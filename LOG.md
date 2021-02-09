@@ -10,3 +10,8 @@
 8. Worked on user model and controller.
 9. Worked on session controller
 10. added seeds
+
+## Tuesday, February 9th
+
+1. Create images folder inside `app/assets`
+2. Created [Favicon](https://favicon.io/favicon-generator/)
