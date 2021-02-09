@@ -21,3 +21,5 @@
 6. Started Errors Reducer
 7. Started Session_Errors Reducer
 8. Started Root Reducer
+9. Added configureStore.
+10. Testing store out on the window.
