@@ -11,7 +11,7 @@ const App = () => (
     <div>
         <header>
             <h1>Welcome to Yelp Clone</h1>
-            {/* <GreetingContainer /> */}
+            <GreetingContainer />
         </header>
 
         {/* <Route path="/login" component={LoginFormContainer} /> */}
