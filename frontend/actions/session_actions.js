@@ -22,7 +22,6 @@ const receiveErrors = errors => {
         type: RECEIEVE_ERRORS,
         errors
     }
-
 }
 
 export const login = (user) => dispatch => {
