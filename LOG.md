@@ -18,3 +18,6 @@
 3. Started Session Reducer
 4. Started Users Reducer
 5. Started Entities Reducer
+6. Started Errors Reducer
+7. Started Session_Errors Reducer
+8. Started Root Reducer
