@@ -1,20 +1,21 @@
-import { connect } from 'react-redux' //adds Redux
-import Greeting from './greeting';
+import { connect } from 'react-redux'
 import { logout } from '../actions/session_actions'
+import Greeting from './greeting'
+
 
 const mapStateToProps = ({ session, entities: { users } }) => {
-    let defaultSession;
+    let defaultSession
 
     if (session.currentUser === undefined) {
-        defaultSession = null;
+        defaultSession = null
     } else {
         defaultSession = session.currentUser.id
     }
 
     return {
         currentUser: users[defaultSession]
-    };
-};
+    }
+}
 
 const mapDispatchToProps = dispatch => ({
     logout: () => dispatch(logout())
