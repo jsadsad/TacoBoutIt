@@ -23,3 +23,4 @@
 8. Started Root Reducer
 9. Added configureStore.
 10. Testing store out on the window.
+11. User log in is now added to the session entities.

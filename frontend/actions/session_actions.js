@@ -25,7 +25,7 @@ const receiveErrors = errors => {
 }
 
 export const login = (user) => dispatch => {
-    return SessionApiUtil.postUser(user).then(createdUser => dispatch(receiveCurrentUser(createdUser)))
+    return SessionApiUtil.createSession(user).then(createdUser => dispatch(receiveCurrentUser(createdUser)))
 }
 
 export const logout = () => dispatch => {
