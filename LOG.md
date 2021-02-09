@@ -17,4 +17,4 @@
 2. Created [Favicon](https://favicon.io/favicon-generator/)
 3. Started Session Reducer
 4. Started Users Reducer
-5. 
+5. Started Entities Reducer
