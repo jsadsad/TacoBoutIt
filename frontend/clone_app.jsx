@@ -23,9 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const root = document.getElementById("root")
     ReactDOM.render(<Root store={store} />, root)
 
-    // window.createSession = createSession
-    // window.deleteSession = deleteSession
-    // window.postUser = postUser
 
     //TESTING
     window.getState = store.getState
