@@ -26,7 +26,7 @@ class SessionForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault()
         const user = Object.assign({}, this.state)
-        this.props.processForm(user).then(() => this.props.history.replace('/'))
+        this.props.processForm(user).then(() => this.props.history.push('/'))
     }
 
     render() {
@@ -101,4 +101,4 @@ class SessionForm extends React.Component {
     }
 }
 
-export default withRouter(SessionForm)
+export default SessionForm
