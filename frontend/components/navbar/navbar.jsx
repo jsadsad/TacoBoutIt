@@ -1,0 +1,26 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+export default ({ currentUser, logout }) => {
+    const display = currentUser ? (
+        <div className="navbar-items">
+            <Link className="write-review-logged-in" to="/">Write a Review</Link>
+            <div className="user-icon">Hello, {currentUser.first_name}! </div>
+            <button onClick={logout}>Log Out</button>
+        </div>
+    ) : (
+            <div className="navbar-items">
+                <Link className="write-review " to="/">Write a Review</Link>
+                <Link className="login-btn" to="/login">Log In</Link>
+                <Link className="signup-btn" to="/signup">Sign Up</Link>
+            </div>
+        )
+    return (
+        <header className="nav-bar">
+            <a className="logo" href="/"><img src={window.logoUrl} /></a>
+            <div>
+                {display}
+            </div>
+        </header>
+    )
+}

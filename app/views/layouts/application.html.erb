@@ -4,13 +4,16 @@
     <title>SomethingYelpClone</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+  
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= favicon_link_tag asset_path('x-favicon.png') %>
   </head>
 
   <body>
+      <script type="text/javascript">
+        window.logoUrl = "<%= image_url('x-favicon.png') %>";
+      </script>
     <%= yield %>
   </body>
 </html>
