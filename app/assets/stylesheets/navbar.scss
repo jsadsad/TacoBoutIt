@@ -19,7 +19,9 @@ $color-accent: #fff;
 }
 
 .user-icon {
-    position: relative;
+    color: #fff;
+    margin-top: 3px;
+    margin-left: 35px;
 }
 
 .write-review {
@@ -43,7 +45,6 @@ $color-accent: #fff;
     margin: 8px;
     z-index: 1;
 }
-
 
 .login-btn {
     color: #fff;
@@ -71,4 +72,27 @@ $color-accent: #fff;
         background-color: #f7f7f7;
         background: linear-gradient(#fff,#f7f7f7);
     }
+}
+
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 83px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.user-dropdown:hover .dropdown-content {
+    display: block;
+    &:hover {
+        background-color: rgb(155, 152, 152);
+    }   
 }

@@ -1,7 +1,6 @@
 import React from "react"
 import { Route, Switch } from 'react-router-dom'
 
-// import GreetingContainer from './greetings/greeting_container'
 import NavBarContainer from './navbar/navbar_container'
 import LoginFormContainer from './session_form/login_form_container'
 import SignupFormContainer from './session_form/signup_form_container'
