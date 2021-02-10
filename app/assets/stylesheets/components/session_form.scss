@@ -1,0 +1,56 @@
+.session-form {
+    display: flex;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding: 30px;
+    border: dotted
+}
+
+.signin-wrapper {
+    margin: auto;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+}
+
+.signup-wrapper {
+    margin: auto;
+    width: 150px;
+    text-align: center;
+}
+
+.click-signup {
+    display: block;
+    box-sizing: border-box;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 6px 23px;
+    background: rgb(198,14,27);
+    color: #fff;
+    border: 0px solid;
+    font-size: 16px;
+    line-height: 2.5em;
+    text-transform: capitalize;
+}
+
+.click-login {
+    display: block;
+    box-sizing: border-box;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 6px 23px;
+    background: rgb(198,14,27);
+    color: #fff;
+    border: 0px solid;
+    font-size: 16px;
+    line-height: 2.5em;
+    text-transform: capitalize;
+}
