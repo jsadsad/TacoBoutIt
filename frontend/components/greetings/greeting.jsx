@@ -1,10 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-// If the user is logged in, then the Greeting should contain:
-// A welcome message including the user's username
-// A button to logout
-
 const Greeting = ({ currentUser, logout }) => {
     const resourceLink = () => (
         <div>

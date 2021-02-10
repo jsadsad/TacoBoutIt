@@ -21,5 +21,3 @@ const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Greeting)
-
-// passsing down {currentUser, logout} props to Greeting component
