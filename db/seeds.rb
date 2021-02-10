@@ -14,4 +14,4 @@ User.create(:first_name => "Helen", :last_name => "Ruby", :email => "what@huh.co
 
 User.create(:first_name => "Chris", :last_name => "Python", :email => "example@test.com", :age => 50, :location => "Portland", :password => "password123")
 
-User.create(:first_name => "Diana", :last_name => "Java", :email => "easy", :age => 50, :location => "Portland", :password => "login!")
+User.create(:first_name => "Kevin", :last_name => "Java", :email => "easy", :age => 50, :location => "Portland", :password => "login!")
