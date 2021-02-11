@@ -8,7 +8,7 @@ const mapStateToProps = ({ errors }) => {
         formType: 'login'
     }
 }
-
+ 
 const mapDispatchToProps = dispatch => {
     return {
         processForm: (user) => dispatch(login(user)),
