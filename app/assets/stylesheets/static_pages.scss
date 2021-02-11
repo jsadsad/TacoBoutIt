@@ -3,5 +3,45 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 22px; 
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 12px; 
+}
+
+.demo-signup {
+    background-color: #2385a0;
+    font-size: 25px;
+    height: 14px;
+    width: 322px;
+    padding: 20px 0px;
+    border-radius: 14px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #1f3663;
+    box-shadow: 0 1px 1px rgb(0,0,0);
+    cursor: pointer;
+    &:hover {
+        background-color: #1892b3;
+    }
+}
+
+.demo-login {
+    background-color: #2385a0;
+    font-size: 25px;
+    height: 14px;
+    width: 322px;
+    padding: 20px 0px;
+    border-radius: 14px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #1f3663;
+    box-shadow: 0 1px 1px rgb(0,0,0);
+    cursor: pointer;
+    &:hover {
+        background-color: #1892b3;
+    }
 }

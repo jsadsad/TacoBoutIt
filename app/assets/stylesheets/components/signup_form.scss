@@ -1,14 +1,3 @@
-.header {
-    text-align: center;
-    background-color: rgb(198,14,27);
-    padding: 10px;
-    font-size: 35px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-}
-
 .title {
     color: #000;
     text-decoration: none;
@@ -18,8 +7,8 @@
 
 .session-form {
     display: flex;
-    margin-top: 70px;
-    margin-left: auto;
+    margin-top: 150px;
+    margin-left: 430px;
     margin-right: auto;
     width: 950px;
     padding: 0 18px 0 18px;
@@ -42,37 +31,16 @@
     font-weight: bold;
     font-size: 15px;
     text-align: center;
-    margin-top: 7px;
-    margin-bottom: 7px;
+    margin-top: 28px;
 }
 
 .terms {
-    color: #333;
+    color: #888484;
     font-size: 12px;
     line-height: 1.5em;
     margin-top: 10px;
     margin-bottom: 25px;
     text-align: center; 
-}
-
-.demo {
-    background-color: rgb(35, 133, 160);
-    font-size: 33px;
-    height: 35px;
-    width: 295px;
-    padding: 5px 0px;
-    border-radius: 3px;
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
-    margin-top: 6px;
-    margin-bottom: 12px;
-    border: 1px solid #1f3663;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    &:hover {
-        background-color: #1892b3;
-    }
 }
 
 .sep-line {
@@ -82,52 +50,58 @@
     text-align: center;
 }
 
-.sign-up-form{
-    display: block;
+.sign-up-form {
     box-sizing: border-box;
-    width: 80%;
-    margin-left: auto;
+    width: 100%;
     margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px 9px;
+    margin-top: 20px;
+    padding: 10px 9px;
     background: #fff;
-    border-radius: 3px;
+}
+
+.sign-up-name {
+    display: flex;
 }
 
 .sign-up-form .sign-up-name input{
-    margin: 5px;
-    margin-left: 23px;
-    padding: 6px 11px;
-    padding-left: 20px;
+    margin: 0px;
+    margin-right: 10px;
+    margin-left: 4px;
+    width: 115px;
+    padding: 5px 12px;
+    padding-left: 17px;
 }
 
 .sign-up-form .sign-up-email input {
     margin: 5px;
-    margin-left: 23px;
-    padding: 6px 11px;
+    margin-left: 4px;
+    padding: 5px 14px;
     padding-left: 20px;
+    width: 90%;
 }
 
 .sign-up-form .sign-up-password input {
     margin: 5px;
-    margin-left: 23px;
-    padding: 6px 11px;
+    margin-left: 4px;
+    padding: 5px 14px;
     padding-left: 20px;
+    width: 90%;
 }
 
 .sign-up-form .sign-up-age input {
     margin: 5px;
-    margin-left: 23px;
-    padding: 6px 11px;
+    margin-left: 4px;
+    padding: 5px 14px;
     padding-left: 20px;
+    width: 90%;
 }
 
 .sign-up-form .sign-up-location input {
     margin: 5px;
-    margin-left: 23px;
-    padding: 6px 11px;
+    margin-left: 4px;
+    padding: 5px 14px;
     padding-left: 20px;
+    width: 90%;
 }
 
 .already-exists {
@@ -140,7 +114,7 @@
     margin-top: 15px;
     margin-bottom: 10px;
     line-height: 1.29em;
-    color: #999;
+    color: rgb(195, 194, 194);
 }
 
 .already-exists p a{
@@ -150,19 +124,29 @@
 .click-signup {
     display: block;
     box-sizing: border-box;
-    width: 70%;
-    margin-left: auto;
-    margin-right: 25px;
-    margin-top: 5px;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 9px;
     margin-bottom: 10px;
     padding: 5px 10px;
-    background: rgb(198,14,27);
+    background: #c60e1b;
     color: #fff;
     border: 0px solid;
     font-size: 15px;
     line-height: 2.5em;
     text-transform: capitalize;
     cursor: pointer;
+    &:hover {
+        background-color: rgb(245,24,11);
+    }
+}
+
+.login-link {
+    color: rgb(11,93,172);
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .classy-image {

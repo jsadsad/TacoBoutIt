@@ -12,7 +12,6 @@ export default ({ currentUser, logout }) => {
         </div>
     ) : (
             <div className="navbar-items">
-                <Link className="write-review " to="/">Write a Review</Link>
                 <Link className="login-btn" to="/login">Log In</Link>
                 <Link className="signup-btn" to="/signup">Sign Up</Link>
             </div>

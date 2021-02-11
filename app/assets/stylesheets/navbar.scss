@@ -1,5 +1,16 @@
 $color-accent: #fff;
 
+.header {
+    text-align: center;
+    background-color: #c60e1b;
+    padding: 20px;
+    font-size: 35px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -8,12 +19,13 @@ $color-accent: #fff;
 }
 
 .logo {
-    width: 80%;
+    width: 25%;
+    margin-left: 250px;
 }
 
 .navbar-items {
-    position: relative;
-    width: 280px;
+position: relative;
+    width: 600px;
     padding: 8px;
     margin: 2px;
 }
@@ -24,18 +36,18 @@ $color-accent: #fff;
     margin-left: 35px;
 }
 
-.write-review {
-    color: #fff;
-    top: 25px;
-    text-decoration: none;
-    padding: 9px 5px;
-    margin: 8px;
-    z-index: 1;
-    &:hover {
-        transition: all .3s ease-out;
-        box-shadow:  0 -1px 0 0 white inset, 0 -2px 0 0 $color-accent inset ;
-    }
-}
+// .write-review {
+//     color: #fff;
+//     top: 25px;
+//     text-decoration: none;
+//     padding: 9px 5px;
+//     margin: 8px;
+//     z-index: 1;
+//     &:hover {
+//         transition: all .3s ease-out;
+//         box-shadow:  0 -1px 0 0 white inset, 0 -2px 0 0 $color-accent inset ;
+//     }
+// }
 
 .write-review-logged-in {
     color: #fff;
@@ -48,10 +60,10 @@ $color-accent: #fff;
 
 .login-btn {
     color: #fff;
-    top: 25px;
+    top: 2px;
     text-decoration: none;
-    padding: 9px 5px;
-    margin: 8px;
+    padding: 5px;
+    margin: 0px;
     z-index: 1;
     &:hover {
         transition: all .3s ease-out;
@@ -71,6 +83,7 @@ $color-accent: #fff;
         color: #666;
         background-color: #f7f7f7;
         background: linear-gradient(#fff,#f7f7f7);
+        padding: 6px;
     }
 }
 
@@ -84,10 +97,11 @@ $color-accent: #fff;
     display: none;
     position: absolute;
     background-color: #fff;
-    min-width: 83px;
-    padding: 10px 15px;
+    min-width: 81px;
+    margin: 5px;
+    /* margin-left: -8px; */
+    padding: 7px 39px;
     cursor: pointer;
-    z-index: 1;
 }
 
 .user-dropdown:hover .dropdown-content {

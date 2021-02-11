@@ -69,7 +69,7 @@ class SessionForm extends React.Component {
                             <div className="sign-in-for">Log in to TacoBoutIt</div>
                             <div className="new-signin">New To TacoBoutIt? <span><Link className="signup-link" to="/signup">Sign up!</Link></span></div>
                             <div className="terms">By logging in, you agree to TacoBoutIt's Terms of Service and Privacy Policy.</div>
-                            <div className="demo" onClick={this.loginDemo}>Demo User</div>
+                            <div className="demo-login" onClick={this.loginDemo}>Demo User</div>
                             <div>
                                 <fieldset className="sep-line">
                                     <legend align="center">
@@ -115,7 +115,7 @@ class SessionForm extends React.Component {
                                 <h3 className="sign-up-for">Sign Up for TacoBoutIt</h3>
                                 <div className="sign-up-subhead">Connect with great local businesses</div>
                                 <div className="terms">By continuing, you agree to TacoBoutIt's Terms of Service and acknowledge TacoBoutIt's Privacy Policy.</div>
-                                <div className="demo" onClick={this.loginDemo}>Demo User</div>
+                                <div className="demo-signup" onClick={this.loginDemo}>Demo User</div>
                                 <div>
                                     <fieldset className="sep-line">
                                         <legend align="center">
@@ -166,7 +166,7 @@ class SessionForm extends React.Component {
                                         />
                                     </div>
                                     <button className="click-signup" type="submit" value={this.props.formType}>{this.props.formType}</button>
-                                    <div className="already-exists">Already on TacoBoutIt? <Link to="/login">Log in</Link></div>
+                                    <div className="already-exists">Already on TacoBoutIt? <Link className="login-link" to="/login">Log in</Link></div>
                                 </div>
                             </div>
                         </form>
