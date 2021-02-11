@@ -1,0 +1,69 @@
+.sign-in-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+}
+
+.sign-in-for {
+    font-size: 25px;
+    line-height: 1.5em;
+    color: rgb(198,14,27);
+    font-weight: 550;
+}
+
+.new-signin {
+    font-size: 13px;
+    color: #000;
+    font-weight: 550;
+    margin-bottom: 5px
+}
+
+.signup-link {
+    color: rgb(11,93,172);
+}
+
+.sign-in-form input {
+    display: block;
+    box-sizing: border-box;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 9px;
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 1.29em;
+}
+
+.bottom-new-sign-up {
+    font-size: 12px;
+    text-align: right;
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: rgb(159, 159, 159);
+}
+
+.click-login {
+    display: block;
+    box-sizing: border-box;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 6px 23px;
+    background: rgb(198,14,27);
+    color: #fff;
+    border: 0px solid;
+    font-size: 16px;    
+    text-transform: capitalize;
+    cursor: pointer;
+}
