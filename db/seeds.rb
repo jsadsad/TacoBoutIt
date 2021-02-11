@@ -8,10 +8,12 @@
 
 User.destroy_all
 
-User.create(:first_name => "Josh", :last_name => "Javascript", :email => "test@example.com", :age => 30, :location => "San Francisco", :password => "123515")
+User.create(:first_name => "Souper", :last_name => "Hero", :email => "test@example.com", :age => 30, :location => "San Francisco", :password => "password")
 
-User.create(:first_name => "Helen", :last_name => "Ruby", :email => "what@huh.com", :age => 40, :location => "Seattle", :password => "123515")
+User.create(:first_name => "Weird", :last_name => "Dough", :email => "yes@no.com", :age => 40, :location => "Seattle", :password => "123456")
 
-User.create(:first_name => "Chris", :last_name => "Python", :email => "example@test.com", :age => 50, :location => "Portland", :password => "password123")
+User.create(:first_name => "Nacho", :last_name => "Friend", :email => "puns@yahoo.com", :age => 18, :location => "Portland", :password => "wordpass")
 
-User.create(:first_name => "Kevin", :last_name => "Java", :email => "easy", :age => 50, :location => "Portland", :password => "login!")
+User.create(:first_name => "Egg", :last_name => "Cellent", :email => "needmore@ideas.com", :age => 35, :location => "Dallas", :password => "ihopethisisecure")
+
+User.create(:first_name => "Queue", :last_name => "Tea", :email => "matcha@boba.com", :age => 49, :location => "Portland", :password => "passwordlol")
