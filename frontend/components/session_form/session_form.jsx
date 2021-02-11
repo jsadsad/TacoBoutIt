@@ -158,12 +158,14 @@ class SessionForm extends React.Component {
                                             placeholder="Age"
                                         />
                                     </div>
-                                    <div className="sign-up-location">
-                                        <input type="location"
-                                            value={this.state.location}
-                                            onChange={this.handleField('location')}
-                                            placeholder="Location"
-                                        />
+                                    <div>
+                                        <select className="signup-location-select" value={this.state.location} onChange={this.handleField('location')}>
+                                                <option value="" disabled selected>Location</option>
+                                                <option value="San Francisco">San Francisco</option>
+                                                <option value="Portland">Portland</option>
+                                                <option value="Seattle">Seattle</option>
+                                                <option value="Los Angeles">Los Angeles</option>
+                                        </select>
                                     </div>
                                     <button className="click-signup" type="submit" value={this.props.formType}>{this.props.formType}</button>
                                     <div className="already-exists">Already on TacoBoutIt? <Link className="login-link" to="/login">Log in</Link></div>
