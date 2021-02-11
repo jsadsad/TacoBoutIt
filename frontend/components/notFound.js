@@ -10,7 +10,6 @@ const NotFoundPage = () => {
                 <div className="page-message">Doggone it! The page you’re looking for cannot be found.</div>
             </div>
         </div>
-        
     )
 }
 
