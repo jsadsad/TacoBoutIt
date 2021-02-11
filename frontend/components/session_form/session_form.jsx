@@ -15,7 +15,12 @@ class SessionForm extends React.Component {
             password: ''
         }
         this.handleSubmit = this.handleSubmit.bind(this)
-        this.loginDemo = this.loginDemo.bind(this);
+        this.loginDemo = this.loginDemo.bind(this)
+        this.renderErrors = this.renderErrors.bind(this)
+    }
+
+    componentWillUnmount() {
+        this.props.clearErrors()
     }
 
     handleField(field) {
@@ -25,7 +30,7 @@ class SessionForm extends React.Component {
     }
 
     loginDemo(e) {
-        e.preventDefault();
+        e.preventDefault()
         this.props.loginDemo({
             email: "test@example.com",
             password: "password"
@@ -35,7 +40,21 @@ class SessionForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault()
         const user = Object.assign({}, this.state)
-        this.props.processForm(user).then(() => this.props.history.replace('/'))
+        this.props.processForm(user)
+    }
+
+    renderErrors() {
+        if (this.props.errors.session.length !== 0) {
+        return (
+        <ul>
+            {this.props.errors.session.map((error, idx) => (
+                <li className="session-error" key={`error-${idx}`}>
+                    {error}
+                </li>
+            ))}
+        </ul>
+        )
+        }
     }
 
     render() {
@@ -58,10 +77,11 @@ class SessionForm extends React.Component {
                                         </legend>
                                 </fieldset>
                             </div>
+                            {this.renderErrors()}
                             <form onSubmit={this.handleSubmit}>
                                 <div className="sign-in-form">
                                     <div>
-                                        <input type="text"
+                                        <input type="email"
                                             value={this.state.email}
                                             onChange={this.handleField('email')}
                                             placeholder="Email"
@@ -103,6 +123,7 @@ class SessionForm extends React.Component {
                                         </legend>
                                     </fieldset>
                                 </div>
+                                {this.renderErrors()}
                                 <div className="sign-up-form">
                                     <div className="sign-up-name">
                                         <input type="text"
