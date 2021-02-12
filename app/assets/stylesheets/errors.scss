@@ -1,22 +1,24 @@
+@keyframes error {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 .session-error {
-    padding-top: 10px;
+    padding-top: 5px;
     color: #000;
     width: 50%;
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    position: sticky;
-    margin-bottom: -30px;
-    padding: 18px 18px 18px 24px;
-    border-radius: 10px;
-    font-size: 16px;
+    position: absolute;
+    padding: 20px 20px 20px 35px;
+    border-radius: 14px;
+    font-size: 15px;
     font-weight: 300;
-    margin-top: 80px;
+    margin-top: 38px;
     margin-left: 420px;
     line-height: 1.5em;
-    background: #fff7cc;
-    transition: height .2s;
-}
+    animation: error 0.4s;
+} 
 
 .alert-error {
     background: #fcd6d3;
