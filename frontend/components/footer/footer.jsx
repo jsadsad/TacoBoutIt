@@ -10,8 +10,8 @@ const Footer = () => (
                 <p>Made with ♥ by JS</p>
             </div>
             <div className="socials">
-                <span className="footer-nav-GH"><a href="https://github.com/jsadsad" target="_blank"><FontAwesomeIcon icon={faGithub} /></a></span>
-                <span className="footer-nav-LN"><a href="https://www.linkedin.com/in/joshsad2" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></span>
+                <span><a href="https://github.com/jsadsad" target="_blank"><FontAwesomeIcon className="footer-nav-GH" icon={faGithub} transform="shrink-2 left-4" /></a></span>
+                <span><a href="https://www.linkedin.com/in/joshsad2" target="_blank"><FontAwesomeIcon className="footer-nav-LN" icon={faLinkedin} transform="shrink-2 left-4"/></a></span>
             </div>
         </div>
     </div>
