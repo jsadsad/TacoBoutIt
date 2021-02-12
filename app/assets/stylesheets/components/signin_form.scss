@@ -43,9 +43,14 @@
     padding: 5px 9px;
     background: #fff;
     border: 1px solid #999;
-    border-radius: 3px;
+    border-radius: 5px;
     font-size: 14px;
     line-height: 1.29em;
+    &:focus {
+        outline: none;
+        border:1px solid rgba(15, 147, 203, 0.475);
+        box-shadow: 0 0 10px #719ECE;
+    }
 }
 
 .bottom-new-sign-up {

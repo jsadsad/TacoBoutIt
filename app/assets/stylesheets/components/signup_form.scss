@@ -59,17 +59,30 @@
     background: #fff;
 }
 
-.sign-up-name {
-    display: flex;
+.sign-up-form input {
+    border: 1px solid #999;
 }
 
-.sign-up-form .sign-up-name input{
+.sign-up-name {
+    display: flex;
+    margin-top: -15px;
+    margin-bottom: 6px;
+}
+
+.sign-up-form .sign-up-name input {
     margin: 0px;
     margin-right: 10px;
     margin-left: 4px;
     width: 115px;
     padding: 5px 12px;
     padding-left: 17px;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    &:focus {
+        outline: none;
+        border:1px solid rgba(15, 147, 203, 0.475);
+        box-shadow: 0 0 10px #719ECE;
+    }
 }
 
 .sign-up-form .sign-up-email input {
@@ -78,6 +91,13 @@
     padding: 5px 14px;
     padding-left: 20px;
     width: 90%;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    &:focus {
+        outline: none;
+        border:1px solid rgba(15, 147, 203, 0.475);
+        box-shadow: 0 0 10px #719ECE;
+    }
 }
 
 .sign-up-form .sign-up-password input {
@@ -86,6 +106,13 @@
     padding: 5px 14px;
     padding-left: 20px;
     width: 90%;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    &:focus {
+        outline: none;
+        border:1px solid rgba(15, 147, 203, 0.475);
+        box-shadow: 0 0 10px #719ECE;
+    }
 }
 
 .sign-up-form .sign-up-age input {
@@ -94,6 +121,13 @@
     padding: 5px 14px;
     padding-left: 20px;
     width: 90%;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    &:focus {
+        outline: none;
+        border:1px solid rgba(15, 147, 203, 0.475);
+        box-shadow: 0 0 10px #719ECE;
+    }
 }
 
 .signup-location-select {
@@ -101,6 +135,11 @@
     margin: 5px;
     margin-left: 6px;
     padding: 7px 14px;
+    &:focus {
+        outline: none;
+        border:1px solid rgba(15, 147, 203, 0.475);
+        box-shadow: 0 0 10px #719ECE;
+    }
 }
 
 .already-exists {

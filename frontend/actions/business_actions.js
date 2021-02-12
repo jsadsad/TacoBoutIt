@@ -22,7 +22,7 @@ export const fetchBusinesses = () => dispatch => {
         .then(businesses => dispatch(receiveBusinesses(businesses)))
 }
 
-export const fetchBusinesses = (businessId) => dispatch => {
+export const fetchBusiness = (businessId) => dispatch => {
     return BusinessAPIUtil.fetchBusiness(businessId)
         .then(business => dispatch(receiveBusiness(business)))
 }
