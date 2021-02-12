@@ -1,4 +1,4 @@
-import *  BusinessAPIUtil from '../util/business_api_util'
+import *  as BusinessAPIUtil from '../util/business_api_util'
 
 export const RECEIVE_BUSINESS = `RECEIVE_BUSINESS`
 export const RECEIVE_BUSINESSES = `RECEIVE_BUSINESSES`
@@ -19,7 +19,7 @@ const receiveBusinesses = businesses => {
 
 export const fetchBusinesses = () => dispatch => {
     return BusinessAPIUtil.fetchBusinesses()
-        .then(businesses => dispatch(receivebusinesses(business)))
+        .then(businesses => dispatch(receiveBusinesses(businesses)))
 }
 
 export const fetchBusinesses = (businessId) => dispatch => {
