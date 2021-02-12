@@ -7,5 +7,5 @@ class Business < ApplicationRecord
         :state, 
         :zip_code,
         :phone_number,
-        presence: true
+    presence: true
 end
