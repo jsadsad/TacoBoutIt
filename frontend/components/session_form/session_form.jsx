@@ -44,22 +44,22 @@ class SessionForm extends React.Component {
         this.props.processForm(user)
     }
 
+    errorsOccured() {
+        this.props.errors.session.length !== 0
+    }
+
     renderErrors() {
         if (this.errorsOccured) {
         return (
             <ul>
                 {this.props.errors.session.map((error, idx) => (
                     <li className="session-error alert-error" key={`error-${idx}`}> {error}
-                        <span className="closebtn" onClick={() => this.props.clearErrors()}>&times;</span> 
+                        <span className="close-btn" onClick={() => this.props.clearErrors()}>&times;</span> 
                     </li>
                 ))}
             </ul>
         )
         }
-    }
-
-    errorsOccured() {
-        this.props.errors.session.length !== 0
     }
 
     render() {
@@ -80,7 +80,7 @@ class SessionForm extends React.Component {
                                 <fieldset className="sep-line">
                                     <legend align="center">
                                         OR
-                                        </legend>
+                                    </legend>
                                 </fieldset>
                             </div>
                             <form onSubmit={this.handleSubmit}>
@@ -90,11 +90,13 @@ class SessionForm extends React.Component {
                                             value={this.state.email}
                                             onChange={this.handleField('email')}
                                             placeholder="Email"
+                                            required
                                         />
                                         <input type="password"
                                             value={this.state.password}
                                             onChange={this.handleField('password')}
                                             placeholder="Password"
+                                            required
                                         />
                                         <button className="click-login" type="submit" value={this.props.formType}>{this.props.formType}</button>
                                         <div className="bottom-new-sign-up">New To TacoBoutIt? <span><Link className="signup-link" to="/signup">Sign up!</Link></span></div>
@@ -135,18 +137,21 @@ class SessionForm extends React.Component {
                                             value={this.state.first_name}
                                             onChange={this.handleField('first_name')}
                                             placeholder="First Name"
+                                            required
                                         />
                                         <input type="text"
                                             value={this.state.last_name}
                                             onChange={this.handleField('last_name')}
                                             placeholder="Last Name"
+                                            required
                                         />
                                     </div>
                                     <div className="sign-up-email">
-                                        <input type="text"
+                                        <input type="email"
                                             value={this.state.email}
                                             onChange={this.handleField('email')}
                                             placeholder="Email"
+                                            required
                                         />
                                     </div>
                                     <div className="sign-up-password">
@@ -154,6 +159,7 @@ class SessionForm extends React.Component {
                                             value={this.state.password}
                                             onChange={this.handleField('password')}
                                             placeholder="Password"
+                                            required
                                         />
                                     </div>
                                     <div className="sign-up-age">
