@@ -1,6 +1,5 @@
 class Business < ApplicationRecord
     validates :name, 
-        :website, 
         :category, 
         :address, 
         :city, 

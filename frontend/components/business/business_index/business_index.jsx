@@ -2,9 +2,8 @@ class BusinessIndex extends React.Component {
     constructor(props) {
         super(props)
     }
-
-    this.state 
     render() {
+        const { businesses } = this.props
         return (
             <div>Business Index</div>
         )
