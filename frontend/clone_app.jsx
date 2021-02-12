@@ -23,5 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //TESTING
     window.getState = store.getState
+    window.dispatch = store.dispatch
 })
 
