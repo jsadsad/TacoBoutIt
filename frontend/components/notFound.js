@@ -9,6 +9,9 @@ const NotFoundPage = () => {
                 <div className="page-status">404 Error.</div>
                 <div className="page-message">Doggone it! The page you’re looking for cannot be found.</div>
             </div>
+            <div>
+                <img className="taco-err" src={window.taco404} />
+            </div>
         </div>
     )
 }
