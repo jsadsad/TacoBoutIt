@@ -188,6 +188,7 @@ class SessionForm extends React.Component {
                         </div>
                     </div>
                 </div>
+                
             )
         }   
     }

@@ -36,11 +36,16 @@
     }
 }
 
-.closebtn:hover {
-  color: black;
+.taco-err {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  -webkit-justify-content: center;
+  /* Safari */
+  justify-content: center;
 }
 
-.taco-err {
+.taco {
   margin-left: 630px;
-  height: 700px;
+  max-height: 700px;
 }

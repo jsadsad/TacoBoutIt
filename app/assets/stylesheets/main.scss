@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  padding-bottom: 280px;
+}
+
+.tbi-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.tbi-wrapper {  
+    min-height: 100%;
+    margin-bottom: -142px; 
+}
+
+.tbi-wrapper:after {
+  content: "";
+  display: block;
+}
