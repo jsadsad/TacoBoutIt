@@ -1,5 +1,41 @@
 .session-error {
-  padding-top: 10px;
-  font-size: 14px;
-  color: rgb(198, 14, 27);
+    padding-top: 10px;
+    color: #000;
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: sticky;
+    margin-bottom: -30px;
+    padding: 18px 18px 18px 24px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 80px;
+    margin-left: 420px;
+    line-height: 1.5em;
+    background: #fff7cc;
+    transition: height .2s;
+}
+
+.alert-error {
+    background: #fcd6d3;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      color: grey
+    }
+}
+
+.closebtn:hover {
+  color: black;
 }

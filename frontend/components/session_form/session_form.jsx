@@ -17,6 +17,7 @@ class SessionForm extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this)
         this.loginDemo = this.loginDemo.bind(this)
         this.renderErrors = this.renderErrors.bind(this)
+        this.errorsOccured = this.errorsOccured.bind(this)
     }
 
     componentWillUnmount() {
@@ -44,17 +45,21 @@ class SessionForm extends React.Component {
     }
 
     renderErrors() {
-        if (this.props.errors.session.length !== 0) {
+        if (this.errorsOccured) {
         return (
-        <ul>
-            {this.props.errors.session.map((error, idx) => (
-                <li className="session-error" key={`error-${idx}`}>
-                    {error}
-                </li>
-            ))}
-        </ul>
+            <ul>
+                {this.props.errors.session.map((error, idx) => (
+                    <li className="session-error alert-error" key={`error-${idx}`}> {error}
+                        <span className="closebtn" onClick={() => this.props.clearErrors()}>&times;</span> 
+                    </li>
+                ))}
+            </ul>
         )
         }
+    }
+
+    errorsOccured() {
+        this.props.errors.session.length !== 0
     }
 
     render() {
@@ -64,6 +69,7 @@ class SessionForm extends React.Component {
                     <div className="header">
                         <Link className="title" to="/">TacoBoutIt</Link>
                     </div>
+                        {this.renderErrors()}
                     <div className="session-form">
                         <div className="sign-in-wrapper"> 
                             <div className="sign-in-for">Log in to TacoBoutIt</div>
@@ -77,7 +83,6 @@ class SessionForm extends React.Component {
                                         </legend>
                                 </fieldset>
                             </div>
-                            {this.renderErrors()}
                             <form onSubmit={this.handleSubmit}>
                                 <div className="sign-in-form">
                                     <div>
@@ -109,6 +114,7 @@ class SessionForm extends React.Component {
                     <div className="header">
                         <Link className="title" to="/">TacoBoutIt</Link>
                     </div>
+                        {this.renderErrors()}
                     <div className="session-form">
                         <form onSubmit={this.handleSubmit}>
                             <div className="sign-up-wrapper">
@@ -123,7 +129,6 @@ class SessionForm extends React.Component {
                                         </legend>
                                     </fieldset>
                                 </div>
-                                {this.renderErrors()}
                                 <div className="sign-up-form">
                                     <div className="sign-up-name">
                                         <input type="text"
@@ -159,8 +164,8 @@ class SessionForm extends React.Component {
                                         />
                                     </div>
                                     <div>
-                                        <select className="signup-location-select" value={this.state.location} onChange={this.handleField('location')}>
-                                                <option value="" disabled selected>Location</option>
+                                        <select className="signup-location-select" value={this.state.location} onChange={this.handleField('location')} >
+                                                <option value="" disabled defaultValue>Location</option>
                                                 <option value="San Francisco">San Francisco</option>
                                                 <option value="Portland">Portland</option>
                                                 <option value="Seattle">Seattle</option>
