@@ -5,8 +5,7 @@ const LandingNav = () => (
     <div className="landing-top-nav">
         <div className="landing-nav-left">
             <span>Write a Review</span>
-            <span>Events</span>
-            <span>Talk</span>
+            <span><Link to="/businesses">Businesses</Link></span>
         </div>
         <div className="landing-nav-right">
             <span><Link to="/login">Log In</Link></span>
