@@ -1,0 +1,19 @@
+.landing-top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem;
+}
+
+.landing-nav-left > * {
+    margin-right: 1.5rem;
+}
+
+.landing-nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.landing-nav-right > * {
+    margin-left: 1.5rem
+}
