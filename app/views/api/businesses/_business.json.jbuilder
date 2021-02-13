@@ -1,5 +1,4 @@
-json.extract! business,
-            :id,
+json.extract! business, :id,
             :name,
             :website,
             :category,
