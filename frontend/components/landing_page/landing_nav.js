@@ -5,11 +5,11 @@ const LandingNav = () => (
     <div className="landing-top-nav">
         <div className="landing-nav-left">
             <span>Write a Review</span>
-            <span><Link to="/businesses">Businesses</Link></span>
+            <Link className="landing-page-links" to="/businesses">Businesses</Link>
         </div>
         <div className="landing-nav-right">
-            <span><Link to="/login">Log In</Link></span>
-            <button><Link className="langin_nav_signup" to="/signup">Sign Up</Link></button>
+            <Link className="landing-page-links" to="/login">Log In</Link>
+            <Link className="landing_nav_signup" to="/signup">Sign Up</Link>
         </div>
     </div>
     

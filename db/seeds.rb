@@ -9,6 +9,10 @@
 User.destroy_all
 Business.destroy_all
 
+ActiveRecord::Base.connection.tables.each do |t|
+  ActiveRecord::Base.connection.reset_pk_sequence!(t)
+end
+
 User.create(:first_name => "Souper", :last_name => "Hero", :email => "test@example.com", :age => 30, :location => "San Francisco", :password => "password")
 
 User.create(:first_name => "Weird", :last_name => "Dough", :email => "yes@no.com", :age => 40, :location => "Seattle", :password => "123456")
