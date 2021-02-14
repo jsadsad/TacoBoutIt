@@ -7,15 +7,25 @@
 }
 
 .biz-show-container-name {
-    width: 610px;
-    height: 170px;
-    float: left;
-    display: block;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
 }
 
 .biz-show-container-category {
     display: flex;
     padding: 15px;
     font-size: 1rem;
+}
+
+.biz-show-container-create-review {
+    display: flex;
+    width: 115px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    line-height: 18px;
+    color: #d32323;
+    padding: 5px;
 }
 
