@@ -1,2 +1,21 @@
-.business-show-container {
+.biz-show-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 50px;
 }
+
+.biz-show-container-name {
+    width: 610px;
+    height: 170px;
+    float: left;
+    display: block;
+}
+
+.biz-show-container-category {
+    display: flex;
+    padding: 15px;
+    font-size: 1rem;
+}
+

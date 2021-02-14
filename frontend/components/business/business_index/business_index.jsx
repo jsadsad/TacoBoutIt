@@ -13,6 +13,7 @@ class BusinessIndex extends React.Component {
 
     render() {
         const { businesses } = this.props
+        if (!businesses) return (<h1>Loading...</h1>)
         return (
             <div>
                 <NavbarContainer />
