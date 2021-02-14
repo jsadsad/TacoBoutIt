@@ -14,17 +14,20 @@ class BusinessIndex extends React.Component {
     render() {
         const { businesses } = this.props;
         return (
-            <div className="biz-index-container">
+            <div>
                 <NavbarContainer />
-                {businesses.map((business, index) => {
-                    return (
-                        <BusinessIndexItem
-                            business={business}
-                            key={index}
-                            index={index} />
-                    )
-                })}
+                <div className="biz-index-container">
+                    {businesses.map((business, index) => {
+                        return (
+                            <BusinessIndexItem
+                                business={business}
+                                key={index}
+                                index={index} />
+                        )
+                    })}
+                </div>
             </div>
+            
         )
     }
 }
