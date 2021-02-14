@@ -1,7 +1,5 @@
 import React from "react"
 import { Route, Switch, Redirect } from 'react-router-dom'
-
-import NavBarContainer from './navbar/navbar_container'
 import LandingPage from "./landing_page/landing_page"
 import LoginFormContainer from './session_form/login_form_container'
 import SignupFormContainer from './session_form/signup_form_container'

@@ -1,38 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { faDollarSign } from '@fortawesome/free-solid-svg-icons'
 
 const BusinessIndexItem = ({ business, index }) => (
-    <div className="biz-index-page-container">
-        <div className="biz-index-details-container">
-            <ul>
-                <li className="biz-index-item">
-                    <Link to={`/businesses/${business.id}`}>
-                        {index + 1}. {business.business_name}
-                    </Link>
-                </li>
-                <li>
-                    <FontAwesomeIcon icon={faStar} />
-                </li>
-                <li>
-                    <FontAwesomeIcon icon={faStar} />
-                </li>
-                <li>
-                    {business.address}
-                </li>
-                <li>
-                    {business.city}
-                    {business.state}
-                    {business.zip_code}
-                </li>
-                <li>
-                    <span>Takeout or Delivery?</span>
-                </li>
-                <li>
-                </li>
-            </ul>
+    <div className="biz-index-search-result">
+        <img src="https://via.placeholder.com/210" className="biz-image" alt="business_image" />
+        <div className="biz-info">
+            <h2 className="biz-index-subtitle"><Link to={`/businesses/${business.id}`}>{index + 1}. {business.name}</Link></h2>
+            <p><FontAwesomeIcon icon={faDollarSign} size="xs" /><FontAwesomeIcon icon={faDollarSign} size="xs"/></p>
+            <span className="biz-category-tag">{business.category}</span>
         </div>
+        <div className="biz-index-contact-info">
+            <p>{business.phone_number}</p>
+            <p>{business.address}</p>
+            <p>{business.city}</p>
+            <p>{business.state}</p>
+            <p>{business.zip_code}</p>
+        </div>
+        <p className="biz-take-out">Takeout or Delivery?</p>
     </div>
 )
 
