@@ -1,7 +1,7 @@
 import React from 'react'
 import NavbarContainer from '../../navbar/navbar_container'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle, faDollarSign, faStar } from '@fortawesome/free-solid-svg-icons'
+import { faCheckCircle, faDollarSign, faStar, faCamera } from '@fortawesome/free-solid-svg-icons'
 
 class BusinessShow extends React.Component {
 
@@ -26,9 +26,15 @@ class BusinessShow extends React.Component {
                                 <FontAwesomeIcon icon={faDollarSign} size="xs" /><FontAwesomeIcon icon={faDollarSign} size="xs" /> &nbsp;&#183;&nbsp; {business.category}
                                 </div>
                             </div>
-                            <div className="biz-show-container-create-review">
-                                <FontAwesomeIcon icon={faStar} size="lg" />Write a Review
+                            <div className="biz-show-widgets">
+                                <div className="biz-show-container-create-review">
+                                    <FontAwesomeIcon icon={faStar} size="md" fixedWidth />Write a Review
                             </div>
+                                <div className="biz-show-container-add-photo">
+                                    <FontAwesomeIcon icon={faCamera} size="md" fixedWidth />Add Photo
+                            </div>
+                            </div>
+   
                         </div>
                     </div>
                 </div>

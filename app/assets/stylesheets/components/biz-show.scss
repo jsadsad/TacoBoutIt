@@ -18,14 +18,32 @@
     font-size: 1rem;
 }
 
+.biz-show-widgets {
+    display: flex;
+}
+
 .biz-show-container-create-review {
     width: 182px;
     height: 25px;
     text-align: center;
-    border-radius: 16px;
-    line-height: 18px;
-    background: #c60e1b;
+    border-radius: 3px;
+    line-height: 30px;
+    background: rgb(238, 33, 44);
     color: #fff;
-    padding: 5px;
+    padding: 6px;
+    margin-right: 10px;
+}
+
+.biz-show-container-add-photo {
+    display: flex;
+    width: 130px;
+    height: 22px;
+    border-radius: 3px;
+    line-height: 22px;
+    background: #fff;
+    border: solid;
+    color: #000;
+    padding: 6px;
+    font-weight: 200;
 }
 
