@@ -19,11 +19,21 @@
     min-width: 400px;
 }
 
+.biz-outdoor-takeout {
+    min-width: 400px;
+    font-size: 12px;
+    padding-top: 4rem;
+}
+
 .biz-index-subtitle {
     color: #4a4a4a;
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.25;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .biz-category-tag {
@@ -43,6 +53,7 @@
 
 .biz-index-contact-info p {
     font-size: .6rem;
+    font-weight: 300;
 }
 
 .biz-take-out {
