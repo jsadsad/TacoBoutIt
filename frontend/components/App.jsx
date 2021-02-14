@@ -1,10 +1,11 @@
 import React from "react"
 import { Route, Switch, Redirect } from 'react-router-dom'
+
 import LandingPage from "./landing_page/landing_page"
 import LoginFormContainer from './session_form/login_form_container'
 import SignupFormContainer from './session_form/signup_form_container'
 import BusinessIndexContainer from './business/business_index/business_index_container'
-
+import BusinessShowContainer from './business/business_show/business_show_container'
 import Footer from './footer/footer'
 import NotFoundPage from './notFound'
 
@@ -18,6 +19,7 @@ const App = () => (
                 <AuthRoute exact path="/login" component={LoginFormContainer} />
                 <AuthRoute exact path="/signup" component={SignupFormContainer} />
                 <Route exact path="/businesses" component={BusinessIndexContainer} />
+                <Route exact path="/businesses/:businessId" component={BusinessShowContainer} />
                 <Route path="/404" component={NotFoundPage} />
                 <Redirect to="/404" />
             </Switch>
