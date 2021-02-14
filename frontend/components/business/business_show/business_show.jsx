@@ -28,13 +28,45 @@ class BusinessShow extends React.Component {
                             </div>
                             <div className="biz-show-widgets">
                                 <div className="biz-show-container-create-review">
-                                    <FontAwesomeIcon icon={faStar} size="md" fixedWidth />Write a Review
-                            </div>
+                                    <FontAwesomeIcon icon={faStar} size="1x" fixedWidth />Write a Review
+                                </div>
                                 <div className="biz-show-container-add-photo">
-                                    <FontAwesomeIcon icon={faCamera} size="md" fixedWidth />Add Photo
+                                    <FontAwesomeIcon icon={faCamera} size="1x" fixedWidth />Add Photo
+                                </div>
                             </div>
+                            <div className="biz-show-container-hours-location">
+                                <div className="biz-show-container-hours-location-title">Location & Hours</div>
+                                <ul className="biz-show-container-hours-list">
+                                    <li className="biz-show-availability-item">
+                                        <div className="biz-show-day-item">Mon</div>
+                                        <div className="biz-show-time-item">Closed</div>
+                                    </li>
+                                    <li className="biz-show-availability-item">
+                                        <div className="biz-show-day-item">Tue</div>
+                                        <div className="biz-show-time-item">12:30 PM - 8:00 PM</div>
+                                    </li>
+                                    <li className="biz-show-availability-item">
+                                        <div className="biz-show-day-item">Wed</div>
+                                        <div className="biz-show-time-item">11:30 PM - 8:00 PM</div>
+                                    </li>
+                                    <li className="biz-show-availability-item">
+                                        <div className="biz-show-day-item">Thu</div>
+                                        <div className="biz-show-time-item">11:30 PM - 8:00 PM</div>
+                                    </li>
+                                    <li className="biz-show-availability-item">
+                                        <div className="biz-show-day-item">Fri</div>
+                                        <div className="biz-show-time-item">12:30 PM - 9:00 PM</div>
+                                    </li>
+                                    <li className="biz-show-availability-item">
+                                        <div className="biz-show-day-item">Sat</div>
+                                        <div className="biz-show-time-item">12:30 PM - 8:00 PM</div>
+                                    </li>
+                                    <li className="biz-show-availability-item">
+                                        <div className="biz-show-day-item">Sun</div>
+                                        <div className="biz-show-time-item">12:30 PM - 8:00 PM</div>
+                                    </li>
+                                </ul>
                             </div>
-   
                         </div>
                     </div>
                 </div>
