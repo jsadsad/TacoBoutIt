@@ -120,6 +120,9 @@
     min-width: 340px;
     margin-top: -8px;
     border: none;
+    &:focus {
+        outline: none;
+    }
 }
 
 .search-mag {
@@ -145,3 +148,23 @@
     color: #fff;
 }
 
+.landing-dropdown-content {
+    display: none;
+    position: absolute;
+    color: #3a7cbd;
+    background-color: #efeded;
+    opacity: 0.8;
+    min-width: 70px;
+    margin-top: 5px;
+    margin-left: 35px;
+    padding: 8px 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.user-dropdown:hover .landing-dropdown-content {
+    display: block;
+    &:hover {
+        text-decoration: underline;
+    }   
+}

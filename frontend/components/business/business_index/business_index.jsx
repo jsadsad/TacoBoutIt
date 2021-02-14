@@ -1,8 +1,8 @@
 import React from 'react';
 import BusinessIndexItem from '../business_index_item/business_index_item'
-import Navbar from '../../navbar/navbar'
+import NavbarContainer from '../../navbar/navbar_container'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSlidersH, faDollarSign} from '@fortawesome/free-solid-svg-icons'
+import { faDollarSign} from '@fortawesome/free-solid-svg-icons'
 
 class BusinessIndex extends React.Component {
     constructor(props) {
@@ -17,7 +17,7 @@ class BusinessIndex extends React.Component {
         const { businesses } = this.props;
         return (
             <div>
-                <Navbar />
+                <NavbarContainer />
                 <div>
                     <div className="biz-index-container-border"></div>
                     <div className="biz-index-container">

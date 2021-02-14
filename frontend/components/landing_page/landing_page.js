@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import SearchBar from '../search_bar/search_bar'
 import SearchSuggestions from '../search_suggestions/search_suggestions'
-import LandingNav from './landing_nav/landing_nav'
+import LandingNav from './landing_nav/landing_nav_container'
 
 const LandingPage = () => (
     <div className="landing-container">

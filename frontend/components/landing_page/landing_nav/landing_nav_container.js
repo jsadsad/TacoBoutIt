@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import LandingNav from './landing_nav'
-import { logout } from '../../../util/session_api_util'
+import { logout } from '../../../actions/session_actions'
 
 const mapStateToProps = ({ session, entities: { users } }) => {
     return {
