@@ -7,9 +7,9 @@ const businessesReducer = (oldState = {}, action) => {
     Object.freeze(oldState)
     switch (action.type) {
         case RECEIVE_BUSINESS:
-            return action.business
+            return Object.assign({}, oldState, { [action.business.id]: action.business })
         case RECEIVE_BUSINESSES:
-            return Object.assign({}, oldState, action.businesses )
+            return action.businesses
         default:
             return oldState
     }
