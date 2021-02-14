@@ -1,3 +1,4 @@
+
 .landing-container {
     display: flex;
     justify-content: center;
@@ -12,12 +13,29 @@
     align-items: center;
     margin: 2.5rem;
     color:white;
+    font-weight: 300;
 }
 
-.landing-page-links {
+.landing-page-business {
     color: white;
     text-decoration: none;
+    &:hover {
+        padding-bottom: 7px;
+        transition: all .3s ease-out;
+        box-shadow:  0 -1px 0 0 white inset, 0 -2px 0 0 #fff inset ;
+    }
 }
+
+.landing-page-login {
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    &:hover {
+        transition: all .3s ease-out;
+        box-shadow:  0 -1px 0 0 white inset, 0 -2px 0 0 #fff inset ;
+    }
+}
+     
 
 .landing-nav-left > * {
     margin-right: 10rem;
@@ -48,9 +66,11 @@
     border-radius: 4px;
     border: 2px solid #fff;
     margin-top: -2px;
-    padding: 7px 24px 8px;
+    padding: 9px 26px 10px;
+    transition: 0.4s;
     &:hover {
-        color: #000;
+        color: rgb(72, 72, 72);
+        background: rgb(211, 209, 209);
     }
 }
 
