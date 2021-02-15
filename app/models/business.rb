@@ -12,4 +12,7 @@ class Business < ApplicationRecord
     foreign_key: :business_id,
     class_name: :Review
 
+    has_one_attached :index_picture
+    has_many_attached :pictures
+
 end
