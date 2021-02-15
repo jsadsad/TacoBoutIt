@@ -1,7 +1,7 @@
 import React from 'react'
 import NavbarContainer from '../../navbar/navbar_container'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle, faDollarSign, faStar, faCamera } from '@fortawesome/free-solid-svg-icons'
+import { faCheckCircle, faDollarSign, faStar, faCamera, faCheck } from '@fortawesome/free-solid-svg-icons'
 
 class BusinessShow extends React.Component {
 
@@ -33,6 +33,21 @@ class BusinessShow extends React.Component {
                                 <div className="biz-show-container-add-photo">
                                     <FontAwesomeIcon icon={faCamera} size="1x" fixedWidth />Add Photo
                                 </div>
+                            </div>
+                            <div className="biz-show-container-covid">
+                                <div className="biz-show-container-covid-title">COVID-19 Updates</div>
+                                <div className="biz-show-container-covid-subtitle">Updated Services</div>
+                                <div className="biz-show-container-covid-icons">
+                                    <div className="biz-show-container-covid-text"><FontAwesomeIcon icon={faCheck} size="sm" fixedWidth color="green" />&nbsp;Indoor dining</div>
+                                </div>
+                                
+                                <div className="biz-show-container-covid-subtitle">Health & Safety Measures</div>
+                                <div className="biz-show-container-covid-icons">
+                                    <div className="biz-show-container-covid-text"><FontAwesomeIcon icon={faCheck} size="sm" fixedWidth color="green" />&nbsp;Masks required</div>
+                                    <div className="biz-show-container-covid-text"><FontAwesomeIcon icon={faCheck} size="sm" fixedWidth color="green" />&nbsp;Limited capacity</div>
+                                    <div className="biz-show-container-covid-text"><FontAwesomeIcon icon={faCheck} size="sm" fixedWidth color="green" />&nbsp;Hand sanitizer provided</div>
+                                </div>
+
                             </div>
                             <div className="biz-show-container-hours-location">
                                 <div className="biz-show-container-hours-location-title">Location & Hours</div>
@@ -66,6 +81,9 @@ class BusinessShow extends React.Component {
                                         <div className="biz-show-time-item">12:30 PM - 8:00 PM</div>
                                     </li>
                                 </ul>
+                            </div>
+                            <div className="biz-reviews-container">
+                                <div className="biz-show-container-reviews">Reviews</div>
                             </div>
                         </div>
                     </div>

@@ -60,7 +60,6 @@
     width: 250px;
     font-weight: 400;
     margin-top: 1.5rem;
-
 }
 
 ul.biz-show-container-hours-list {
@@ -77,7 +76,6 @@ ul.biz-show-container-hours-list {
     margin-bottom: 3px;
     font-size: 16px;
     color: #333333;
-    
 }
 
 .biz-show-day-item {
@@ -88,4 +86,41 @@ ul.biz-show-container-hours-list {
 .biz-show-time-item {
     margin-left: 40px;
     font-weight: 200;
+}
+
+.biz-show-container-reviews {
+    font-size: 24px;
+    width: 250px;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+
+.biz-show-container-covid {
+    width: 100%;
+    line-height: initial;
+    padding-bottom: 1rem;
+    border-bottom: #e6e6e6 1px solid;
+}
+
+.biz-show-container-covid-title {
+    font-size: 24px;
+    width: 250px;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.biz-show-container-covid-subtitle {
+    font-size: 18px;
+    padding-top: 1rem;
+}
+
+.biz-show-container-covid-icons {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.biz-show-container-covid-text {
+    font-size: 14px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
