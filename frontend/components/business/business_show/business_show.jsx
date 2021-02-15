@@ -1,7 +1,7 @@
 import React from 'react'
 import NavbarContainer from '../../navbar/navbar_container'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle, faDollarSign, faStar, faCamera, faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faCheckCircle, faDollarSign, faStar, faCamera, faCheck, faDirections, faPhoneAlt, faShareSquare} from '@fortawesome/free-solid-svg-icons'
 
 class BusinessShow extends React.Component {
 
@@ -16,8 +16,8 @@ class BusinessShow extends React.Component {
         return (
             <div>
                 <NavbarContainer />
-                <div>
-                    <div className="biz-show-container">
+                <div className="biz-show-container">
+                    <div className="biz-show-left">
                         <div className="biz-show-container-top">
                             <div className="biz-show-container-name">
                                 <h2>{business.name}</h2>
@@ -87,6 +87,26 @@ class BusinessShow extends React.Component {
                             </div>
                         </div>
                     </div>
+                    <div className="biz-show-right">
+                        <div className="biz-right-widget">
+                            <div className="biz-widget-content">
+                                <ul>
+                                    <li>
+                                        <FontAwesomeIcon icon={faShareSquare} size="sm" fixedWidth />
+                                        <a href={business.website}>&nbsp;Website</a>
+                                    </li>
+                                    <li>
+                                        <FontAwesomeIcon icon={faPhoneAlt} size="sm" fixedWidth /><span>&nbsp;{business.phone_number}</span>
+                                    </li>
+                                    <li className="biz-widget-right-location">
+                                        <FontAwesomeIcon icon={faDirections} size="sm" fixedWidth />
+                                        <a className="biz-right-location-link" href={`https://www.google.com/maps/dir/?api=1&destination=${business.lat},${business.lng}`}>&nbsp;Get Directions</a>
+                                        <li><div className="biz-right-location-subtitle">{business.address} {business.city} {business.state} {business.zip_code}</div></li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
@@ -94,3 +114,5 @@ class BusinessShow extends React.Component {
 }
 
 export default BusinessShow
+
+    

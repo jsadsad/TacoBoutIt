@@ -1,13 +1,21 @@
 .biz-show-container {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    display: flex;
+    justify-content: center;
     padding-top: 50px;
 }
 
+.biz-show-left {
+    width: 700px;
+    padding-right: 42px;
+}
+
+.biz-show-right {
+    display: flex;
+    flex-direction: column;
+}
+
 .biz-show-container-name {
-    height: 185px;
+    height: 100px;
     display: flex;
     flex-direction: column;
 }
@@ -103,7 +111,7 @@ ul.biz-show-container-hours-list {
 }
 
 .biz-show-container-covid-title {
-    font-size: 24px;
+    font-size: 21px;
     width: 250px;
     font-weight: 400;
     margin-top: 1rem;
@@ -123,4 +131,61 @@ ul.biz-show-container-hours-list {
     font-size: 14px;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+.biz-right-widget {
+    width: 15rem;
+    font-size: 14px;
+    text-align: left;
+    color: #333333;
+}
+
+.biz-widget-content {
+    position: sticky;
+    width: 15rem;
+    border: 1px solid #eeeeef;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+
+.biz-widget-content ul li {
+    height: 100%;
+    display: flex;
+    border-bottom: #eeeeef 1px solid;
+    padding: 18px 10px;
+    margin: 0;
+    font: small-caption;
+}
+
+.biz-widget-content ul li p {
+  display: block;
+  margin-top: -8px;
+}
+
+.biz-widget-content ul li a {
+    color: rgb(16, 112, 124);
+}
+
+.biz-widget-content ul li:last-child {
+    border-bottom: none;
+}
+
+.biz-widget-right-location {
+    display: flex;
+}
+
+.biz-right-location-link {
+    display: flex;
+}
+
+.biz-right-location-subtitle {
+    width: 200px;
+    font-size: 12px;
+    font-weight: 150;
+    padding: 4px;
+    margin-left: -92px;
+    margin-top: 17px;
+    margin-bottom: -30px;
 }
