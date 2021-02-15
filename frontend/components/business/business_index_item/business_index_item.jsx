@@ -6,6 +6,8 @@ import { faDollarSign, faCheck, faTimes } from '@fortawesome/free-solid-svg-icon
 const BusinessIndexItem = ({ business, index }) => (
     <div className="biz-index-search-result">
         <img src="https://via.placeholder.com/200" className="biz-image" alt="business_image" />
+        {/* <img src="{business.index_picture}" className="biz-image" alt="business_image" /> */}
+        
         <div className="biz-info">
             <h2><Link className="biz-index-subtitle" to={`/businesses/${business.id}`}>{index + 1}. {business.name}</Link></h2>
             <p><FontAwesomeIcon icon={faDollarSign} color="grey" size="xs" /><FontAwesomeIcon icon={faDollarSign} size="xs" color="grey"/><span className="biz-category-tag">{business.category}</span></p>
