@@ -10,7 +10,7 @@ import CreateReviewContainer from './review/create_review_form_container'
 import EditReviewContainer from './review/edit_review_form_container'
 import NotFoundPage from './notFound'
 
-import { AuthRoute } from '../util/route_util'
+import { AuthRoute, ProtectedRoute } from '../util/route_util'
 
 const App = () => (
     <div className="tbi-container">
@@ -21,8 +21,8 @@ const App = () => (
                 <AuthRoute exact path="/signup" component={SignupFormContainer} />
                 <Route exact path="/businesses" component={BusinessIndexContainer} />
                 <Route exact path="/businesses/:businessId" component={BusinessShowContainer} />
-                <Route exact path="/businesses/:businessId/reviews/new" component={CreateReviewContainer} />
-                <Route exact path="/businesses/:businessId/reviews/edit" component={EditReviewContainer} />
+                <ProtectedRoute exact path="/businesses/:businessId/reviews/new" component={CreateReviewContainer} />
+                <ProtectedRoute exact path="/businesses/:businessId/reviews/edit" component={EditReviewContainer} />
                 <Route path="/404" component={NotFoundPage} />
                 <Redirect to="/404" />
             </Switch>
