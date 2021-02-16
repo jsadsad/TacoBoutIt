@@ -6,6 +6,8 @@ import LoginFormContainer from './session_form/login_form_container'
 import SignupFormContainer from './session_form/signup_form_container'
 import BusinessIndexContainer from './business/business_index/business_index_container'
 import BusinessShowContainer from './business/business_show/business_show_container'
+import CreateReviewContainer from './review/create_review_form_container'
+import EditReviewContainer from './review/edit_review_form_container'
 import NotFoundPage from './notFound'
 
 import { AuthRoute } from '../util/route_util'
@@ -19,6 +21,8 @@ const App = () => (
                 <AuthRoute exact path="/signup" component={SignupFormContainer} />
                 <Route exact path="/businesses" component={BusinessIndexContainer} />
                 <Route exact path="/businesses/:businessId" component={BusinessShowContainer} />
+                <Route exact path="/businesses/:businessId/reviews/new" component={CreateReviewContainer} />
+                <Route exact path="/businesses/:businessId/reviews/edit" component={EditReviewContainer} />
                 <Route path="/404" component={NotFoundPage} />
                 <Redirect to="/404" />
             </Switch>
