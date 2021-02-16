@@ -10,6 +10,6 @@ json.extract! business, :id,
             :lat,
             :lng
 
-json.index_picture url_for(business.index_picture) if business.index_picture.attached?
+json.indexPicture url_for(business.index_picture) if business.index_picture.attached?
 
 json.pictures business.pictures.map { |photo| url_for(photo) } if business.pictures.attached?

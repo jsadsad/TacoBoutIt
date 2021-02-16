@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const LandingNav = ({ currentUser, logout }) => {
     const display = currentUser ? (
         <div className="user-dropdown">
-            <div className="user-icon">{`${currentUser.first_name} ${currentUser.last_name}`}</div>
+            <div className="user-icon">{`${currentUser.firstName} ${currentUser.lastName}`}</div>
             <div className="landing-dropdown-content" onClick={logout}>Log Out</div>
         </div>
     ) : (

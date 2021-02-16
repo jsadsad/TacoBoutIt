@@ -96,12 +96,12 @@ class BusinessShow extends React.Component {
                                         <a href={business.website}>&nbsp;Website</a>
                                     </li>
                                     <li>
-                                        <FontAwesomeIcon icon={faPhoneAlt} size="sm" fixedWidth /><span>&nbsp;{business.phone_number}</span>
+                                        <FontAwesomeIcon icon={faPhoneAlt} size="sm" fixedWidth /><span>&nbsp;{business.phoneNumber}</span>
                                     </li>
                                     <li className="biz-widget-right-location">
                                         <FontAwesomeIcon icon={faDirections} size="sm" fixedWidth />
                                         <a className="biz-right-location-link" href={`https://www.google.com/maps/dir/?api=1&destination=${business.lat},${business.lng}`}>&nbsp;Get Directions</a>
-                                        <li><div className="biz-right-location-subtitle">{business.address} {business.city} {business.state} {business.zip_code}</div></li>
+                                        <li><div className="biz-right-location-subtitle">{business.address} {business.city} {business.state} {business.zipCode}</div></li>
                                     </li>
                                 </ul>
                             </div>

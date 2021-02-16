@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDollarSign, faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
 
+
 const BusinessIndexItem = ({ business, index }) => (
     <div className="biz-index-search-result">
-        <img src="https://via.placeholder.com/200" className="biz-image" alt="business_image" />
-        {/* <img src="{business.index_picture}" className="biz-image" alt="business_image" /> */}
+        <img src={business.indexPicture} className="biz-image" alt="business_image" />
         
         <div className="biz-info">
             <h2><Link className="biz-index-subtitle" to={`/businesses/${business.id}`}>{index + 1}. {business.name}</Link></h2>
@@ -18,10 +18,11 @@ const BusinessIndexItem = ({ business, index }) => (
             </div>
         </div>
         <div className="biz-index-contact-info">
-            <p>{business.phone_number}</p>
+            <p>{business.phoneNumber}</p>
             <p>{business.address}</p>
         </div>
     </div>
 )
 
 export default BusinessIndexItem
+
