@@ -29,10 +29,10 @@ review2 = Review.create!(:content => "Pasta was super gooood! The place followed
 review3 = Review.create!(:content => "Mmmmm...pad thai is always the right choice.", :rating => 4, :author_id => 1, :business_id => 3)
 review4 = Review.create!(:content => "Don't trust this place! I got food poisoning the next day. Defintely the Pad Thai.", :rating => 1, :author_id => 3, :business_id => 3)
 
-biz-index1 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/HOPR_1.jpg")
-biz-index2 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/SH1.jpg")
-biz-index3 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/TEE_01.jpg")
+bizIndex1 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/HOPR_1.jpg")
+bizIndex2 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/SH1.jpg")
+bizIndex3 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/TEE_01.jpg")
 
-business1.index_picture.attach(io: biz-index1, filename: "biz-idx1.jpg")
-business2.index_picture.attach(io: biz-index2 , filename: "biz-idx2.jpg")
-business3.index_picture.attach(io: biz-index3, filename: "biz-idx3.jpg")
+business1.index_picture.attach(io: bizIndex1, filename: "biz-idx1.jpg")
+business2.index_picture.attach(io: bizIndex2, filename: "biz-idx2.jpg")
+business3.index_picture.attach(io: bizIndex3, filename: "biz-idx3.jpg")
