@@ -1,7 +1,7 @@
 import { 
     RECEIVE_BUSINESS, 
     RECEIVE_BUSINESSES
-    } from '../actions/business_actions'
+} from '../actions/business_actions'
 
 const businessesReducer = (oldState = {}, action) => {
     Object.freeze(oldState)
