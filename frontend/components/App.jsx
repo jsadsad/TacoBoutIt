@@ -6,7 +6,6 @@ import LoginFormContainer from './session_form/login_form_container'
 import SignupFormContainer from './session_form/signup_form_container'
 import BusinessIndexContainer from './business/business_index/business_index_container'
 import BusinessShowContainer from './business/business_show/business_show_container'
-import Footer from './footer/footer'
 import NotFoundPage from './notFound'
 
 import { AuthRoute } from '../util/route_util'
@@ -23,9 +22,6 @@ const App = () => (
                 <Route path="/404" component={NotFoundPage} />
                 <Redirect to="/404" />
             </Switch>
-        </div>
-        <div>
-            <Footer />
         </div>
     </div>
 )

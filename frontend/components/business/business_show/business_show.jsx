@@ -16,16 +16,19 @@ class BusinessShow extends React.Component {
         return (
             <div>
                 <NavbarContainer />
+                <div className="biz-pic-header">
+                    {business.pictures.map((picture, index) => { return ( <img src={picture} key={index} alt="biz-picture"/> )})}
+                </div>
+                <div className="biz-show-container-name">
+                    <h2>{business.name}</h2>
+                    <div className="biz-show-container-category">
+                        <div className="biz-show-container-claimed"><FontAwesomeIcon icon={faCheckCircle} size="sm" fixedWidth />Claimed &#183;&nbsp;</div>
+                        <FontAwesomeIcon icon={faDollarSign} size="xs" /><FontAwesomeIcon icon={faDollarSign} size="xs" /> &nbsp;&#183;&nbsp; {business.category}
+                    </div>
+                </div>
                 <div className="biz-show-container">
                     <div className="biz-show-left">
                         <div className="biz-show-container-top">
-                            <div className="biz-show-container-name">
-                                <h2>{business.name}</h2>
-                                <div className="biz-show-container-category">
-                                    <FontAwesomeIcon icon={faCheckCircle} size="sm" color="green" fixedWidth />Claimed &#183;&nbsp;
-                                <FontAwesomeIcon icon={faDollarSign} size="xs" /><FontAwesomeIcon icon={faDollarSign} size="xs" /> &nbsp;&#183;&nbsp; {business.category}
-                                </div>
-                            </div>
                             <div className="biz-show-widgets">
                                 <div className="biz-show-container-create-review">
                                     <FontAwesomeIcon icon={faStar} size="1x" fixedWidth />Write a Review
