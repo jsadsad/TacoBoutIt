@@ -5,7 +5,7 @@ import {
 
 import {
     RECEIVE_BUSINESS
-    } from '..actions/business_actions'
+    } from '../actions/business_actions'
 
 const reviewsReducer = (oldState = {}, action) => {
     Object.freeze(oldState)
