@@ -1,19 +1,30 @@
 html, body {
+  width: 100%;
   height: 100%;
 }
 
-body {
-  padding-bottom: 280px;
+article {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+footer {
+  padding: 1rem;
+}
+
+main {
+  background: whitesmoke;
+  color: #444;
 }
 
 .tbi-container {
     position: relative;
-    min-height: 110vh;
 }
 
-.tbi-wrapper {  
-    min-height: 100%;
-    margin-bottom: -142px; 
+.tbi-wrapper {
+    min-height: 110vh;  
 }
 
 .tbi-wrapper:after {

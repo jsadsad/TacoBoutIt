@@ -101,7 +101,7 @@ class BusinessShow extends React.Component {
                                     <li className="biz-widget-right-location">
                                         <FontAwesomeIcon icon={faDirections} size="sm" fixedWidth />
                                         <a className="biz-right-location-link" href={`https://www.google.com/maps/dir/?api=1&destination=${business.lat},${business.lng}`}>&nbsp;Get Directions</a>
-                                        <li><div className="biz-right-location-subtitle">{business.address} {business.city} {business.state} {business.zipCode}</div></li>
+                                        <div className="biz-right-location-subtitle">{business.address} {business.city} {business.state} {business.zipCode}</div>
                                     </li>
                                 </ul>
                             </div>

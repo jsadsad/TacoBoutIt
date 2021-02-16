@@ -24,9 +24,9 @@ const App = () => (
                 <Redirect to="/404" />
             </Switch>
         </div>
-        <footer>
+        <div>
             <Footer />
-        </footer>
+        </div>
     </div>
 )
 
