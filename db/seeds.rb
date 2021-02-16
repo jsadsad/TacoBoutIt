@@ -48,4 +48,21 @@ business1.pictures.attach(io: primeRib3, filename: "prime-rib-foodie3")
 business1.pictures.attach(io: primeRib4, filename: "prime-rib-foodie4")
 
 # Spoon House Bakery and Restaurant
+spoonHouse1 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/SH2.jpg")
+spoonHouse2 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/SH3.jpg")
+spoonHouse3 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/SH4.jpg")
+spoonHouse4 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/SH5.jpg")
+business2.pictures.attach(io: spoonHouse1, filename: "spoon-house-foodie1")
+business2.pictures.attach(io: spoonHouse2, filename: "spoon-house-foodie2")
+business2.pictures.attach(io: spoonHouse3, filename: "spoon-house-foodie3")
+business2.pictures.attach(io: spoonHouse4, filename: "spoon-house-foodie4")
+
 # Thai Elephant Express
+thaiElephant1 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/TEE2.jpg")
+thaiElephant2 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/TEE3.jpg")
+thaiElephant3 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/TEE4.jpg")
+thaiElephant4 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/TEE5.jpg")
+business3.pictures.attach(io: thaiElephant1, filename: "thai-ele-foodie1")
+business3.pictures.attach(io: thaiElephant2, filename: "thai-ele-foodie2")
+business3.pictures.attach(io: thaiElephant3, filename: "thai-ele-foodie3")
+business3.pictures.attach(io: thaiElephant4, filename: "thai-ele-foodie4")
