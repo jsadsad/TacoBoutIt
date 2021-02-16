@@ -1,5 +1,6 @@
 import React from 'react'
 import NavbarContainer from '../../navbar/navbar_container'
+import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle, faDollarSign, faStar, faCamera, faCheck, faDirections, faPhoneAlt, faShareSquare} from '@fortawesome/free-solid-svg-icons'
 
@@ -31,7 +32,7 @@ class BusinessShow extends React.Component {
                         <div className="biz-show-container-top">
                             <div className="biz-show-widgets">
                                 <div className="biz-show-container-create-review">
-                                    <FontAwesomeIcon icon={faStar} size="1x" fixedWidth />Write a Review
+                                    <Link to={`/businesses/${business.id}/reviews/new`} className="biz-show-container-review-btn"><FontAwesomeIcon icon={faStar} size="1x" fixedWidth />Write a Review</Link>
                                 </div>
                                 <div className="biz-show-container-add-photo">
                                     <FontAwesomeIcon icon={faCamera} size="1x" fixedWidth />Add Photo
