@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import SearchBar from '../search_bar/search_bar'
 import SearchSuggestions from '../search_suggestions/search_suggestions'
 import LandingNav from './landing_nav/landing_nav_container'
+import Footer from '../footer/footer'
 
 const LandingPage = () => (
     <div className="landing-container">
@@ -12,6 +13,7 @@ const LandingPage = () => (
             <SearchBar />
             <SearchSuggestions />
         </div>
+        <Footer />
     </div>
 )
     

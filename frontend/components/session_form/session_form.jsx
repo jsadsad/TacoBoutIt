@@ -1,6 +1,7 @@
 import React from 'react'
 import { withRouter } from "react-router" 
 import { Link } from "react-router-dom"
+import Footer from '../footer/footer'
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -108,6 +109,7 @@ class SessionForm extends React.Component {
                             <img src={window.classyImage} alt="A Classy Image" />
                         </div>
                     </div>
+                    <Footer />
                 </div>
             )
         } else if (this.props.formType === 'signup') {
@@ -187,6 +189,7 @@ class SessionForm extends React.Component {
                             <img src={window.classyImage} alt="A Classy Image" />
                         </div>
                     </div>
+                    <Footer />
                 </div>
                 
             )
