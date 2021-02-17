@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 import NavbarContainer from '../navbar/navbar_container'
 
 class ReviewForm extends React.Component {
@@ -21,7 +21,6 @@ class ReviewForm extends React.Component {
 
     componentDidMount() {
         this.props.fetchBusiness(this.props.match.params.businessId)
-        this.props.clearErrors();
     }
 
     componentWillUnmount() {
@@ -36,7 +35,7 @@ class ReviewForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault()
-        this.props.processForm(this.state).then(() => this.props.history.push(`/businesses/${this.props.businessId}`));
+        this.props.processForm(this.state).then(() => this.props.history.push(`/businesses/${this.props.businessId}`))
     }
 
     errorsOccured() {
@@ -48,8 +47,7 @@ class ReviewForm extends React.Component {
             return (
                 <ul>
                     {this.props.errors.map((error, idx) => (
-                        <li className="session-error alert-error" key={`error-${idx}`}> {error}
-                            <span className="close-btn" onClick={() => this.props.clearErrors()}>&times;</span>
+                        <li className="review-error" key={`error-${idx}`}> {error}
                         </li>
                     ))}
                 </ul>
@@ -65,7 +63,6 @@ class ReviewForm extends React.Component {
             <div>
                 <NavbarContainer />
                 <div>
-                    {this.renderErrors()}
                 </div>
                 <div className="review-form-container">
                     <div className="review-form-business-name">
@@ -83,6 +80,9 @@ class ReviewForm extends React.Component {
                                 value={this.state.content}
                                 onChange={this.handleField('content')}
                                 ></textarea>
+                            </div>
+                            <div>
+                                {this.renderErrors()}
                             </div>
                             <button className="review-submit-click" onClick={this.handleSubmit} type="submit" >
                                 {this.props.formType}

@@ -1,9 +1,8 @@
 class Review < ApplicationRecord
-    validates :content,
-        :rating,
-        :author_id,
-        :business_id,
-    presence: true
+    validates :author_id, :business_id, presence: true
+
+    validates :content, presence: { message: "To submit your review, please explain your rating to others." }
+    validates :rating, :inclusion => { :in => (1..5).to_a, :message => "Rating must be between 1 to 5."}
 
     belongs_to :user,
     foreign_key: :author_id,

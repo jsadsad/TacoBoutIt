@@ -39,14 +39,26 @@
 }
 
 .taco-err {
-  max-width: 1200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-justify-content: center;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
 }
 
 .taco {
   margin-left: 630px;
   max-height: 700px;
 }
+
+.review-error {
+    color: rgb(198,14,27);
+    position: absolute;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: -35px;
+    margin-left: 38px;
+    line-height: 2.5em;
+    animation: error 0.4s;
+} 
