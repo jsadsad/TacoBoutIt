@@ -13,6 +13,7 @@ class ReviewForm extends React.Component {
             business_id: this.props.businessId,
             reviewId: this.props.reviewId
         }
+        
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
