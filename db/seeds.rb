@@ -28,6 +28,8 @@ review1 = Review.create!(:content => "Our steak was too overcooked. It was hard 
 review2 = Review.create!(:content => "Pasta was super gooood! The place followed COVID-19 guidelines", :rating => 5, :author_id => 3, :business_id => 2)
 review3 = Review.create!(:content => "Mmmmm...pad thai is always the right choice.", :rating => 4, :author_id => 1, :business_id => 3)
 review4 = Review.create!(:content => "Don't trust this place! I got food poisoning the next day. Defintely the Pad Thai.", :rating => 1, :author_id => 3, :business_id => 3)
+review5 = Review.create!(:content => "Day always goes better with Thai tea.", :rating => 5, :author_id => 1, :business_id => 3)
+review6 = Review.create!(:content => "It was too pricey. Food was okay.", :rating => 3, :author_id => 2, :business_id => 1)
 
 # Business Index
 bizIndex1 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/HOPR_1.jpg")
