@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_16_065439) do
+ActiveRecord::Schema.define(version: 2021_02_17_033000) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,7 +60,6 @@ ActiveRecord::Schema.define(version: 2021_02_16_065439) do
     t.integer "business_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["author_id", "business_id"], name: "index_reviews_on_author_id_and_business_id", unique: true
   end
 
   create_table "users", force: :cascade do |t|
