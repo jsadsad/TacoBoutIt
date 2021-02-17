@@ -1,7 +1,10 @@
 import * as ReviewApiUtil from '../util/review_api_util'
-import { receiveErrors } from './session_actions'
+
 export const RECEIVE_REVIEW = `RECEIVE_REVIEW`
 export const REMOVE_REVIEW = `REMOVE_REVIEW`
+
+export const RECEIVE_REVIEW_ERRORS = `RECEIVE_REVIEW_ERRORS`
+export const CLEAR_REVIEW_ERRORS = `CLEAR_REVIEW_ERRORS`
 
 const receiveReview = review => {
     return {
@@ -14,6 +17,19 @@ const removeReview = review => {
     return {
         type: REMOVE_REVIEW,
         reviewId: review.id
+    }
+}
+
+export const receiveErrors = (errors) => {
+    return {
+        type: RECEIVE_REVIEW_ERRORS,
+        errors
+    }
+}
+
+export const clearErrors = () => {
+    return {
+        type: CLEAR_REVIEW_ERRORS
     }
 }
 

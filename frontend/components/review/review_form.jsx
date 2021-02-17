@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import NavbarContainer from '../navbar/navbar_container'
 
 class ReviewForm extends React.Component {
@@ -13,12 +13,19 @@ class ReviewForm extends React.Component {
             business_id: this.props.businessId,
             reviewId: this.props.reviewId
         }
-        
+
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.renderErrors = this.renderErrors.bind(this)
+        this.errorsOccured = this.errorsOccured.bind(this)
     }
 
     componentDidMount() {
         this.props.fetchBusiness(this.props.match.params.businessId)
+        this.props.clearErrors();
+    }
+
+    componentWillUnmount() {
+        this.props.clearErrors()
     }
 
     handleField(field) {
@@ -29,9 +36,27 @@ class ReviewForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault()
-        this.props.processForm(this.state)
+        this.props.processForm(this.state).then(() => this.props.history.push(`/businesses/${this.props.businessId}`));
     }
 
+    errorsOccured() {
+        this.props.errors.length !== 0
+    }
+
+    renderErrors() {
+        if (this.errorsOccured) {
+            return (
+                <ul>
+                    {this.props.errors.map((error, idx) => (
+                        <li className="session-error alert-error" key={`error-${idx}`}> {error}
+                            <span className="close-btn" onClick={() => this.props.clearErrors()}>&times;</span>
+                        </li>
+                    ))}
+                </ul>
+            )
+        }
+    }
+    
     render() {
         const { business } = this.props
         if (!business) return (<h1>Loading...</h1>)
@@ -39,6 +64,9 @@ class ReviewForm extends React.Component {
         return (
             <div>
                 <NavbarContainer />
+                <div>
+                    {this.renderErrors()}
+                </div>
                 <div className="review-form-container">
                     <div className="review-form-business-name">
                         <Link to={`/businesses/${business.id}`} className="review-form-business-name-text">{business.name}</Link>
