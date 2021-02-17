@@ -5,7 +5,7 @@ import ReviewForm from './review_form'
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        formType: 'Create Review',
+        formType: 'Post Review',
         currentUserId: state.session.id,
         business: state.entities.businesses[ownProps.match.params.businessId],
         businessId: ownProps.match.params.businessId,
