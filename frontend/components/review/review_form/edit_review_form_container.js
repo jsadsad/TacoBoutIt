@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
-import { updateReview, clearErrors } from '../../actions/review_actions'
-import { fetchBusiness } from '../../actions/business_actions'
+import { updateReview, clearErrors } from '../../../actions/review_actions'
+import { fetchBusiness } from '../../../actions/business_actions'
 import ReviewForm from './review_form'
 
 const mapStateToProps = (state, ownProps) => {
