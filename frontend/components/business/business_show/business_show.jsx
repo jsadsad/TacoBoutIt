@@ -1,5 +1,6 @@
 import React from 'react'
 import NavbarContainer from '../../navbar/navbar_container'
+import ReviewIndexContainer from '../../review/review_index/review_index_container'
 import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle, faDollarSign, faStar, faCamera, faCheck, faDirections, faPhoneAlt, faShareSquare} from '@fortawesome/free-solid-svg-icons'
@@ -11,14 +12,29 @@ class BusinessShow extends React.Component {
     }
 
     render() {
-        const { business } = this.props
+        const { business, businessId, fetchBusiness, reviews } = this.props
+        const businesses = { [businessId]: business }
+
+        let picturesHeader;
+        if (business.pictures) {
+            picturesHeader = business.pictures.map((pic, idx) => {
+                return (
+                    <div>
+                        <img className='biz-img 'src={pic} key={idx} alt="biz-picture" />
+                    </div>
+                ) 
+            })} 
+        else {
+            picturesHeader = ""
+        }
+
         if (!business) return (<h1>Loading...</h1>)
 
         return (
             <div>
                 <NavbarContainer />
                 <div className="biz-pic-header">
-                    {business.pictures.map((picture, index) => { return ( <img src={picture} key={index} alt="biz-picture"/> )})}
+                    {picturesHeader}
                 </div>
                 <div className="biz-show-container-name">
                     <h2>{business.name}</h2>
@@ -58,36 +74,37 @@ class BusinessShow extends React.Component {
                                 <ul className="biz-show-container-hours-list">
                                     <li className="biz-show-availability-item">
                                         <div className="biz-show-day-item">Mon</div>
-                                        <div className="biz-show-time-item">Closed</div>
+                                        <div className="biz-show-time-item">{business.hours}</div>
                                     </li>
                                     <li className="biz-show-availability-item">
                                         <div className="biz-show-day-item">Tue</div>
-                                        <div className="biz-show-time-item">12:30 PM - 8:00 PM</div>
+                                        <div className="biz-show-time-item">{business.hours}</div>
                                     </li>
                                     <li className="biz-show-availability-item">
                                         <div className="biz-show-day-item">Wed</div>
-                                        <div className="biz-show-time-item">11:30 PM - 8:00 PM</div>
+                                        <div className="biz-show-time-item">{business.hours}</div>
                                     </li>
                                     <li className="biz-show-availability-item">
                                         <div className="biz-show-day-item">Thu</div>
-                                        <div className="biz-show-time-item">11:30 PM - 8:00 PM</div>
+                                        <div className="biz-show-time-item">{business.hours}</div>
                                     </li>
                                     <li className="biz-show-availability-item">
                                         <div className="biz-show-day-item">Fri</div>
-                                        <div className="biz-show-time-item">12:30 PM - 9:00 PM</div>
+                                        <div className="biz-show-time-item">{business.hours}</div>
                                     </li>
                                     <li className="biz-show-availability-item">
                                         <div className="biz-show-day-item">Sat</div>
-                                        <div className="biz-show-time-item">12:30 PM - 8:00 PM</div>
+                                        <div className="biz-show-time-item">{business.hours}</div>
                                     </li>
                                     <li className="biz-show-availability-item">
                                         <div className="biz-show-day-item">Sun</div>
-                                        <div className="biz-show-time-item">12:30 PM - 8:00 PM</div>
+                                        <div className="biz-show-time-item">{business.hours}</div>
                                     </li>
                                 </ul>
                             </div>
                             <div className="biz-reviews-container">
                                 <div className="biz-show-container-reviews">Reviews</div>
+                                <ReviewIndexContainer business={business} />
                             </div>
                         </div>
                     </div>
@@ -118,5 +135,3 @@ class BusinessShow extends React.Component {
 }
 
 export default BusinessShow
-
-    

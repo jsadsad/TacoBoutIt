@@ -7,6 +7,7 @@ json.extract! business, :id,
             :state,
             :zip_code,
             :phone_number,
+            :hours,
             :lat,
             :lng
 
