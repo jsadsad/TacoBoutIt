@@ -45,6 +45,9 @@
     color: #fff;
     padding: 6px;
     margin-right: 10px;
+    &:hover {
+        background-color: rgb(198, 48, 40);
+    }
 }
 
 .biz-show-container-review-btn {
