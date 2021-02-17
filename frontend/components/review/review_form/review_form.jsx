@@ -46,7 +46,7 @@ class ReviewForm extends React.Component {
         if (this.errorsOccured) {
             return (
                 <ul>
-                    {this.props.errors.map((error, idx) => (
+                    {this.props.errors.slice(0,1).map((error, idx) => (
                         <li className="review-error" key={`error-${idx}`}> {error}
                         </li>
                     ))}
