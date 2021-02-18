@@ -213,6 +213,8 @@ class SessionForm extends React.Component {
                   <div className="sign-up-age">
                     <input
                       type="number"
+                      min="1"
+                      max="150"
                       value={this.state.age}
                       onChange={this.handleField('age')}
                       placeholder="Age"
