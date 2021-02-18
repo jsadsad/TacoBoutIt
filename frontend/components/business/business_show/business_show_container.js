@@ -6,14 +6,12 @@ import { getReviewsForBusiness } from '../../../reducers/selectors'
 import BusinessShow from './business_show'
 
 const mapStateToProps = (state, { match }) => {
-  const currentUser = state.entities.users[state.session.id]
   const userId = state.session.id
   const users = state.entities.users
   const businessId = parseInt(match.params.businessId)
   const business = selectBusiness(state.entities, businessId)
   const reviews = getReviewsForBusiness(state, { businessId })
   return {
-    currentUser,
     businessId,
     business,
     reviews,
