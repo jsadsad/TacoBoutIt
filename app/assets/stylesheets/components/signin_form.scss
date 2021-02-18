@@ -1,86 +1,86 @@
 .sign-in-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  text-align: center;
 }
 
 .sign-in-for {
-    font-size: 32px;
-    line-height: 1.5em;
-    color: rgb(198,14,27);
-    font-weight: 550;
+  font-size: 32px;
+  line-height: 1.5em;
+  color: rgb(198, 14, 27);
+  font-weight: 550;
 }
 
 .new-signin {
-    font-size: 16px;
-    color: #000;
-    font-weight: 500;
-    margin-bottom: 5px;
-    margin-top: 10px
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .signup-link {
-    color: rgb(11,93,172);
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
+  color: rgb(11, 93, 172);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .sign-in-form {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .sign-in-form input {
-    display: block;
-    box-sizing: border-box;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px 9px;
-    background: #fff;
-    border: 1px solid #999;
-    border-radius: 5px;
-    font-size: 14px;
-    line-height: 1.29em;
-    &:focus {
-        outline: none;
-        border:1px solid rgba(15, 147, 203, 0.475);
-        box-shadow: 0 0 10px #719ECE;
-    }
+  display: block;
+  box-sizing: border-box;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 9px;
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.29em;
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(15, 147, 203, 0.475);
+    box-shadow: 0 0 10px #719ece;
+  }
 }
 
 .bottom-new-sign-up {
-    font-size: 12px;
-    text-align: right;
-    display: block;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: rgb(195, 194, 194);
+  font-size: 12px;
+  text-align: right;
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: rgb(195, 194, 194);
 }
 
 .click-login {
-    display: block;
-    box-sizing: border-box;
-    width: 80%;
-    margin-left: 32px;
-    margin-top: 10px;
-    padding: 5px 10px;
-    background: #c60e1b;
-    color: #fff;
-    border: 0px solid;
-    font-size: 15px;
-    line-height: 2.5em;
-    text-transform: capitalize;
-    cursor: pointer;
-    &:hover {
-        background-color: rgb(245,24,11);
-    }
+  display: block;
+  box-sizing: border-box;
+  width: 80%;
+  margin-left: 32px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: #c60e1b;
+  color: #fff;
+  border: 0px solid;
+  font-size: 15px;
+  line-height: 2.5em;
+  text-transform: capitalize;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(245, 24, 11);
+  }
 }

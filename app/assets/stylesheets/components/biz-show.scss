@@ -1,177 +1,177 @@
 .biz-show-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .biz-show-left {
-    width: 700px;
-    padding-right: 42px;
+  width: 700px;
+  padding-right: 42px;
 }
 
 .biz-show-right {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .biz-show-container-name {
-    font-size: 2.2rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    bottom: 325px;
-    color: white;
-    left: 3px;
+  font-size: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 325px;
+  color: white;
+  left: 3px;
 }
 
 .biz-show-container-category {
-    display: flex;
-    padding-top: 18px;
-    font-size: 1rem;
+  display: flex;
+  padding-top: 18px;
+  font-size: 1rem;
 }
 
 .biz-show-widgets {
-    display: flex;
-    height: 4rem;
-    border-bottom: #e6e6e6 1px solid;
+  display: flex;
+  height: 4rem;
+  border-bottom: #e6e6e6 1px solid;
 }
 
 .biz-show-container-create-review {
-    width: 182px;
-    height: 25px;
-    text-align: center;
-    border-radius: 3px;
-    line-height: 30px;
-    background: rgb(238, 33, 44);
-    color: #fff;
-    padding: 6px;
-    margin-right: 10px;
-    &:hover {
-        background-color: rgb(198, 48, 40);
-    }
+  width: 182px;
+  height: 25px;
+  text-align: center;
+  border-radius: 3px;
+  line-height: 30px;
+  background: rgb(238, 33, 44);
+  color: #fff;
+  padding: 6px;
+  margin-right: 10px;
+  &:hover {
+    background-color: rgb(198, 48, 40);
+  }
 }
 
 .biz-show-container-review-btn {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .biz-show-container-add-photo {
-    display: flex;
-    width: 130px;
-    height: 22px;
-    border-radius: 3px;
-    line-height: 22px;
-    background: #fff;
-    border: solid;
-    color: #000;
-    padding: 6px;
-    font-weight: 200;
+  display: flex;
+  width: 130px;
+  height: 22px;
+  border-radius: 3px;
+  line-height: 22px;
+  background: #fff;
+  border: solid;
+  color: #000;
+  padding: 6px;
+  font-weight: 200;
 }
 
 .biz-show-container-hours-location {
-    width: 100%;
-    line-height: initial;
-    border-bottom: #e6e6e6 1px solid;
+  width: 100%;
+  line-height: initial;
+  border-bottom: #e6e6e6 1px solid;
 }
 
 .biz-show-container-hours-location-title {
-    font-size: 24px;
-    width: 250px;
-    font-weight: 400;
-    margin-top: 1.5rem;
+  font-size: 24px;
+  width: 250px;
+  font-weight: 400;
+  margin-top: 1.5rem;
 }
 
 ul.biz-show-container-hours-list {
-    padding: 0px;
-    display: flex;
-    width: max-content;
-    flex-direction: column;
-    padding-top: 2rem;
-    margin-bottom: 3rem;
+  padding: 0px;
+  display: flex;
+  width: max-content;
+  flex-direction: column;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .biz-show-availability-item {
-    display: flex;
-    margin-bottom: 3px;
-    font-size: 16px;
-    color: #333333;
+  display: flex;
+  margin-bottom: 3px;
+  font-size: 16px;
+  color: #333333;
 }
 
 .biz-show-day-item {
-    padding-right: 10px;
-    font-weight: bold;
+  padding-right: 10px;
+  font-weight: bold;
 }
 
 .biz-show-time-item {
-    margin-left: 40px;
-    font-weight: 200;
+  margin-left: 40px;
+  font-weight: 200;
 }
 
 .biz-show-container-reviews {
-    font-size: 24px;
-    width: 250px;
-    font-weight: 400;
-    margin-top: 1.5rem;
+  font-size: 24px;
+  width: 250px;
+  font-weight: 400;
+  margin-top: 1.5rem;
 }
 
 .biz-show-container-claimed {
-    color: rgb(5, 167, 5)
+  color: rgb(5, 167, 5);
 }
 
 .biz-show-container-covid {
-    width: 100%;
-    line-height: initial;
-    padding-bottom: 1rem;
-    border-bottom: #e6e6e6 1px solid;
+  width: 100%;
+  line-height: initial;
+  padding-bottom: 1rem;
+  border-bottom: #e6e6e6 1px solid;
 }
 
 .biz-show-container-covid-title {
-    font-size: 21px;
-    width: 250px;
-    font-weight: 400;
-    margin-top: 1rem;
+  font-size: 21px;
+  width: 250px;
+  font-weight: 400;
+  margin-top: 1rem;
 }
 
 .biz-show-container-covid-subtitle {
-    font-size: 18px;
-    padding-top: 1rem;
+  font-size: 18px;
+  padding-top: 1rem;
 }
 
 .biz-show-container-covid-icons {
-    display: flex;
-    padding-top: 1rem;
+  display: flex;
+  padding-top: 1rem;
 }
 
 .biz-show-container-covid-text {
-    font-size: 14px;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  font-size: 14px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .biz-right-widget {
-    width: 15rem;
-    font-size: 14px;
-    text-align: left;
-    color: #333333;
+  width: 15rem;
+  font-size: 14px;
+  text-align: left;
+  color: #333333;
 }
 
 .biz-widget-content {
-    position: sticky;
-    width: 15rem;
-    border: 1px solid #eeeeef;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 7px;
-    font-size: 1rem;
+  position: sticky;
+  width: 15rem;
+  border: 1px solid #eeeeef;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  font-size: 1rem;
 }
 
 .biz-widget-content ul li {
-    height: 100%;
-    display: flex;
-    border-bottom: #eeeeef 1px solid;
-    padding: 18px 10px;
-    margin: 0;
-    font: small-caption;
+  height: 100%;
+  display: flex;
+  border-bottom: #eeeeef 1px solid;
+  padding: 18px 10px;
+  margin: 0;
+  font: small-caption;
 }
 
 .biz-widget-content ul li p {
@@ -180,47 +180,47 @@ ul.biz-show-container-hours-list {
 }
 
 .biz-widget-content ul li a {
-    color: rgb(16, 112, 124);
+  color: rgb(16, 112, 124);
 }
 
 .biz-widget-content ul li:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .biz-widget-right-location {
-    display: flex;
+  display: flex;
 }
 
 .biz-right-location-link {
-    display: flex;
+  display: flex;
 }
 
 .biz-right-location-subtitle {
-    width: 226px;
-    font-size: 12px;
-    font-weight: 150;
-    padding: 7px;
-    margin-left: -90px;
-    margin-top: 41px;
+  width: 226px;
+  font-size: 12px;
+  font-weight: 150;
+  padding: 7px;
+  margin-left: -90px;
+  margin-top: 41px;
 }
 
 .biz-pic-header {
-    display: flex;
-    margin-left: auto;
-    width: 100%;
-    height: 21rem;
-    background-color: #000;
-    border: 0px solid #000;
+  display: flex;
+  margin-left: auto;
+  width: 100%;
+  height: 21rem;
+  background-color: #000;
+  border: 0px solid #000;
 }
 
 .biz-img {
-    display: flex;
-    width: 100%;
-    height: 21rem;
-    object-fit: cover;
-    &:hover {
-        position: relative;
-        margin-top: 20px;
-        margin-right: 15px;
+  display: flex;
+  width: 100%;
+  height: 21rem;
+  object-fit: cover;
+  &:hover {
+    position: relative;
+    margin-top: 20px;
+    margin-right: 15px;
   }
 }

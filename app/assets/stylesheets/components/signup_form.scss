@@ -1,191 +1,191 @@
 .title {
-    color: #000;
-    text-decoration: none;
-    text-shadow: 0px 2px 2px #d3d3d3;
-	-webkit-text-stroke: 1px #282828;
+  color: #000;
+  text-decoration: none;
+  text-shadow: 0px 2px 2px #d3d3d3;
+  -webkit-text-stroke: 1px #282828;
 }
 
 .session-form {
-    display: flex;
-    margin-top: 150px;
-    margin-left: 430px;
-    margin-right: auto;
-    width: 950px;
-    padding: 0 18px 0 18px;
+  display: flex;
+  margin-top: 150px;
+  margin-left: 430px;
+  margin-right: auto;
+  width: 950px;
+  padding: 0 18px 0 18px;
 }
 
 .sign-up-wrapper {
-    margin: auto;
-    width: 320px;
-    text-align: center;
+  margin: auto;
+  width: 320px;
+  text-align: center;
 }
 
 .sign-up-for {
-    font-size: 28px;
-    color: rgb(198,14,27);
-    font-weight: bold;
-    text-align: center;
+  font-size: 28px;
+  color: rgb(198, 14, 27);
+  font-weight: bold;
+  text-align: center;
 }
 
 .sign-up-subhead {
-    font-weight: bold;
-    font-size: 17px;
-    text-align: center;
-    margin-top: 28px;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  margin-top: 28px;
 }
 
 .terms {
-    color: #888484;
-    font-size: 12px;
-    line-height: 1.5em;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    text-align: center; 
+  color: #888484;
+  font-size: 12px;
+  line-height: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .sep-line {
-    border: none;
-    border-top: 1px solid #ccc;
-    border-bottom: 3px solid transparent;
-    text-align: center;
+  border: none;
+  border-top: 1px solid #ccc;
+  border-bottom: 3px solid transparent;
+  text-align: center;
 }
 
 .sign-up-form {
-    box-sizing: border-box;
-    width: 100%;
-    margin-right: auto;
-    margin-top: 20px;
-    padding: 20px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 20px 10px;
 }
 
 .sign-up-form input {
-    border: 1px solid #999;
+  border: 1px solid #999;
 }
 
 .sign-up-name {
-    display: flex;
-    margin-top: -15px;
-    margin-bottom: 6px;
+  display: flex;
+  margin-top: -15px;
+  margin-bottom: 6px;
 }
 
 .sign-up-form .sign-up-name input {
-    margin: 0px;
-    margin-right: 10px;
-    margin-left: 4px;
-    width: 115px;
-    padding: 5px 12px;
-    padding-left: 17px;
-    border: 1.5px solid #ccc;
-    border-radius: 5px;
-    &:focus {
-        outline: none;
-        border:1px solid rgba(15, 147, 203, 0.475);
-        box-shadow: 0 0 10px #719ECE;
-    }
+  margin: 0px;
+  margin-right: 10px;
+  margin-left: 4px;
+  width: 115px;
+  padding: 5px 12px;
+  padding-left: 17px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(15, 147, 203, 0.475);
+    box-shadow: 0 0 10px #719ece;
+  }
 }
 
 .sign-up-form .sign-up-email input {
-    margin: 5px;
-    margin-left: 4px;
-    padding: 5px 14px;
-    padding-left: 20px;
-    width: 90%;
-    border: 1.5px solid #ccc;
-    border-radius: 5px;
-    &:focus {
-        outline: none;
-        border:1px solid rgba(15, 147, 203, 0.475);
-        box-shadow: 0 0 10px #719ECE;
-    }
+  margin: 5px;
+  margin-left: 4px;
+  padding: 5px 14px;
+  padding-left: 20px;
+  width: 90%;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(15, 147, 203, 0.475);
+    box-shadow: 0 0 10px #719ece;
+  }
 }
 
 .sign-up-form .sign-up-password input {
-    margin: 5px;
-    margin-left: 4px;
-    padding: 5px 14px;
-    padding-left: 20px;
-    width: 90%;
-    border: 1.5px solid #ccc;
-    border-radius: 5px;
-    &:focus {
-        outline: none;
-        border:1px solid rgba(15, 147, 203, 0.475);
-        box-shadow: 0 0 10px #719ECE;
-    }
+  margin: 5px;
+  margin-left: 4px;
+  padding: 5px 14px;
+  padding-left: 20px;
+  width: 90%;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(15, 147, 203, 0.475);
+    box-shadow: 0 0 10px #719ece;
+  }
 }
 
 .sign-up-form .sign-up-age input {
-    margin: 5px;
-    margin-left: 4px;
-    padding: 5px 14px;
-    padding-left: 20px;
-    width: 90%;
-    border: 1.5px solid #ccc;
-    border-radius: 5px;
-    &:focus {
-        outline: none;
-        border:1px solid rgba(15, 147, 203, 0.475);
-        box-shadow: 0 0 10px #719ECE;
-    }
+  margin: 5px;
+  margin-left: 4px;
+  padding: 5px 14px;
+  padding-left: 20px;
+  width: 90%;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(15, 147, 203, 0.475);
+    box-shadow: 0 0 10px #719ece;
+  }
 }
 
 .signup-location-select {
-    width: 150px;
-    margin: 5px;
-    margin-left: 6px;
-    padding: 7px 14px;
-    &:focus {
-        outline: none;
-        border:1px solid rgba(15, 147, 203, 0.475);
-        box-shadow: 0 0 10px #719ECE;
-    }
+  width: 150px;
+  margin: 5px;
+  margin-left: 6px;
+  padding: 7px 14px;
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(15, 147, 203, 0.475);
+    box-shadow: 0 0 10px #719ece;
+  }
 }
 
 .already-exists {
-    font-size: 12px;
-    text-align: right;
-    display: block;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    line-height: 1.29em;
-    color: rgb(195, 194, 194);
+  font-size: 12px;
+  text-align: right;
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  line-height: 1.29em;
+  color: rgb(195, 194, 194);
 }
 
-.already-exists p a{
-    color: rgb(198,14,27);
+.already-exists p a {
+  color: rgb(198, 14, 27);
 }
 
 .click-signup {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    margin-left: 10px;
-    margin-top: 9px;
-    margin-bottom: 10px;
-    padding: 5px 10px;
-    background: #c60e1b;
-    color: #fff;
-    border: 0px solid;
-    font-size: 15px;
-    line-height: 2.5em;
-    text-transform: capitalize;
-    cursor: pointer;
-    &:hover {
-        background-color: rgb(245,24,11);
-    }
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 9px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background: #c60e1b;
+  color: #fff;
+  border: 0px solid;
+  font-size: 15px;
+  line-height: 2.5em;
+  text-transform: capitalize;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(245, 24, 11);
+  }
 }
 
 .login-link {
-    color: rgb(11,93,172);
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
+  color: rgb(11, 93, 172);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .classy-image {
-    margin-left: 200px;
+  margin-left: 200px;
 }

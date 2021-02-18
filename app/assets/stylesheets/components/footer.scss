@@ -1,60 +1,59 @@
-.tbi-footer  {
-    width: 100%;
-    height: 0%;
-    position: absolute;
-    bottom: 0;
-    clear: both;
+.tbi-footer {
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  bottom: 0;
+  clear: both;
 }
 
 .tbi-wrapper:after {
-    height: auto; 
+  height: auto;
 }
 
 .tbi-footer-scape {
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
 .footer-city {
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    width: auto;
-    height: 150px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
+  height: 150px;
 }
 
 .tbi-copyright {
-    text-align: center;
-    display: block;
-    margin-top: 18px;
-    font-size: 12px;
-    line-height: 1.5em;
-    color: rgb(198, 14, 27);
+  text-align: center;
+  display: block;
+  margin-top: 18px;
+  font-size: 12px;
+  line-height: 1.5em;
+  color: rgb(198, 14, 27);
 }
 
 .socials {
-    font-size: 30px;
-    margin-left: auto;
-    margin-right: 15px;
-    padding: 1px 11px;
-    width: 96%;
-    text-align: center;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: 15px;
+  padding: 1px 11px;
+  width: 96%;
+  text-align: center;
 }
 
 .footer-nav-GH {
-    padding: 2px;
-    margin: 2px;
-    color: #556B2F;
-    &:hover {
-        opacity: .6;
-    }
+  padding: 2px;
+  margin: 2px;
+  color: #556b2f;
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .footer-nav-LN {
-    padding: 2px;
-    margin: 2px;
-    color: #556B2F;
-    &:hover {
-        opacity: .6;
-    }
+  padding: 2px;
+  margin: 2px;
+  color: #556b2f;
+  &:hover {
+    opacity: 0.6;
+  }
 }
-

@@ -1,169 +1,168 @@
 .landing-container {
-    display: flex;
-    justify-content: center;
-    background-image: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/fa8d73b85ad8/assets/img/home/hero_photos/J4bBEXXBIHmYLl50X1l72g.jpg);
-    background-size: 100vw 112vh;
-    background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  background-image: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/fa8d73b85ad8/assets/img/home/hero_photos/J4bBEXXBIHmYLl50X1l72g.jpg);
+  background-size: 100vw 112vh;
+  background-repeat: no-repeat;
 }
 
 .landing-top-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2.5rem;
-    color:white;
-    font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5rem;
+  color: white;
+  font-weight: 300;
 }
 
 .landing-page-business {
-    color: white;
-    text-decoration: none;
-    &:hover {
-        padding-bottom: 7px;
-        transition: all .3s ease-out;
-        box-shadow:  0 -1px 0 0 white inset, 0 -2px 0 0 #fff inset ;
-    }
+  color: white;
+  text-decoration: none;
+  &:hover {
+    padding-bottom: 7px;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 -1px 0 0 white inset, 0 -2px 0 0 #fff inset;
+  }
 }
 
 .landing-page-login {
-    color: white;
-    text-decoration: none;
-    padding: 7px;
-    &:hover {
-        transition: all .3s ease-out;
-        box-shadow:  0 -1px 0 0 white inset, 0 -2px 0 0 #fff inset ;
-    }
+  color: white;
+  text-decoration: none;
+  padding: 7px;
+  &:hover {
+    transition: all 0.3s ease-out;
+    box-shadow: 0 -1px 0 0 white inset, 0 -2px 0 0 #fff inset;
+  }
 }
-     
 
 .landing-nav-left > * {
-    margin-right: 10rem;
+  margin-right: 10rem;
 }
 
 .landing-nav-right {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .landing-nav-right > * {
-    margin-left: 5rem;
+  margin-left: 5rem;
 }
 
 .landing-search-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
 }
 
 .landing_nav_signup {
-    color: #fff;
-    text-decoration: none;
-    background: transparent;
-    box-shadow: none;
-    border-radius: 4px;
-    border: 2px solid #fff;
-    margin-top: -2px;
-    padding: 9px 26px 10px;
-    transition: 0.4s;
-    &:hover {
-        color: rgb(72, 72, 72);
-        background: rgb(211, 209, 209);
-    }
+  color: #fff;
+  text-decoration: none;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  margin-top: -2px;
+  padding: 9px 26px 10px;
+  transition: 0.4s;
+  &:hover {
+    color: rgb(72, 72, 72);
+    background: rgb(211, 209, 209);
+  }
 }
 
 .taco-logo {
-    width: 180px;
-    height: 80px;
-    margin: 50px 0;
+  width: 180px;
+  height: 80px;
+  margin: 50px 0;
 }
 
 .field.has-addons {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .control {
-    font-size: 1.06rem;
-    position: relative;
-    text-align: inherit;
-    height: 30px;
-    padding-bottom: 6px;
-    margin-bottom: 1px;
+  font-size: 1.06rem;
+  position: relative;
+  text-align: inherit;
+  height: 30px;
+  padding-bottom: 6px;
+  margin-bottom: 1px;
 }
 
 .button {
-    background-color: #fff;
-    border:none;
-    cursor: pointer;
-    justify-content: center;
-    padding-bottom: calc(.5em - 1px);
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: calc(0.5em - 5px);
-    text-align: center;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 5px);
+  text-align: center;
 }
 
 .button.is-static {
-    background-color: #f5f5f5;
-    border-color: #dbdbdb;  
-    color: #000;
-    box-shadow: none;
-    pointer-events: none;
+  background-color: #f5f5f5;
+  border-color: #dbdbdb;
+  color: #000;
+  box-shadow: none;
+  pointer-events: none;
 }
 
 .input {
-    display: flex;
-    font-size: 1.6rem;
-    min-width: 340px;
-    margin-top: -8px;
-    border: none;
-    &:focus {
-        outline: none;
-    }
+  display: flex;
+  font-size: 1.6rem;
+  min-width: 340px;
+  margin-top: -8px;
+  border: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 .search-mag {
-    height: 26px;
-    margin-top: -.5rem;
-    background: linear-gradient(#d90007, #c91400);
-    color: #fff;
-    padding: 5px 26px 0px;
-    box-shadow: none;
-    &:hover {
-        background: #bd252a
-    }
+  height: 26px;
+  margin-top: -0.5rem;
+  background: linear-gradient(#d90007, #c91400);
+  color: #fff;
+  padding: 5px 26px 0px;
+  box-shadow: none;
+  &:hover {
+    background: #bd252a;
+  }
 }
 
 .search-icons {
-    font-size: .8rem;
-    margin: 6px 12px;
+  font-size: 0.8rem;
+  margin: 6px 12px;
 }
 
 .search-fa-text {
-    margin-left: 5px;
-    margin-right: 2rem;
-    color: #fff;
+  margin-left: 5px;
+  margin-right: 2rem;
+  color: #fff;
 }
 
 .landing-dropdown-content {
-    display: none;
-    position: absolute;
-    color: #3a7cbd;
-    background-color: #efeded;
-    opacity: 0.8;
-    min-width: 70px;
-    margin-top: 5px;
-    margin-left: 35px;
-    padding: 8px 20px;
-    z-index: 1;
-    cursor: pointer;
+  display: none;
+  position: absolute;
+  color: #3a7cbd;
+  background-color: #efeded;
+  opacity: 0.8;
+  min-width: 70px;
+  margin-top: 5px;
+  margin-left: 35px;
+  padding: 8px 20px;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .user-dropdown:hover .landing-dropdown-content {
-    display: block;
-    &:hover {
-        text-decoration: underline;
-    }   
+  display: block;
+  &:hover {
+    text-decoration: underline;
+  }
 }

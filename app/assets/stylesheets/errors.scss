@@ -1,49 +1,53 @@
 @keyframes error {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .session-error {
-    padding-top: 5px;
-    color: #000;
-    width: 50%;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    position: absolute;
-    padding: 20px 20px 20px 35px;
-    border-radius: 14px;
-    font-size: 15px;
-    font-weight: 300;
-    margin-top: 38px;
-    margin-left: 420px;
-    line-height: 1.5em;
-    animation: error 0.4s;
-} 
+  padding-top: 5px;
+  color: #000;
+  width: 50%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  padding: 20px 20px 20px 35px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 38px;
+  margin-left: 420px;
+  line-height: 1.5em;
+  animation: error 0.4s;
+}
 
 .alert-error {
-    background: #fcd6d3;
+  background: #fcd6d3;
 }
 
 .close-btn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-    &:hover {
-      color: grey
-    }
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    color: grey;
+  }
 }
 
 .taco-err {
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-justify-content: center;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
 }
 
 .taco {
@@ -52,13 +56,13 @@
 }
 
 .review-error {
-    color: rgb(198,14,27);
-    position: absolute;
-    border-radius: 14px;
-    font-size: 18px;
-    font-weight: 300;
-    margin-top: -35px;
-    margin-left: 38px;
-    line-height: 2.5em;
-    animation: error 0.4s;
-} 
+  color: rgb(198, 14, 27);
+  position: absolute;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: -35px;
+  margin-left: 38px;
+  line-height: 2.5em;
+  animation: error 0.4s;
+}

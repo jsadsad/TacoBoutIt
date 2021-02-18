@@ -1,69 +1,69 @@
 .review-form-container {
-    max-width: 700px;
-    margin: 50px auto;
+  max-width: 700px;
+  margin: 50px auto;
 }
 
 .review-form-business-name {
-    font-size: 2rem;
-    font-weight: 500;
-    padding: 10px 0px 10px 0px;
-    height: 50px;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 10px 0px 10px 0px;
+  height: 50px;
 }
 
 .review-form-business-name-text {
-    text-decoration: none;
-    color: #000;
-    &:hover {
-        text-decoration: underline;
-    }
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .review-form-guidelines {
-    font-size: 12px;
-    color: #3d8b94;
+  font-size: 12px;
+  color: #3d8b94;
 }
 
 .review-content-box {
-    display: flex;
-    justify-content: center;
-    height: 420px;
-    max-width: 700px;
-    cursor: text;
+  display: flex;
+  justify-content: center;
+  height: 420px;
+  max-width: 700px;
+  cursor: text;
 }
 
 .review-textarea {
-    width: 100%;
-    font-size: 21px;
-    resize: none;
-    font-weight: 100;
-    &:focus {
-        outline: none;
-    }
+  width: 100%;
+  font-size: 21px;
+  resize: none;
+  font-weight: 100;
+  &:focus {
+    outline: none;
+  }
 }
 
 .review-textarea::placeholder {
-    padding-top: 1rem;
-    font-size: 1rem;
+  padding-top: 1rem;
+  font-size: 1rem;
 }
 
 .review-submit-click {
-    height: 54px;
-    font-size: 18px;
-    min-width: 200px;
-    margin: 20px;
-    font-weight: 700;
-    color: #fff;
-    background: #c60e1b;
-    border: 1px solid #c60e1b;
-    border-radius: 5px;
-    cursor: pointer;
-    &:hover {
-        background-color: rgb(245,24,11);
-    }
+  height: 54px;
+  font-size: 18px;
+  min-width: 200px;
+  margin: 20px;
+  font-weight: 700;
+  color: #fff;
+  background: #c60e1b;
+  border: 1px solid #c60e1b;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(245, 24, 11);
+  }
 }
 
 .form-rating-text {
-    color: #c60e1b;
-    font-size: 12px;
-    margin-top: 40px;
+  color: #c60e1b;
+  font-size: 12px;
+  margin-top: 40px;
 }

@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -20,14 +21,14 @@ main {
 }
 
 .tbi-container {
-    position: relative;
+  position: relative;
 }
 
 .tbi-wrapper {
-    min-height: 110vh;  
+  min-height: 110vh;
 }
 
 .tbi-wrapper:after {
-  content: "";
+  content: '';
   display: block;
 }
