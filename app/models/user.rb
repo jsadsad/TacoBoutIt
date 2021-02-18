@@ -3,7 +3,8 @@ class User < ApplicationRecord
 
     validates :email, presence: true, uniqueness: true
     validates :password_digest, :session_token, presence: true
-    validates :password, length: { minimum: 6 }, allow_nil: true
+    validates :password, length: { minimum: 6, :message => "Password is too short. Minimum is 6 characters."}, allow_nil: true
+    validates :age, :inclusion => { :in => (13..149).to_a, :message => "Must be 13 or older to sign up."}
 
     after_initialize :ensure_session_token
 
