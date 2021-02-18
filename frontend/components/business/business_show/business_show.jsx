@@ -1,5 +1,6 @@
 import React from 'react'
 import NavbarContainer from '../../navbar/navbar_container'
+import ReviewItem from '../../review/review_item/review_item'
 import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle, faDollarSign, faStar, faCamera, faCheck, faDirections, faPhoneAlt, faShareSquare} from '@fortawesome/free-solid-svg-icons'
@@ -12,8 +13,8 @@ class BusinessShow extends React.Component {
     }
 
     render() {
-        const { business, reviews } = this.props
-
+        const { business, reviews, users, userId, deleteReview } = this.props
+        console.log(reviews)
         let picturesHeader;
         if (business.pictures) {
             picturesHeader = business.pictures.map((pic, idx) => {
@@ -105,6 +106,15 @@ class BusinessShow extends React.Component {
                             <div className="biz-reviews-container">
                                 <div className="biz-show-container-reviews">Reviews</div>
                                 <div>This is where reviews will go.</div>
+                                {reviews.map((review,idx) => {
+                                    return <ReviewItem
+                                            key={idx}
+                                            review={review}
+                                            author={users[review.author_id]}
+                                            user_id={userId}
+                                            deleteReview={deleteReview}
+                                    />
+                                })}
                             </div>
                         </div>
                     </div>
