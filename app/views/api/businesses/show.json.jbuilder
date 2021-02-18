@@ -8,7 +8,7 @@ json.partial! '/api/businesses/business', business: @business
   end
 
   json.users do
-    json.set! review.user.id do
+    json.set! review.author_id do
       json.extract! review.user, :id, :first_name, :last_name
     end
   end

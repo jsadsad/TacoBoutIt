@@ -7,8 +7,13 @@ class ReviewItem extends React.Component {
     super(props)
   }
 
+  componentDidMount() {}
+
   render() {
-    const { review } = this.props
+    const { review, author } = this.props
+
+    if (!review) return null
+    if (!author) return null
 
     const starRating = (n) => {
       switch (n) {
@@ -133,8 +138,17 @@ class ReviewItem extends React.Component {
     }
     return (
       <div className="reviews-container">
-        <div>{review.authorId}</div>
-        <div className="review-rating">{starRating(review.rating)}</div>
+        <div className="review-avatar-author">
+          <img
+            className="avatar"
+            src="https://tbi-seeds.s3-us-west-1.amazonaws.com/taco_avatar.png"
+          />
+          <div className="review-author">
+            {author.firstName} {author.lastName}
+          </div>
+          <div className="review-rating">{starRating(review.rating)}</div>
+        </div>
+
         <div className="review-content">{review.content}</div>
       </div>
     )

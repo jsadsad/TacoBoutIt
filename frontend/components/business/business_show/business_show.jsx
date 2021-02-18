@@ -18,10 +18,12 @@ class BusinessShow extends React.Component {
   componentDidMount() {
     this.props.fetchBusiness(this.props.match.params.businessId)
     this.props.fetchReviews(this.props.match.params.businessId)
+    this.props.fetchUsers()
   }
 
   render() {
-    const { business, reviews, users, userId, deleteReview } = this.props
+    const { business, reviews, users, deleteReview } = this.props
+
     let picturesHeader
     if (business.pictures) {
       picturesHeader = business.pictures.map((pic, idx) => {
@@ -168,8 +170,8 @@ class BusinessShow extends React.Component {
                     <ReviewItem
                       key={idx}
                       review={review}
-                      author={users[review.author_id]}
-                      user_id={userId}
+                      author={users[review.authorId]}
+                      // user_id={userId}
                       deleteReview={deleteReview}
                     />
                   )

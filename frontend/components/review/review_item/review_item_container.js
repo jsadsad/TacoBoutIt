@@ -4,7 +4,7 @@ import ReviewItem from './review_item'
 
 const mapStateToProps = (state) => {
   return {
-    reviews: Object.values(state.entities.reviews),
+    reviewers: state.entities.businesses,
   }
 }
 
