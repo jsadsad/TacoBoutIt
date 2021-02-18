@@ -4,9 +4,7 @@ import ReviewItem from './review_item'
 
 const mapStateToProps = (state) => {
   return {
-    users: Object.values(state.entities.users),
     reviews: Object.values(state.entities.reviews),
-    user_id: state.session.id,
   }
 }
 

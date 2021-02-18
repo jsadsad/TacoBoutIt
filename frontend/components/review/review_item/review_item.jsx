@@ -1,16 +1,19 @@
 import React from 'react'
 
-const ReviewItem = (props) => {
-  //need to get review's user first_name and last_name
+class ReviewItem extends React.Component {
+  constructor(props) {
+    super(props)
+  }
 
-  return (
-    <div className>
-      <div>{props.review.content}</div>
-      <div>{props.review.rating}</div>
-    </div>
-  )
+  render() {
+    const { review } = this.props
+    return (
+      <div className="reviews-container">
+        <div className="review-rating">{review.rating}</div>
+        <div className="review-content">{review.content}</div>
+      </div>
+    )
+  }
 }
-
-// <ReviewList />
 
 export default ReviewItem

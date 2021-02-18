@@ -163,7 +163,6 @@ class BusinessShow extends React.Component {
               </div>
               <div className="biz-reviews-container">
                 <div className="biz-show-container-reviews">Reviews</div>
-                <div>This is where reviews will go.</div>
                 {reviews.map((review, idx) => {
                   return (
                     <ReviewItem

@@ -36,9 +36,11 @@ review6 = Review.create!(:content => "It was too pricey. Food was okay.", :ratin
 bizIndex1 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/HOPR_1.jpg")
 bizIndex2 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/SH1.jpg")
 bizIndex3 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/TEE_01.jpg")
+bizIndex4 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/SS_1.jpg")
 business1.index_picture.attach(io: bizIndex1, filename: "biz-idx1.jpg")
 business2.index_picture.attach(io: bizIndex2, filename: "biz-idx2.jpg")
 business3.index_picture.attach(io: bizIndex3, filename: "biz-idx3.jpg")
+business4.index_picture.attach(io: bizIndex4, filename: 'biz-idx4.jpg')
 
 # House of Prime Rib
 primeRib1 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/HOPR_2.jpg")
