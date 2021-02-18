@@ -22,18 +22,27 @@
 
 .review-author {
   font-weight: 400;
+  width: 50%;
   margin: 30px 40px 30px 20px;
 }
 
+.review-author-location {
+  font-size: 14px;
+  padding-top: 7px;
+  font-weight: 200;
+}
+
 .review-rating {
-  text-align: center;
-  width: 375px;
-  font-size: 62.5%;
+  text-align: end;
+  width: 100%;
+  font-size: 80.5%;
 }
 
 .review-content {
   width: 100%;
-  font-size: 80.5%;
-  padding: 20px;
-  height: 30px;
+  font-weight: 400;
+  font-size: 75.5%;
+  padding: 15px;
+  height: 35px;
+  white-space: pre;
 }

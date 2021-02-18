@@ -145,7 +145,9 @@ class ReviewItem extends React.Component {
           />
           <div className="review-author">
             {author.firstName} {author.lastName}
+            <div className="review-author-location">{author.location}</div>
           </div>
+
           <div className="review-rating">{starRating(review.rating)}</div>
         </div>
 
