@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom'
 const NavBar = ({ currentUser, logout }) => {
   const display = currentUser ? (
     <div className="navbar-items">
-      <Link className="write-review-logged-in" to="/">
-        Write a Review
-      </Link>
       <div className="user-dropdown">
         <div className="user-icon">{`${currentUser.firstName} ${currentUser.lastName}`}</div>
         <div className="dropdown-content" onClick={logout}>

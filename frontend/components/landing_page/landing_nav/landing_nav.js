@@ -23,7 +23,6 @@ const LandingNav = ({ currentUser, logout }) => {
   return (
     <div className="landing-top-nav">
       <div className="landing-nav-left">
-        <span>Write a Review</span>
         <Link className="landing-page-business" to="/businesses">
           Businesses
         </Link>
