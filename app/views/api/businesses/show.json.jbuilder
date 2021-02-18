@@ -1,6 +1,5 @@
 json.partial! '/api/businesses/business', business: @business
 
-
 @business.reviews.includes(:user).each do |review|
   json.reviews do
     json.set! review.id do

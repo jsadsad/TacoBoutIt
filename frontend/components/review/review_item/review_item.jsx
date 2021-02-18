@@ -133,6 +133,7 @@ class ReviewItem extends React.Component {
     }
     return (
       <div className="reviews-container">
+        <div>{review.authorId}</div>
         <div className="review-rating">{starRating(review.rating)}</div>
         <div className="review-content">{review.content}</div>
       </div>
