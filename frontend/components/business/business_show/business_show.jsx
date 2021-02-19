@@ -172,7 +172,6 @@ class BusinessShow extends React.Component {
                       key={idx}
                       review={review}
                       author={users[review.authorId]}
-                      // user_id={userId}
                       deleteReview={deleteReview}
                     />
                   )
@@ -212,7 +211,7 @@ class BusinessShow extends React.Component {
                 </ul>
               </div>
               <div className="google-maps">
-                <BusinessMap />
+                <BusinessMap business={business} type="show" zoom="false" />
               </div>
             </div>
           </div>
