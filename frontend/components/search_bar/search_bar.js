@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 function SearchBar() {
   return (
@@ -41,7 +42,9 @@ function NearInput() {
 function SearchButton() {
   return (
     <div className="search-bar-search-mag">
-      <FontAwesomeIcon icon={faSearch} size="24px" />
+      <Link to="/businesses">
+        <FontAwesomeIcon icon={faSearch} size="24px" color="white" />
+      </Link>
     </div>
   )
 }
