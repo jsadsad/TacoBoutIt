@@ -26,6 +26,9 @@ business1 = Business.create!(:name => "House of Prime Rib", :website => "https:/
 business2 = Business.create!(:name => "Spoon House Bakery and Restaurant", :website => "http://places.singleplatform.com/spoon-house/menu?ref=google", :category => "Italian", :address => "1601 W Redondo Beach Blvd", :city => "Gardena", :state => "CA", :zip_code => 90247, :phone_number => "(310) 538-0376", :hours => "11:00 AM - 9:00 PM", :lat => 33.89007225223046, :lng => -118.3048875687615)
 business3 = Business.create!(:name => "Thai Elephant Express", :website => "https://zmenu.com/thai-elephant-express-san-jose-online-menu/", :category => "Thai", :address => "3005 Silver Creek Rd Ste 128", :city => "San Jose", :state => "CA", :zip_code => 95121, :phone_number => "(408) 528-8882", :hours => "10:00 AM - 8:00 PM", :lat => 37.30874462435048, :lng => -121.81341205217721)
 business4 = Business.create!(:name => "Sushi Sam's Edomata", :website => "http://www.sushisams.com/", :category => "Japanese", :address => "218 E 3rd Ave", :city => "San Mateo", :state => "CA", :zip_code => 94401, :phone_number => "(650) 344-0888", :hours => "4:30 PM - 8:00 PM", :lat => 37.5651704769691, :lng => -122.3227604256077)
+business5 = Business.create!(:name => "Seapot", :website => "http://www.seapotusa.com", :category => "Chinese", :address => "1952 S El Camino Real", :city => "San Mateo", :state => "CA", :zip_code => 94403, :phone_number => "(650) 315-2827", :hours => "5:00 PM - 9:00 PM", :lat => 37.54854277994115, :lng => -122.31088388472293)
+business6 = Business.create!(:name => "Ohgane Korean Restaurant", :website => "http://www.ohgane.com", :category => "Korean", :address => "3915 Broadway", :city => "Oakland", :state => "CA", :zip_code => 94611, :phone_number => "(510) 594-8300", :hours => "11:00 AM - 9:00 PM", :lat => 37.82736310867334, :lng => -122.25747003372018)
+business7 = Business.create!(:name => "Lardo", :website => "http://www.lardopdx.com", :category => "American (Traditional)", :address => "1212 SE Hawthorne St", :city => "Portland", :state => "OR", :zip_code => 97214, :phone_number => "(503) 234-7786", :hours => "11:00 AM - 10:00 PM", :lat => 45.51212095575145, :lng => -122.65298996453124)
 
 review1 = Review.create!(:content => "Our steak was too overcooked. It was hard to chew and I spit it out!", :rating => 2, :author_id => 1, :business_id => 1)
 review2 = Review.create!(:content => "Pasta was super gooood! The place followed COVID-19 guidelines", :rating => 5, :author_id => 4, :business_id => 2)
@@ -35,6 +38,7 @@ review5 = Review.create!(:content => "Day always goes better with Thai tea.", :r
 review6 = Review.create!(:content => "It was too pricey. :( Food was okay but not worth.", :rating => 3, :author_id => 3, :business_id => 1)
 review7 = Review.create!(:content => "Oh my god. That Toro literally melts in your mouth!!", :rating => 5, :author_id => 3, :business_id => 4)
 review8 = Review.create!(:content => "Owner is super friendly. Gave us very friendly service!", :rating => 5, :author_id => 2, :business_id => 4)
+review9 = Review.create!(:content => "Fresh seafood. Worth the wait. Worth the money!", :rating => 4, :author_id => 3, :business_id => 5)
 
 # Business Index
 bizIndex1 = open("https://tbi-seeds.s3-us-west-1.amazonaws.com/HOPR_1.jpg")
