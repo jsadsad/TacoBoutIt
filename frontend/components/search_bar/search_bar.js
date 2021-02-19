@@ -43,7 +43,7 @@ function SearchButton() {
   return (
     <div className="search-bar-search-mag">
       <Link to="/businesses">
-        <FontAwesomeIcon icon={faSearch} size="24px" color="white" />
+        <FontAwesomeIcon icon={faSearch} size="md" color="white" />
       </Link>
     </div>
   )
