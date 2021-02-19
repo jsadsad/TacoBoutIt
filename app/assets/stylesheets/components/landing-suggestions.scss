@@ -1,0 +1,44 @@
+.landing-suggestions-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 43px;
+  margin-bottom: 25px;
+}
+
+.landing-suggestion-title {
+  color: #d32323;
+  text-align: center;
+  margin-top: 36px;
+}
+
+.landing-suggestion-index {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+
+.landing-suggestion-category {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: 218px;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.landing-suggestion-category img {
+  height: 174px;
+  width: 218px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.landing-suggestions-caption {
+  font-size: 16px;
+  padding-top: 15px;
+  text-align: center;
+  color: rgb(19, 96, 174);
+}
