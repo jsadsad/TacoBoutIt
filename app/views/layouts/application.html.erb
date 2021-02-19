@@ -12,6 +12,7 @@
   <body>
     <article>
     <script type="text/javascript">
+      window.googleAPIKey = "<%= Rails.application.credentials.google[:api_key] %>"
       window.logoUrl = "<%= image_url('TBI-small.png') %>";
       window.classyImage = "<%= image_url('signup_circle.png') %>";
       window.taco404 = "<%= image_url('taco404.png') %>";
