@@ -45,7 +45,7 @@ TacoBoutIt uses the Google Maps API that points where the restaurant is located 
 
 # Future Ideas
 
-- [] Update and Delete Reviews
-- [] Categories
-- [] Profile Page for Users
-- [] Review Count
+- [ ] Update and Delete Reviews
+- [ ] Categories
+- [ ] Profile Page for Users
+- [ ] Review Count
