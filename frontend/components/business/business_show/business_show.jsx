@@ -1,6 +1,7 @@
 import React from 'react'
 import NavbarContainer from '../../navbar/navbar_container'
 import ReviewItem from '../../review/review_item/review_item'
+import BusinessMap from '../business_map/business_map'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -129,9 +130,8 @@ class BusinessShow extends React.Component {
               </div>
               <div className="biz-show-container-hours-location">
                 <div className="biz-show-container-hours-location-title">
-                  {' '}
-                  Location & Hours{' '}
-                </div>{' '}
+                  Location & Hours
+                </div>
                 <ul className="biz-show-container-hours-list">
                   <li className="biz-show-availability-item">
                     <div className="biz-show-day-item">Mon</div>
@@ -210,6 +210,7 @@ class BusinessShow extends React.Component {
                   </li>
                 </ul>
               </div>
+              <BusinessMap />
             </div>
           </div>
         </div>

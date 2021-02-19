@@ -1,4 +1,5 @@
 import React from 'react'
+import BusinessMap from '../business_map/business_map'
 import NavbarContainer from '../../navbar/navbar_container'
 import BusinessIndexItem from '../business_index_item/business_index_item'
 
@@ -28,6 +29,7 @@ class BusinessIndex extends React.Component {
             )
           })}
         </div>
+        <BusinessMap />
       </div>
     )
   }

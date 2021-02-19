@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>TacoBoutIt</title>
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['MAPS_API_KEY']}" %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -12,7 +13,6 @@
   <body>
     <article>
     <script type="text/javascript">
-      window.googleAPIKey = "<%= Rails.application.credentials.google[:api_key] %>"
       window.logoUrl = "<%= image_url('TBI-small.png') %>";
       window.classyImage = "<%= image_url('signup_circle.png') %>";
       window.taco404 = "<%= image_url('taco404.png') %>";
