@@ -1,6 +1,6 @@
 import React from 'react'
 import NavbarContainer from '../../navbar/navbar_container'
-import ReviewItem from '../../review/review_item/review_item'
+import ReviewItemContainer from '../../review/review_item/review_item_container'
 import BusinessMap from '../business_map/business_map'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -168,7 +168,7 @@ class BusinessShow extends React.Component {
                 <div className="biz-show-container-reviews">Reviews</div>
                 {reviews.map((review, idx) => {
                   return (
-                    <ReviewItem
+                    <ReviewItemContainer
                       key={idx}
                       review={review}
                       author={users[review.authorId]}

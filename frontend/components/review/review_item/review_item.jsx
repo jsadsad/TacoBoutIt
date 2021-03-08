@@ -9,12 +9,18 @@ class ReviewItem extends React.Component {
 
   componentDidMount() {}
 
+  reviewEditandDelete() {
+    if (this.props.currentUser !== null && this.props.currentUser) {
+      if (this.props.currentUser.id === this.props.review.authorId) {
+        return <div className="edit-delete-button">Edit or Delete?</div>
+      }
+    }
+  }
+
   render() {
     const { review, author } = this.props
-
     if (!review) return null
     if (!author) return null
-
     const starRating = (n) => {
       switch (n) {
         case 1:
@@ -147,11 +153,10 @@ class ReviewItem extends React.Component {
             {author.firstName} {author.lastName}
             <div className="review-author-location">{author.location}</div>
           </div>
-
           <div className="review-rating">{starRating(review.rating)}</div>
         </div>
-
         <div className="review-content">{review.content}</div>
+        {this.reviewEditandDelete()}
       </div>
     )
   }
