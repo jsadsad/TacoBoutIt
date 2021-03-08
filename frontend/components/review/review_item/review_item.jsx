@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faTrash } from '@fortawesome/free-solid-svg-icons'
 
@@ -14,7 +15,16 @@ class ReviewItem extends React.Component {
   reviewEdit() {
     if (this.props.currentUser !== null && this.props.currentUser) {
       if (this.props.currentUser.id === this.props.review.authorId) {
-        return <div className="edit-delete-button">Edit</div>
+        return (
+          <div className="edit-delete-button">
+            <Link
+              className="edit-review-text"
+              to={`/businesses/${this.props.review.businessId}/reviews/${this.props.review.id}/edit`}
+            >
+              Edit
+            </Link>
+          </div>
+        )
       }
     }
   }
@@ -42,6 +52,7 @@ class ReviewItem extends React.Component {
 
   render() {
     const { review, author } = this.props
+    debugger
     if (!review) return null
     if (!author) return null
     const starRating = (n) => {

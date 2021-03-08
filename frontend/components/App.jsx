@@ -32,7 +32,7 @@ const App = () => (
         />
         <ProtectedRoute
           exact
-          path="/businesses/:businessId/reviews/edit"
+          path="/businesses/:businessId/reviews/:reviewId/edit"
           component={EditReviewContainer}
         />
         <Route path="/404" component={NotFoundPage} />
