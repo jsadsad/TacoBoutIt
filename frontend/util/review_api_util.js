@@ -9,7 +9,7 @@ export const createReview = (review) => {
 export const updateReview = (review) => {
   return $.ajax({
     method: `PATCH`,
-    url: `/api/businesses/${review.business_id}/reviews/${review.id}`,
+    url: `/api/businesses/${review.businessId}/reviews/${review.id}`,
     data: { review },
   })
 }
@@ -17,7 +17,7 @@ export const updateReview = (review) => {
 export const deleteReview = (review) => {
   return $.ajax({
     method: `DELETE`,
-    url: `/api/businesses/${review.business_id}/reviews/${review.id}`,
+    url: `/api/businesses/${review.businessId}/reviews/${review.id}`,
   })
 }
 

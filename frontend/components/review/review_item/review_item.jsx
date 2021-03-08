@@ -1,18 +1,41 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { faStar, faTrash } from '@fortawesome/free-solid-svg-icons'
 
 class ReviewItem extends React.Component {
   constructor(props) {
     super(props)
+
+    this.reviewDelete = this.reviewDelete.bind(this)
   }
 
   componentDidMount() {}
 
-  reviewEditandDelete() {
+  reviewEdit() {
     if (this.props.currentUser !== null && this.props.currentUser) {
       if (this.props.currentUser.id === this.props.review.authorId) {
-        return <div className="edit-delete-button">Edit or Delete?</div>
+        return <div className="edit-delete-button">Edit</div>
+      }
+    }
+  }
+
+  reviewDelete() {
+    if (this.props.currentUser !== null && this.props.currentUser) {
+      if (this.props.currentUser.id === this.props.review.authorId) {
+        return (
+          <div
+            className="delete-button"
+            onClick={() => this.props.deleteReview(this.props.review)}
+          >
+            {' '}
+            <FontAwesomeIcon
+              icon={faTrash}
+              color="black"
+              size="sm"
+              fixedWidth
+            />
+          </div>
+        )
       }
     }
   }
@@ -153,10 +176,15 @@ class ReviewItem extends React.Component {
             {author.firstName} {author.lastName}
             <div className="review-author-location">{author.location}</div>
           </div>
-          <div className="review-rating">{starRating(review.rating)}</div>
+          <div className="review-rating">
+            {starRating(review.rating)}
+            <div>
+              {this.reviewDelete()}
+              {this.reviewEdit()}
+            </div>
+          </div>
         </div>
         <div className="review-content">{review.content}</div>
-        {this.reviewEditandDelete()}
       </div>
     )
   }

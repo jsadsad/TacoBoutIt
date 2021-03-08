@@ -5,8 +5,6 @@ import ReviewItem from './review_item'
 const mapStateToProps = (state) => {
   return {
     reviewers: state.entities.businesses,
-    // reviewers: state.entities.businesses,
-    // currentUser: state.entities.users[state.session.id],
     currentUser: state.entities.users[state.session.id],
   }
 }
