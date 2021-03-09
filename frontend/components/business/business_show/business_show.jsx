@@ -189,7 +189,9 @@ class BusinessShow extends React.Component {
                       size="sm"
                       fixedWidth
                     />
-                    <a href={business.website}>&nbsp;Website</a>
+                    <a href={business.website} target="_blank">
+                      &nbsp;Website
+                    </a>
                   </li>
                   <li>
                     <FontAwesomeIcon icon={faPhoneAlt} size="sm" fixedWidth />
@@ -200,6 +202,7 @@ class BusinessShow extends React.Component {
                     <a
                       className="biz-right-location-link"
                       href={`https://www.google.com/maps/dir/?api=1&destination=${business.lat},${business.lng}`}
+                      target="_blank"
                     >
                       &nbsp;Get Directions
                     </a>
