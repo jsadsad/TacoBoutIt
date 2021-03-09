@@ -52,7 +52,6 @@ class ReviewItem extends React.Component {
 
   render() {
     const { review, author } = this.props
-    debugger
     if (!review) return null
     if (!author) return null
     const starRating = (n) => {

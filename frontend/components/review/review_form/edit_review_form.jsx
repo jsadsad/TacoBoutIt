@@ -1,29 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import NavbarContainer from '../../navbar/navbar_container'
+import { Link } from 'react-router-dom'
 
-class ReviewForm extends React.Component {
+class EditReviewForm extends React.Component {
   constructor(props) {
     super(props)
-
     this.state = {
-      content: this.props.review.content,
-      rating: this.props.review.rating,
-      author_id: this.props.currentUserId,
-      business_id: this.props.businessId,
-      reviewId: this.props.reviewId,
+      content: this.props.review,
+      rating: this.props.review,
+      userId: this.props.userId,
+      businessId: this.props.match.params.businessId,
+      id: this.props.match.params.reviewId,
     }
-
     this.handleSubmit = this.handleSubmit.bind(this)
-    this.renderErrors = this.renderErrors.bind(this)
-  }
-
-  componentDidMount() {
-    this.props.fetchBusiness(this.props.match.params.businessId)
-  }
-
-  componentWillUnmount() {
-    this.props.clearErrors()
   }
 
   handleField(field) {
@@ -33,12 +22,26 @@ class ReviewForm extends React.Component {
       })
   }
 
+  componentDidMount() {
+    this.props.fetchBusiness(this.props.match.params.businessId)
+    this.props.fetchReviews(this.props.match.params.businessId).then(() => {
+      this.setState({
+        content: this.props.review ? this.props.review.content : '',
+        rating: this.props.review ? this.props.review.rating : '',
+        userId: this.props.userId ? this.props.userId : '',
+        businessId: this.props.match.params.businessId
+          ? parseInt(this.props.match.params.businessId)
+          : '',
+      })
+    })
+  }
+
   handleSubmit(e) {
     e.preventDefault()
     this.props
-      .processForm(this.state)
+      .updateReview(this.state)
       .then(() =>
-        this.props.history.push(`/businesses/${this.props.businessId}`)
+        this.props.history.push(`/businesses/${this.state.businessId}`)
       )
   }
 
@@ -60,7 +63,6 @@ class ReviewForm extends React.Component {
   render() {
     const { business } = this.props
     if (!business) return <h1>Loading...</h1>
-
     return (
       <div>
         <NavbarContainer />
@@ -110,4 +112,4 @@ class ReviewForm extends React.Component {
   }
 }
 
-export default ReviewForm
+export default EditReviewForm
