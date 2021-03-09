@@ -10,43 +10,45 @@ class ReviewItem extends React.Component {
     this.reviewDelete = this.reviewDelete.bind(this)
   }
 
-  componentDidMount() {}
+  currentUserLoggedIn() {
+    if (this.props.currentUser.id === this.props.review.authorId) return true
+    return false
+  }
 
   reviewEdit() {
-    if (this.props.currentUser !== null && this.props.currentUser) {
-      if (this.props.currentUser.id === this.props.review.authorId) {
-        return (
-          <div className="edit-delete-button">
-            <Link
-              className="edit-review-text"
-              to={`/businesses/${this.props.review.businessId}/reviews/${this.props.review.id}/edit`}
-            >
-              Edit
-            </Link>
-          </div>
-        )
-      }
+    if (this.currentUserLoggedIn()) {
+      return (
+        <div className="review-edit">
+          <Link
+            className="review-edit-text"
+            to={`/businesses/${this.props.review.businessId}/reviews/${this.props.review.id}/edit`}
+          >
+            Edit
+          </Link>
+        </div>
+      )
     }
   }
 
   reviewDelete() {
-    if (this.props.currentUser !== null && this.props.currentUser) {
-      if (this.props.currentUser.id === this.props.review.authorId) {
-        return (
-          <div
-            className="delete-button"
-            onClick={() => this.props.deleteReview(this.props.review)}
-          >
-            {' '}
-            <FontAwesomeIcon
-              icon={faTrash}
-              color="black"
-              size="sm"
-              fixedWidth
-            />
-          </div>
-        )
-      }
+    if (this.currentUserLoggedIn()) {
+      return (
+        <div
+          className="review-delete-can"
+          onClick={() => {
+            if (window.confirm('Are you sure you want to delete this review?'))
+              this.props.deleteReview(this.props.review)
+          }}
+        >
+          <FontAwesomeIcon
+            className="fa-trash"
+            icon={faTrash}
+            color="black"
+            size="sm"
+            fixedWidth
+          />
+        </div>
+      )
     }
   }
 

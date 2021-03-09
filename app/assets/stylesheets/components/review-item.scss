@@ -36,6 +36,8 @@
   text-align: end;
   width: 100%;
   font-size: 80.5%;
+  padding-top: 10px;
+  margin-top: 5px;
 }
 
 .review-content {
@@ -47,10 +49,31 @@
   white-space: pre;
 }
 
-.delete-button {
-  border: solid black;
+.review-delete-can {
+  border: groove 2.5px black;
   cursor: pointer;
   font-size: 2.2rem;
-  margin-top: 15px;
-  margin-left: 88%;
+  margin-top: 1.2rem;
+  margin-left: 87%;
+}
+
+.fa-trash {
+  &:hover {
+    color: #ed4444;
+  }
+}
+
+.review-edit {
+  margin-top: 10px;
+}
+
+.review-edit-text {
+  color: #ed4444;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 5px;
+  &:hover {
+    text-decoration: underline;
+  }
 }
