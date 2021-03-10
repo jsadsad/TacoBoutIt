@@ -10,46 +10,46 @@ class ReviewItem extends React.Component {
     this.reviewDelete = this.reviewDelete.bind(this)
   }
 
-  currentUserLoggedIn() {
-    if (this.props.currentUser.id === this.props.review.authorId) return true
-    return false
-  }
+  // currentUserLoggedIn() {
+  //   if (this.props.currentUser.id === this.props.review.authorId) return true
+  //   return false
+  // }
 
   reviewEdit() {
-    if (this.currentUserLoggedIn()) {
-      return (
-        <div className="review-edit">
-          <Link
-            className="review-edit-text"
-            to={`/businesses/${this.props.review.businessId}/reviews/${this.props.review.id}/edit`}
-          >
-            Edit
-          </Link>
-        </div>
-      )
-    }
+    // if (this.props.currentUser.id === this.props.review.authorId) {
+    return (
+      <div className="review-edit">
+        <Link
+          className="review-edit-text"
+          to={`/businesses/${this.props.review.businessId}/reviews/${this.props.review.id}/edit`}
+        >
+          Edit
+        </Link>
+      </div>
+    )
+    // }
   }
 
   reviewDelete() {
-    if (this.currentUserLoggedIn()) {
-      return (
-        <div
-          className="review-delete-can"
-          onClick={() => {
-            if (window.confirm('Are you sure you want to delete this review?'))
-              this.props.deleteReview(this.props.review)
-          }}
-        >
-          <FontAwesomeIcon
-            className="fa-trash"
-            icon={faTrash}
-            color="black"
-            size="sm"
-            fixedWidth
-          />
-        </div>
-      )
-    }
+    // if (this.props.currentUser.id === this.props.review.authorId) {
+    return (
+      <div
+        className="review-delete-can"
+        onClick={() => {
+          if (window.confirm('Are you sure you want to delete this review?'))
+            this.props.deleteReview(this.props.review)
+        }}
+      >
+        <FontAwesomeIcon
+          className="fa-trash"
+          icon={faTrash}
+          color="black"
+          size="sm"
+          fixedWidth
+        />
+      </div>
+    )
+    // }
   }
 
   render() {
