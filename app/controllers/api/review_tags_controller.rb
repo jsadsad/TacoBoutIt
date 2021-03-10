@@ -10,7 +10,6 @@ class Api::ReviewTagsController < ApplicationController
   end
 
   def create
-
     @tag = ReviewTag.new(tag_params)
     @tag.author_id = current_user.id
     @tag.review_id = params[:tag][:review_id].to_i
@@ -20,7 +19,6 @@ class Api::ReviewTagsController < ApplicationController
     else
       render json: @tag.errors.full_messages, status: 422
     end
-
   end
 
   def update
