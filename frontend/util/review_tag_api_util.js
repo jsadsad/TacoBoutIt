@@ -17,15 +17,15 @@ export const fetchTags = (review) =>
     method: 'GET',
   })
 
-export const deleteTag = (tagId) =>
-  $.ajax({
-    url: `/api/tags/${tagId}`,
-    method: 'DELETE',
-  })
-
 export const updateTag = (tag) =>
   $.ajax({
     url: `/api/tags/${tag.id}`,
     method: 'PATCH',
     data: { tag },
+  })
+
+export const deleteTag = (tagId) =>
+  $.ajax({
+    url: `/api/tags/${tagId}`,
+    method: 'DELETE',
   })
