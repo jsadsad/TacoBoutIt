@@ -12,4 +12,8 @@ class Review < ApplicationRecord
     foreign_key: :business_id,
     class_name: :Business
 
+    has_many :tags,
+    foreign_key: :review_id,
+    class_name: :ReviewTag
+
 end
