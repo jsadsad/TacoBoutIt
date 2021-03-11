@@ -2,13 +2,15 @@
 
 [Live!](http://tacobout-it.herokuapp.com/#/)
 
-TacoBoutIt is a clone project of Yelp. I have created funtionality such as User Auth, visting Business pages, and creating unique Reviews under each Business.
+TacoBoutIt is a clone project of Yelp.
+
+I have created functionality such as User Auth, visiting Business pages, creating unique Reviews, and Tagging Reviews
 
 ## Technologies Used
 
 - Ruby on Rails
 - AWS S3
-- PostgresSql
+- PostgreSQL
 - Redux
 - JavaScript
 - React
@@ -69,6 +71,38 @@ export const getReviewsForBusiness = (state, ownProps) => {
 4. Google Maps
 
 TacoBoutIt uses the Google Maps API that points where the restaurant is located based on latitude and longitude.
+
+```
+class BusinessMap extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  mapOptions() {
+    if (this.props.business) {
+      return {
+        center: {
+          lat: this.props.business.lat,
+          lng: this.props.business.lng,
+        },
+        zoom: 15,
+        fullScreen: false,
+        clickableIcons: false,
+        disableDefaultUI: true,
+        draggable: false,
+        streetViewControl: false,
+        mapTypeControl: false,
+        gestureHandling: 'none',
+        fullscreenControl: false,
+      }
+    } else {
+      return {
+        center: { lat: 37.773972, lng: -122.431297 },
+        zoom: 13,
+      }
+    }
+  }
+```
 
 # Future Ideas
 
