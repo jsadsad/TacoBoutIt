@@ -22,7 +22,7 @@ class Api::ReviewTagsController < ApplicationController
 
   def update
     @tag = ReviewTag.find_by(id: params[:id])
-    if @tag.update_attributes(tag_params)
+    if @tag.update(tag_params)
       render :show
     else
       render json: @tag.errors.full_messages, status: 422

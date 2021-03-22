@@ -1,5 +1,6 @@
 import React from 'react'
 import ReviewTagCreateContainer from '../../tags/tag_create_container'
+import ReviewTagUpdateContainer from '../../tags/tag_update_container'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -237,6 +238,20 @@ class ReviewItem extends React.Component {
           review.authorId !== currentUser.id ? (
             <ReviewTagCreateContainer
               reviewId={review.id}
+              usefulSum={reviewNumUseful}
+              funnySum={reviewNumFunny}
+              coolSum={reviewNumCool}
+            />
+          ) : (
+            ''
+          )}
+          {currentUser &&
+          review.currentUserTags &&
+          review.currentUserTags.length > 0 &&
+          review.authorId !== currentUser.id ? (
+            <ReviewTagUpdateContainer
+              tag={review.currentUserTags[0]}
+              review={review}
               usefulSum={reviewNumUseful}
               funnySum={reviewNumFunny}
               coolSum={reviewNumCool}
