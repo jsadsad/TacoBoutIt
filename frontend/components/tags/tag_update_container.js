@@ -3,12 +3,6 @@ import { updateTag, fetchTag, fetchTags } from '../../actions/tag_actions'
 import { fetchReviews } from '../../actions/review_actions'
 import UpdateTag from './tag_update'
 
-const mapStateToProps = (state) => {
-  return {
-    review,
-  }
-}
-
 const mapDispatchToProps = (dispatch) => {
   return {
     updateTag: (tag) => dispatch(updateTag(tag)),

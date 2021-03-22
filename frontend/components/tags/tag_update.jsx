@@ -4,6 +4,7 @@ class UpdateTag extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      id: this.props.tag.id,
       review_id: this.props.tag.review_id,
       useful: this.props.tag.useful,
       funny: this.props.tag.funny,
@@ -15,16 +16,16 @@ class UpdateTag extends React.Component {
   }
 
   componentDidMount() {
-    let usefulBol = this.props.tag.useful
-    let funnyBol = this.props.tag.funny
-    let coolBol = this.props.tag.cool
+    let usefulState = this.props.tag.useful
+    let funnyState = this.props.tag.funny
+    let coolState = this.props.tag.cool
     let useful = document.getElementById(`useful${this.props.tag.id}`)
     let funny = document.getElementById(`funny${this.props.tag.id}`)
     let cool = document.getElementById(`cool${this.props.tag.id}`)
 
-    if (usefulBol) useful.classList.add('reacted')
-    if (funnyBol) funny.classList.add('reacted')
-    if (coolBol) cool.classList.add('reacted')
+    if (usefulState) useful.classList.add('reacted')
+    if (funnyState) funny.classList.add('reacted')
+    if (coolState) cool.classList.add('reacted')
   }
 
   handleUseful(e) {
