@@ -11,6 +11,7 @@ require 'open-uri'
 User.destroy_all
 Business.destroy_all
 Review.destroy_all
+ReviewTag.destroy_all
 
 ActiveRecord::Base.connection.tables.each do |t|
   ActiveRecord::Base.connection.reset_pk_sequence!(t)

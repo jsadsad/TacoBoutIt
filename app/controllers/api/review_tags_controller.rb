@@ -13,7 +13,6 @@ class Api::ReviewTagsController < ApplicationController
     @tag = ReviewTag.new(tag_params)
     @tag.author_id = current_user.id
     @tag.review_id = params[:tag][:review_id].to_i
-   
     if @tag.save
       render :show
     else

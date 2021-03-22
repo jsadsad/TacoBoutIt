@@ -75,8 +75,7 @@ class ReviewItem extends React.Component {
 
   render() {
     const { review, author, currentUser } = this.props
-    if (!review) return null
-    if (!author) return null
+    if (!review || !author) return null
     let reviewNumUseful
     let reviewNumFunny
     let reviewNumCool
@@ -236,10 +235,10 @@ class ReviewItem extends React.Component {
           review.currentUserTags.length === 0 &&
           review.authorId !== currentUser.id ? (
             <ReviewTagCreateContainer
-            // reviewId={review.id}
-            // numUseful={reviewNumUseful}
-            // numFunny={reviewNumFunny}
-            // numCool={reviewNumCool}
+              reviewId={review.id}
+              numUseful={reviewNumUseful}
+              numFunny={reviewNumFunny}
+              numCool={reviewNumCool}
             />
           ) : (
             ''

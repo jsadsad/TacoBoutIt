@@ -16,44 +16,27 @@ class ReviewTag extends React.Component {
 
   handleUseful(e) {
     e.preventDefault()
-
-    this.setState(
-      {
-        useful: true,
-      },
-      () => {
-        this.props.createTag(this.state)
-      }
-    )
+    this.setState({ useful: true }, () => {
+      this.props.createTag(this.state)
+    })
   }
 
   handleFunny(e) {
     e.preventDefault()
-    this.setState(
-      {
-        funny: true,
-      },
-      () => {
-        this.props.createTag(this.state)
-      }
-    )
+    this.setState({ funny: true }, () => {
+      this.props.createTag(this.state)
+    })
   }
 
   handleCool(e) {
     e.preventDefault()
-    this.setState(
-      {
-        cool: true,
-      },
-      () => {
-        this.props.createTag(this.state)
-      }
-    )
+    this.setState({ cool: true }, () => {
+      this.props.createTag(this.state)
+    })
   }
 
   render() {
     let { numCool, numUseful, numFunny } = this.props
-
     return (
       <div>
         <form>
