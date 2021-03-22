@@ -1,31 +1,31 @@
 export const createTag = (tag) =>
   $.ajax({
-    url: '/api/tags',
+    url: '/api/review_tags',
     method: 'POST',
     data: { tag },
   })
 
 export const fetchTag = (id) =>
   $.ajax({
-    url: `/api/tags/${id}`,
+    url: `/api/review_tags/${id}`,
     method: 'GET',
   })
 
 export const fetchTags = (review) =>
   $.ajax({
-    url: `/api/businesses/${review.businessId}/reviews/${review.id}/tags`,
+    url: `/api/businesses/${review.businessId}/reviews/${review.id}/review_tags`,
     method: 'GET',
   })
 
 export const updateTag = (tag) =>
   $.ajax({
-    url: `/api/tags/${tag.id}`,
+    url: `/api/review_tags/${tag.id}`,
     method: 'PATCH',
     data: { tag },
   })
 
 export const deleteTag = (tagId) =>
   $.ajax({
-    url: `/api/tags/${tagId}`,
+    url: `/api/review_tags/${tagId}`,
     method: 'DELETE',
   })

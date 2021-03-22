@@ -1,4 +1,5 @@
 import React from 'react'
+import ReviewTagCreateContainer from '../../tags/tag_create_container'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -8,7 +9,6 @@ import {
   faSmileBeam,
   faCookie,
 } from '@fortawesome/free-solid-svg-icons'
-import { ReactionCreateContainer } from '../../tags/tag_create_container'
 
 class ReviewItem extends React.Component {
   constructor(props) {
@@ -231,19 +231,19 @@ class ReviewItem extends React.Component {
         </div>
         <div className="review-content">{review.content}</div>
         <div className="review-tags-container">
-          {/* {currentUser &&
-          review.currentUserReaction &&
-          review.currentUserReaction.length === 0 &&
+          {currentUser &&
+          review.currentUserTags &&
+          review.currentUserTags.length === 0 &&
           review.authorId !== currentUser.id ? (
-            <ReactionCreateContainer
-              reviewId={review.id}
-              numUseful={reviewNumUseful}
-              numFunny={reviewNumFunny}
-              numCool={reviewNumCool}
+            <ReviewTagCreateContainer
+            // reviewId={review.id}
+            // numUseful={reviewNumUseful}
+            // numFunny={reviewNumFunny}
+            // numCool={reviewNumCool}
             />
           ) : (
             ''
-          )} */}
+          )}
           {/* {currentUser === undefined ||
               currentUser.id === review.authorId ? ( */}
           <h6>

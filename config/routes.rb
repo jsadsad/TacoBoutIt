@@ -5,10 +5,10 @@ Rails.application.routes.draw do
     resources :users, only: [:index,:create]
     resources :businesses, only: [:index, :show, :create] do
       resources :reviews, only: [:index, :create, :update, :destroy] do 
-         resources :tags, only: [:index]
+         resources :review_tags, only: [:index]
       end
     end
-    resources :tags, only: [:show, :create, :destroy, :update]
+    resources :review_tags, only: [:show, :create, :destroy, :update]
     resource :session, only: [:create, :destroy]
   end
 end

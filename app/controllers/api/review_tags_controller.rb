@@ -1,6 +1,6 @@
 class Api::ReviewTagsController < ApplicationController
   def index
-    @tags = ReviewTag.find_by(id: params[:review_id]).tags
+    @tags = ReviewTag.all
     render :index
   end
 
@@ -38,8 +38,9 @@ class Api::ReviewTagsController < ApplicationController
   end
 
   private
+
   def tag_params
-    params.require(:review_tag).permit(:tag_type, :useful, :funny, :cool)
+    params.require(:tag).permit(:useful, :funny, :cool)
   end
 
 end
