@@ -73,142 +73,143 @@ class ReviewItem extends React.Component {
     }
   }
 
+  starRating(num) {
+    switch (num) {
+      case 1:
+        return (
+          <div>
+            <FontAwesomeIcon
+              icon={faStar}
+              color="tomato"
+              size="sm"
+              fixedWidth
+            />
+          </div>
+        )
+      case 2:
+        return (
+          <div>
+            <FontAwesomeIcon
+              icon={faStar}
+              color="tomato"
+              size="sm"
+              fixedWidth
+            />
+            <FontAwesomeIcon
+              icon={faStar}
+              color="tomato"
+              size="sm"
+              fixedWidth
+            />
+          </div>
+        )
+      case 3:
+        return (
+          <div>
+            <FontAwesomeIcon
+              icon={faStar}
+              color="tomato"
+              size="sm"
+              fixedWidth
+            />
+            <FontAwesomeIcon
+              icon={faStar}
+              color="tomato"
+              size="sm"
+              fixedWidth
+            />
+            <FontAwesomeIcon
+              icon={faStar}
+              color="tomato"
+              size="sm"
+              fixedWidth
+            />
+          </div>
+        )
+      case 4:
+        return (
+          <div>
+            <FontAwesomeIcon
+              icon={faStar}
+              color="tomato"
+              size="sm"
+              fixedWidth
+            />
+            <FontAwesomeIcon
+              icon={faStar}
+              color="tomato"
+              size="sm"
+              fixedWidth
+            />
+            <FontAwesomeIcon
+              icon={faStar}
+              color="tomato"
+              size="sm"
+              fixedWidth
+            />
+            <FontAwesomeIcon
+              icon={faStar}
+              color="tomato"
+              size="sm"
+              fixedWidth
+            />
+          </div>
+        )
+      case 5:
+        return (
+          <div>
+            <FontAwesomeIcon
+              icon={faStar}
+              color="tomato"
+              size="sm"
+              fixedWidth
+            />
+            <FontAwesomeIcon
+              icon={faStar}
+              color="tomato"
+              size="sm"
+              fixedWidth
+            />
+            <FontAwesomeIcon
+              icon={faStar}
+              color="tomato"
+              size="sm"
+              fixedWidth
+            />
+            <FontAwesomeIcon
+              icon={faStar}
+              color="tomato"
+              size="sm"
+              fixedWidth
+            />
+            <FontAwesomeIcon
+              icon={faStar}
+              color="tomato"
+              size="sm"
+              fixedWidth
+            />
+          </div>
+        )
+      default:
+        return <div></div>
+    }
+  }
+
   render() {
     const { review, author, currentUser } = this.props
     if (!review || !author) return null
     let reviewNumUseful
     let reviewNumFunny
     let reviewNumCool
-    if (review.tag) {
-      reviewNumUseful = review.tag.filter(
-        (reaction) => reaction.useful === true
-      ).length
-      reviewNumFunny = review.tag.filter((reaction) => reaction.funny === true)
+
+    if (review.tagCount) {
+      reviewNumUseful = review.tagCount.filter((tag) => tag.useful === true)
         .length
-      reviewNumCool = review.tag.filter((reaction) => reaction.cool === true)
+      reviewNumFunny = review.tagCount.filter((tag) => tag.funny === true)
         .length
+      reviewNumCool = review.tagCount.filter((tag) => tag.cool === true).length
     }
-    const starRating = (num) => {
-      switch (num) {
-        case 1:
-          return (
-            <div>
-              <FontAwesomeIcon
-                icon={faStar}
-                color="tomato"
-                size="sm"
-                fixedWidth
-              />
-            </div>
-          )
-        case 2:
-          return (
-            <div>
-              <FontAwesomeIcon
-                icon={faStar}
-                color="tomato"
-                size="sm"
-                fixedWidth
-              />
-              <FontAwesomeIcon
-                icon={faStar}
-                color="tomato"
-                size="sm"
-                fixedWidth
-              />
-            </div>
-          )
-        case 3:
-          return (
-            <div>
-              <FontAwesomeIcon
-                icon={faStar}
-                color="tomato"
-                size="sm"
-                fixedWidth
-              />
-              <FontAwesomeIcon
-                icon={faStar}
-                color="tomato"
-                size="sm"
-                fixedWidth
-              />
-              <FontAwesomeIcon
-                icon={faStar}
-                color="tomato"
-                size="sm"
-                fixedWidth
-              />
-            </div>
-          )
-        case 4:
-          return (
-            <div>
-              <FontAwesomeIcon
-                icon={faStar}
-                color="tomato"
-                size="sm"
-                fixedWidth
-              />
-              <FontAwesomeIcon
-                icon={faStar}
-                color="tomato"
-                size="sm"
-                fixedWidth
-              />
-              <FontAwesomeIcon
-                icon={faStar}
-                color="tomato"
-                size="sm"
-                fixedWidth
-              />
-              <FontAwesomeIcon
-                icon={faStar}
-                color="tomato"
-                size="sm"
-                fixedWidth
-              />
-            </div>
-          )
-        case 5:
-          return (
-            <div>
-              <FontAwesomeIcon
-                icon={faStar}
-                color="tomato"
-                size="sm"
-                fixedWidth
-              />
-              <FontAwesomeIcon
-                icon={faStar}
-                color="tomato"
-                size="sm"
-                fixedWidth
-              />
-              <FontAwesomeIcon
-                icon={faStar}
-                color="tomato"
-                size="sm"
-                fixedWidth
-              />
-              <FontAwesomeIcon
-                icon={faStar}
-                color="tomato"
-                size="sm"
-                fixedWidth
-              />
-              <FontAwesomeIcon
-                icon={faStar}
-                color="tomato"
-                size="sm"
-                fixedWidth
-              />
-            </div>
-          )
-        default:
-          return <div></div>
-      }
-    }
+
     return (
       <div className="reviews-container">
         <div className="review-avatar-author">
@@ -221,7 +222,7 @@ class ReviewItem extends React.Component {
             <div className="review-author-location">{author.location}</div>
           </div>
           <div className="review-rating">
-            {starRating(review.rating)}
+            {this.starRating(review.rating)}
             <div>
               {this.reviewDelete()}
               {this.reviewEdit()}
@@ -243,41 +244,42 @@ class ReviewItem extends React.Component {
           ) : (
             ''
           )}
-          {/* {currentUser === undefined ||
-              currentUser.id === review.authorId ? ( */}
-          <h6>
-            <FontAwesomeIcon
-              className="fa-light-bulb"
-              icon={faLightbulb}
-              color="black"
-              size="sm"
-              fixedWidth
-            />
-            {`Useful 1`}
-          </h6>
-          <h6>
-            <FontAwesomeIcon
-              className="fa-light-bulb"
-              icon={faSmileBeam}
-              color="black"
-              size="sm"
-              fixedWidth
-            />
-            {`Funny 2`}
-          </h6>
-          <h6>
-            <FontAwesomeIcon
-              className="fa-light-bulb"
-              icon={faCookie}
-              color="black"
-              size="sm"
-              fixedWidth
-            />
-            {`Cool 3`}
-          </h6>
-          {/* ) : (
-                ''
-              )} */}
+          {currentUser === undefined || currentUser.id === review.authorId ? (
+            <div>
+              <div>
+                <FontAwesomeIcon
+                  className="fa-light-bulb"
+                  icon={faLightbulb}
+                  color="black"
+                  size="sm"
+                  fixedWidth
+                />
+                {`Useful ${reviewNumUseful}`}
+              </div>
+              <div>
+                <FontAwesomeIcon
+                  className="fa-light-bulb"
+                  icon={faSmileBeam}
+                  color="black"
+                  size="sm"
+                  fixedWidth
+                />
+                {`Funny ${reviewNumFunny}`}
+              </div>
+              <div>
+                <FontAwesomeIcon
+                  className="fa-light-bulb"
+                  icon={faCookie}
+                  color="black"
+                  size="sm"
+                  fixedWidth
+                />
+                {`Cool ${reviewNumCool}`}
+              </div>
+            </div>
+          ) : (
+            ''
+          )}
         </div>
       </div>
     )

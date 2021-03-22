@@ -4,10 +4,10 @@ class ReviewTag extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      review_id: this.props.reviewId,
       useful: false,
       funny: false,
       cool: false,
-      review_id: this.props.reviewId,
     }
     this.handleUseful = this.handleUseful.bind(this)
     this.handleFunny = this.handleFunny.bind(this)
