@@ -231,6 +231,19 @@ class ReviewItem extends React.Component {
         </div>
         <div className="review-content">{review.content}</div>
         <div className="review-tags-container">
+          {/* {currentUser &&
+          review.currentUserReaction &&
+          review.currentUserReaction.length === 0 &&
+          review.authorId !== currentUser.id ? (
+            <ReactionCreateContainer
+              reviewId={review.id}
+              numUseful={reviewNumUseful}
+              numFunny={reviewNumFunny}
+              numCool={reviewNumCool}
+            />
+          ) : (
+            ''
+          )} */}
           {/* {currentUser === undefined ||
               currentUser.id === review.authorId ? ( */}
           <h6>
