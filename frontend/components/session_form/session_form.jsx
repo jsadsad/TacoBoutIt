@@ -34,10 +34,12 @@ class SessionForm extends React.Component {
 
   loginDemo(e) {
     e.preventDefault()
-    this.props.loginDemo({
-      email: 'test@example.com',
-      password: 'password',
-    })
+    this.props
+      .loginDemo({
+        email: 'test@example.com',
+        password: 'password',
+      })
+      .then(() => this.props.history.goBack())
   }
 
   handleSubmit(e) {
