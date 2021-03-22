@@ -237,9 +237,9 @@ class ReviewItem extends React.Component {
           review.authorId !== currentUser.id ? (
             <ReviewTagCreateContainer
               reviewId={review.id}
-              numUseful={reviewNumUseful}
-              numFunny={reviewNumFunny}
-              numCool={reviewNumCool}
+              usefulSum={reviewNumUseful}
+              funnySum={reviewNumFunny}
+              coolSum={reviewNumCool}
             />
           ) : (
             ''

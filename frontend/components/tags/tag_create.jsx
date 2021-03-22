@@ -36,13 +36,13 @@ class ReviewTag extends React.Component {
   }
 
   render() {
-    let { numCool, numUseful, numFunny } = this.props
+    let { coolSum, usefulSum, funnySum } = this.props
     return (
       <div>
         <form>
-          <button onClick={this.handleUseful}>{`Useful ${numUseful}`}</button>
-          <button onClick={this.handleFunny}>{`Funny ${numFunny}`}</button>
-          <button onClick={this.handleCool}>{`Cool ${numCool}`}</button>
+          <button onClick={this.handleUseful}>{`Useful ${usefulSum}`}</button>
+          <button onClick={this.handleFunny}>{`Funny ${funnySum}`}</button>
+          <button onClick={this.handleCool}>{`Cool ${coolSum}`}</button>
         </form>
       </div>
     )
