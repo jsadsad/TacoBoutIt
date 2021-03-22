@@ -23,9 +23,9 @@ const NavBar = ({ currentUser, logout }) => {
   )
   return (
     <header className="nav-bar">
-      <a className="logo" href="/">
-        <img src={window.logoUrl} />
-      </a>
+      <Link to="/businesses">Github</Link>
+      <Link to="/businesses">LinkedIn</Link>
+      <Link to="/businesses">Businesses</Link>
       <div>{display}</div>
     </header>
   )
