@@ -1,7 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar, faTrash } from '@fortawesome/free-solid-svg-icons'
+import {
+  faStar,
+  faTrash,
+  faLightbulb,
+  faSmileBeam,
+  faCookie,
+} from '@fortawesome/free-solid-svg-icons'
+import { ReactionCreateContainer } from '../../tags/tag_create_container'
 
 class ReviewItem extends React.Component {
   constructor(props) {
@@ -67,11 +74,23 @@ class ReviewItem extends React.Component {
   }
 
   render() {
-    const { review, author } = this.props
+    const { review, author, currentUser } = this.props
     if (!review) return null
     if (!author) return null
-    const starRating = (n) => {
-      switch (n) {
+    let reviewNumUseful
+    let reviewNumFunny
+    let reviewNumCool
+    if (review.tag) {
+      reviewNumUseful = review.tag.filter(
+        (reaction) => reaction.useful === true
+      ).length
+      reviewNumFunny = review.tag.filter((reaction) => reaction.funny === true)
+        .length
+      reviewNumCool = review.tag.filter((reaction) => reaction.cool === true)
+        .length
+    }
+    const starRating = (num) => {
+      switch (num) {
         case 1:
           return (
             <div>
@@ -211,6 +230,43 @@ class ReviewItem extends React.Component {
           </div>
         </div>
         <div className="review-content">{review.content}</div>
+        <div className="review-tags-container">
+          {/* {currentUser === undefined ||
+              currentUser.id === review.authorId ? ( */}
+          <h6>
+            <FontAwesomeIcon
+              className="fa-light-bulb"
+              icon={faLightbulb}
+              color="black"
+              size="sm"
+              fixedWidth
+            />
+            {`Useful 1`}
+          </h6>
+          <h6>
+            <FontAwesomeIcon
+              className="fa-light-bulb"
+              icon={faSmileBeam}
+              color="black"
+              size="sm"
+              fixedWidth
+            />
+            {`Funny 2`}
+          </h6>
+          <h6>
+            <FontAwesomeIcon
+              className="fa-light-bulb"
+              icon={faCookie}
+              color="black"
+              size="sm"
+              fixedWidth
+            />
+            {`Cool 3`}
+          </h6>
+          {/* ) : (
+                ''
+              )} */}
+        </div>
       </div>
     )
   }
