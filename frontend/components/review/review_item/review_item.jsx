@@ -10,17 +10,20 @@ class ReviewItem extends React.Component {
     this.reviewDelete = this.reviewDelete.bind(this)
   }
 
-  // currentUserLoggedIn() {
-  //   if (this.props.currentUser.id === this.props.review.authorId) return true
-  //   return false
-  // }
+  userLoggedIn() {
+    if (this.props.currentUser !== null && this.props.currentUser !== undefined)
+      return true
+    return false
+  }
+
+  currentUserLoggedIn() {
+    if (this.props.currentUser.id === this.props.review.authorId) return true
+    return false
+  }
 
   reviewEdit() {
-    if (
-      this.props.currentUser !== null &&
-      this.props.currentUser !== undefined
-    ) {
-      if (this.props.currentUser.id === this.props.review.authorId) {
+    if (this.userLoggedIn()) {
+      if (this.currentUserLoggedIn()) {
         return (
           <div className="review-edit">
             <Link
@@ -36,11 +39,8 @@ class ReviewItem extends React.Component {
   }
 
   reviewDelete() {
-    if (
-      this.props.currentUser !== null &&
-      this.props.currentUser !== undefined
-    ) {
-      if (this.props.currentUser.id === this.props.review.authorId) {
+    if (this.userLoggedIn()) {
+      if (this.currentUserLoggedIn()) {
         return (
           <div
             className="review-delete-can"
