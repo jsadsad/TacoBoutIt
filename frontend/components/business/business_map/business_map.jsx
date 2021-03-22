@@ -6,12 +6,20 @@ class BusinessMap extends React.Component {
     super(props)
   }
 
+  componentDidMount() {
+    let mapLoc = this.mapOptions()
+    this.map = new google.maps.Map(this.mapNode, mapLoc)
+  }
+
   mapOptions() {
+    const { business } = this.props
+
+    if (!business) return null
     if (this.props.business) {
       return {
         center: {
-          lat: this.props.business.lat,
-          lng: this.props.business.lng,
+          lat: parseFloat(business.lat),
+          lng: parseFloat(business.lng),
         },
         zoom: 15,
         fullScreen: false,
@@ -29,11 +37,6 @@ class BusinessMap extends React.Component {
         zoom: 13,
       }
     }
-  }
-
-  componentDidMount() {
-    let mapLoc = this.mapOptions()
-    this.map = new google.maps.Map(this.mapNode, mapLoc)
   }
 
   render() {
