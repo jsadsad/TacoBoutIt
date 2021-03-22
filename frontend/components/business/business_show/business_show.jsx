@@ -8,7 +8,6 @@ import {
   faCheckCircle,
   faDollarSign,
   faStar,
-  faCamera,
   faCheck,
   faDirections,
   faPhoneAlt,
@@ -71,10 +70,6 @@ class BusinessShow extends React.Component {
                     <FontAwesomeIcon icon={faStar} size="1x" fixedWidth />
                     Write a Review
                   </Link>
-                </div>
-                <div className="biz-show-container-add-photo">
-                  <FontAwesomeIcon icon={faCamera} size="1x" fixedWidth />
-                  Add Photo
                 </div>
               </div>
               <div className="biz-show-container-covid">
