@@ -209,6 +209,7 @@ class ReviewItem extends React.Component {
 
   render() {
     const { review, author, currentUser } = this.props
+    const createdAt = new Date(review.createdAt).toLocaleDateString()
     if (!review || !author) return null
     let reviewNumUseful
     let reviewNumFunny
@@ -232,6 +233,7 @@ class ReviewItem extends React.Component {
           <div className="review-author">
             {author.firstName} {author.lastName}
             <div className="review-author-location">{author.location}</div>
+            <div className="review-createdAt">{createdAt}</div>
           </div>
           <div className="review-rating">
             {this.starRating(review.rating)}
