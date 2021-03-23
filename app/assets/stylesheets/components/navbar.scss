@@ -90,7 +90,7 @@ $color-accent: #fff;
   display: flex;
   margin: 0 auto;
   width: 55rem;
-  box-shadow: 2px 2px 5px 0px #353535;
+  box-shadow: 8px 3px 12px 2px #353535;
   height: 3rem;
 }
 
@@ -128,4 +128,11 @@ $color-accent: #fff;
   margin-right: 1rem;
   max-width: 100%;
   height: auto;
+}
+
+.navbar-FA {
+  padding: 3px;
+  &:hover {
+    color: green;
+  }
 }

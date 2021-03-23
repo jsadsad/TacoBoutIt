@@ -32,36 +32,32 @@ const NavBar = ({ currentUser, logout }) => {
     <div className="nav-bar">
       <div className="nav-bar-left">
         <a href="" target="_blank">
-          {' '}
           <FontAwesomeIcon
-            className="navbar-GH"
+            className="navbar-FA"
             icon={faGithub}
             transform="left-4"
             color="white"
           />
         </a>
         <a href="" target="_blank">
-          {' '}
           <FontAwesomeIcon
-            className="navbar-LN"
+            className="navbar-FA"
             icon={faLinkedin}
             transform="left-4"
             color="white"
           />
         </a>
         <a href="" target="_blank">
-          {' '}
           <FontAwesomeIcon
-            className="navbar-LN"
+            className="navbar-FA"
             icon={faAngellist}
             transform="left-4"
             color="white"
           />
         </a>
-        <Link to="/">
+        {/* <Link to="/">
           <img className="navbar-logo" src={window.tbiLogo} />
-        </Link>
-
+        </Link> */}
         <Link className="navbar-all-businesses" to="/businesses">
           All Businesses
         </Link>
