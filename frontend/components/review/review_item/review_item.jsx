@@ -268,39 +268,36 @@ class ReviewItem extends React.Component {
               coolSum={reviewNumCool}
             />
           ) : (
-            ''
+            <div></div>
           )}
           {currentUser === undefined || currentUser.id === review.authorId ? (
             <div className="cur-amounts">
               <div>
                 <FontAwesomeIcon
-                  className="fa-light-bulb"
                   icon={faLightbulb}
-                  color="black"
+                  color="salmon"
                   size="sm"
                   fixedWidth
                 />
-                <span>{`Useful ${reviewNumUseful}`}</span>
+                <span className="cur-amounts-text">{`Useful ${reviewNumUseful}`}</span>
               </div>
               <div>
                 <FontAwesomeIcon
-                  className="fa-light-bulb"
                   icon={faSmileBeam}
-                  color="black"
+                  color="lime"
                   size="sm"
                   fixedWidth
                 />
-                <span>{`Funny ${reviewNumFunny}`}</span>
+                <span className="cur-amounts-text">{`Funny ${reviewNumFunny}`}</span>
               </div>
               <div>
                 <FontAwesomeIcon
-                  className="fa-light-bulb"
                   icon={faCookie}
-                  color="black"
+                  color="chocolate"
                   size="sm"
                   fixedWidth
                 />
-                <span>{`Cool ${reviewNumCool}`}</span>
+                <span className="cur-amounts-text">{`Cool ${reviewNumCool}`}</span>
               </div>
             </div>
           ) : (

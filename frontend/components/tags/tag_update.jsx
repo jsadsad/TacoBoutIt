@@ -1,4 +1,10 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faLightbulb,
+  faSmileBeam,
+  faCookie,
+} from '@fortawesome/free-solid-svg-icons'
 
 class UpdateTag extends React.Component {
   constructor(props) {
@@ -16,13 +22,13 @@ class UpdateTag extends React.Component {
   }
 
   componentDidMount() {
-    let usefulState = this.props.tag.useful
-    let funnyState = this.props.tag.funny
-    let coolState = this.props.tag.cool
-
     let useful = document.getElementById(`useful${this.props.tag.id}`)
     let funny = document.getElementById(`funny${this.props.tag.id}`)
     let cool = document.getElementById(`cool${this.props.tag.id}`)
+
+    let usefulState = this.props.tag.useful
+    let funnyState = this.props.tag.funny
+    let coolState = this.props.tag.cool
 
     if (usefulState) useful.classList.add('tag-toggle')
     if (funnyState) funny.classList.add('tag-toggle')
@@ -118,6 +124,13 @@ class UpdateTag extends React.Component {
             className="tag-buttons"
             id={`useful${this.props.tag.id}`}
           >
+            <FontAwesomeIcon
+              className="button-fa"
+              icon={faLightbulb}
+              color="black"
+              size="sm"
+              fixedWidth
+            />
             {`Useful ${usefulSum}`}
           </button>
           <button
@@ -125,6 +138,13 @@ class UpdateTag extends React.Component {
             className="tag-buttons"
             id={`funny${this.props.tag.id}`}
           >
+            <FontAwesomeIcon
+              className="button-fa"
+              icon={faSmileBeam}
+              color="black"
+              size="sm"
+              fixedWidth
+            />
             {`Funny ${funnySum}`}
           </button>
           <button
@@ -132,6 +152,13 @@ class UpdateTag extends React.Component {
             className="tag-buttons"
             id={`cool${this.props.tag.id}`}
           >
+            <FontAwesomeIcon
+              className="button-fa"
+              icon={faCookie}
+              color="black"
+              size="sm"
+              fixedWidth
+            />
             {`Cool ${coolSum}`}
           </button>
         </form>

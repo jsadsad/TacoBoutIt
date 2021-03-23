@@ -1,4 +1,10 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faLightbulb,
+  faSmileBeam,
+  faCookie,
+} from '@fortawesome/free-solid-svg-icons'
 
 class ReviewTag extends React.Component {
   constructor(props) {
@@ -40,9 +46,39 @@ class ReviewTag extends React.Component {
     return (
       <div>
         <form>
-          <button onClick={this.handleUseful}>{`Useful ${usefulSum}`}</button>
-          <button onClick={this.handleFunny}>{`Funny ${funnySum}`}</button>
-          <button onClick={this.handleCool}>{`Cool ${coolSum}`}</button>
+          <button onClick={this.handleUseful}>
+            {' '}
+            <FontAwesomeIcon
+              className="button-fa"
+              icon={faLightbulb}
+              color="black"
+              size="sm"
+              fixedWidth
+            />
+            {`Useful ${usefulSum}`}
+          </button>
+          <button onClick={this.handleFunny}>
+            {' '}
+            <FontAwesomeIcon
+              className="button-fa"
+              icon={faSmileBeam}
+              color="black"
+              size="sm"
+              fixedWidth
+            />
+            {`Funny ${funnySum}`}
+          </button>
+          <button onClick={this.handleCool}>
+            {' '}
+            <FontAwesomeIcon
+              className="button-fa"
+              icon={faCookie}
+              color="black"
+              size="sm"
+              fixedWidth
+            />
+            {`Cool ${coolSum}`}
+          </button>
         </form>
       </div>
     )
