@@ -20,8 +20,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 75%;
-  height: 25px;
+  width: 85%;
+  height: 28px;
 }
 
 .tag-toggle {
@@ -39,10 +39,26 @@
   font-size: 1rem;
 }
 
+.fa-div {
+  width: 8rem;
+  margin-right: 0rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-style: italic;
+  border-radius: 1rem;
+  border: groove #000000;
+  background-color: #848484;
+  border-radius: 1rem;
+}
+
 .cur-amounts-text {
-  font-size: 1.2rem;
-  color: #ef0202;
-  margin: 7px;
-  font-style: oblique;
+  font-size: 1rem;
+  color: #000000;
+  margin-left: 16px;
+  padding-top: -1px;
   font-weight: 300;
+}
+
+.cur-fa-icon {
+  margin: 2px 0px 0px 10px;
 }

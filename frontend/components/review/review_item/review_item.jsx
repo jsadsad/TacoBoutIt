@@ -274,8 +274,9 @@ class ReviewItem extends React.Component {
           )}
           {currentUser === undefined || currentUser.id === review.authorId ? (
             <div className="cur-amounts">
-              <div>
+              <div className="fa-div">
                 <FontAwesomeIcon
+                  className="cur-fa-icon"
                   icon={faLightbulb}
                   color="salmon"
                   size="sm"
@@ -283,8 +284,9 @@ class ReviewItem extends React.Component {
                 />
                 <span className="cur-amounts-text">{`Useful ${reviewNumUseful}`}</span>
               </div>
-              <div>
+              <div className="fa-div">
                 <FontAwesomeIcon
+                  className="cur-fa-icon"
                   icon={faSmileBeam}
                   color="lime"
                   size="sm"
@@ -292,8 +294,9 @@ class ReviewItem extends React.Component {
                 />
                 <span className="cur-amounts-text">{`Funny ${reviewNumFunny}`}</span>
               </div>
-              <div>
+              <div className="fa-div">
                 <FontAwesomeIcon
+                  className="cur-fa-icon"
                   icon={faCookie}
                   color="chocolate"
                   size="sm"
