@@ -20,6 +20,10 @@ main {
   color: #444;
 }
 
+*:focus {
+  outline: none;
+}
+
 .tbi-container {
   position: relative;
 }

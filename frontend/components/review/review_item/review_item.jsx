@@ -14,8 +14,19 @@ import {
 class ReviewItem extends React.Component {
   constructor(props) {
     super(props)
-
     this.reviewDelete = this.reviewDelete.bind(this)
+  }
+
+  componentDidUpdate(prevProps) {
+    const { fetchReviews, business, review } = this.props
+    let didUpdate =
+      this.props.coolSum !== prevProps.coolSum ||
+      this.props.usefulSum !== prevProps.usefulSum ||
+      this.props.funnySum !== prevProps.funnySum
+
+    if (review.tagCount && prevProps.review.tagCount && didUpdate) {
+      fetchReviews(business.id)
+    }
   }
 
   userLoggedIn() {
@@ -260,7 +271,7 @@ class ReviewItem extends React.Component {
             ''
           )}
           {currentUser === undefined || currentUser.id === review.authorId ? (
-            <div>
+            <div className="cur-amounts">
               <div>
                 <FontAwesomeIcon
                   className="fa-light-bulb"
@@ -269,7 +280,7 @@ class ReviewItem extends React.Component {
                   size="sm"
                   fixedWidth
                 />
-                {`Useful ${reviewNumUseful}`}
+                <span>{`Useful ${reviewNumUseful}`}</span>
               </div>
               <div>
                 <FontAwesomeIcon
@@ -279,7 +290,7 @@ class ReviewItem extends React.Component {
                   size="sm"
                   fixedWidth
                 />
-                {`Funny ${reviewNumFunny}`}
+                <span>{`Funny ${reviewNumFunny}`}</span>
               </div>
               <div>
                 <FontAwesomeIcon
@@ -289,11 +300,11 @@ class ReviewItem extends React.Component {
                   size="sm"
                   fixedWidth
                 />
-                {`Cool ${reviewNumCool}`}
+                <span>{`Cool ${reviewNumCool}`}</span>
               </div>
             </div>
           ) : (
-            ''
+            <div></div>
           )}
         </div>
       </div>

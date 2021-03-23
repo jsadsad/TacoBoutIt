@@ -165,6 +165,7 @@ class BusinessShow extends React.Component {
                   return (
                     <ReviewItemContainer
                       key={idx}
+                      business={business}
                       review={review}
                       author={users[review.authorId]}
                       deleteReview={deleteReview}

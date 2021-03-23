@@ -19,19 +19,20 @@ class UpdateTag extends React.Component {
     let usefulState = this.props.tag.useful
     let funnyState = this.props.tag.funny
     let coolState = this.props.tag.cool
+
     let useful = document.getElementById(`useful${this.props.tag.id}`)
     let funny = document.getElementById(`funny${this.props.tag.id}`)
     let cool = document.getElementById(`cool${this.props.tag.id}`)
 
-    if (usefulState) useful.classList.add('reacted')
-    if (funnyState) funny.classList.add('reacted')
-    if (coolState) cool.classList.add('reacted')
+    if (usefulState) useful.classList.add('tag-toggle')
+    if (funnyState) funny.classList.add('tag-toggle')
+    if (coolState) cool.classList.add('tag-toggle')
   }
 
   handleUseful(e) {
     e.preventDefault()
     let useful = document.getElementById(`useful${this.props.tag.id}`)
-    if (useful) useful.classList.toggle('reacted')
+    if (useful) useful.classList.toggle('tag-toggle')
     if (this.state.useful) {
       this.setState(
         {
@@ -57,7 +58,7 @@ class UpdateTag extends React.Component {
   handleFunny(e) {
     e.preventDefault()
     let funny = document.getElementById(`funny${this.props.tag.id}`)
-    if (funny) funny.classList.toggle('reacted')
+    if (funny) funny.classList.toggle('tag-toggle')
 
     if (this.state.funny) {
       this.setState(
@@ -83,8 +84,7 @@ class UpdateTag extends React.Component {
   handleCool(e) {
     e.preventDefault()
     let cool = document.getElementById(`cool${this.props.tag.id}`)
-
-    if (cool) cool.classList.toggle('reacted')
+    if (cool) cool.classList.toggle('tag-toggle')
 
     if (this.state.cool) {
       this.setState(
@@ -109,27 +109,28 @@ class UpdateTag extends React.Component {
 
   render() {
     let { usefulSum, funnySum, coolSum } = this.props
+
     return (
       <div>
-        <form className="reaction-form">
+        <form>
           <button
-            className="reaction-buttons"
-            id={`useful${this.props.tag.id}`}
             onClick={this.handleUseful}
+            className="tag-buttons"
+            id={`useful${this.props.tag.id}`}
           >
             {`Useful ${usefulSum}`}
           </button>
           <button
-            className="reaction-buttons"
-            id={`funny${this.props.tag.id}`}
             onClick={this.handleFunny}
+            className="tag-buttons"
+            id={`funny${this.props.tag.id}`}
           >
             {`Funny ${funnySum}`}
           </button>
           <button
-            className="reaction-buttons"
-            id={`cool${this.props.tag.id}`}
             onClick={this.handleCool}
+            className="tag-buttons"
+            id={`cool${this.props.tag.id}`}
           >
             {`Cool ${coolSum}`}
           </button>

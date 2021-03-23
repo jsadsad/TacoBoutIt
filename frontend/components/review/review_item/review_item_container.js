@@ -4,9 +4,18 @@ import { fetchTag, fetchTags } from '../../../actions/tag_actions'
 import ReviewItem from './review_item'
 
 const mapStateToProps = (state) => {
+  let currentUser = state.entities.users[state.session.id]
+  let tags = Object.values(state.entities.tags)
+  let usefulSum = tags.filter((tag) => tag.useful === true).length
+  let funnySum = tags.filter((tag) => tag.funny === true).length
+  let coolSum = tags.filter((tag) => tag.cool === true).length
+
   return {
-    reviewers: state.entities.businesses,
-    currentUser: state.entities.users[state.session.id],
+    currentUser,
+    usefulSum,
+    funnySum,
+    coolSum,
+    tags,
   }
 }
 

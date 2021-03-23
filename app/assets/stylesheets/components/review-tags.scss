@@ -2,3 +2,35 @@
   display: flex;
   color: #000;
 }
+
+.review-tags-container div form button {
+  width: 10rem;
+  margin-right: 2rem;
+  font-size: 15px;
+  font-style: italic;
+  border-radius: 1rem;
+}
+
+.review-tags-container div form button span {
+  padding-right: 5px;
+}
+
+.tag-buttons {
+  font-size: 10px;
+}
+
+.cur-amounts {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  height: 30px;
+}
+
+.tag-toggle {
+  color: #00838f !important;
+  background: rgba(10, 179, 201, 0.1) !important;
+  font-weight: 700 !important;
+  border-color: #00838f !important;
+  transition: 0.6s linear;
+  box-shadow: -2px 0px 7px 0px #ffffff, 0em 0em 0.4em #ab2626;
+}
