@@ -1,5 +1,12 @@
 import React from 'react'
+import SearchBar from '../search_bar/search_bar'
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faGithub,
+  faLinkedin,
+  faAngellist,
+} from '@fortawesome/free-brands-svg-icons'
 
 const NavBar = ({ currentUser, logout }) => {
   const display = currentUser ? (
@@ -23,9 +30,38 @@ const NavBar = ({ currentUser, logout }) => {
   )
   return (
     <header className="nav-bar">
-      <Link to="/businesses">Github</Link>
-      <Link to="/businesses">LinkedIn</Link>
-      <Link to="/businesses">Businesses</Link>
+      <div className="nav-bar-left">
+        <a href="" target="_blank">
+          {' '}
+          <FontAwesomeIcon
+            className="navbar-GH"
+            icon={faGithub}
+            transform="left-4"
+          />
+        </a>
+        <a href="" target="_blank">
+          {' '}
+          <FontAwesomeIcon
+            className="navbar-LN"
+            icon={faLinkedin}
+            transform="left-4"
+          />
+        </a>
+        <a href="" target="_blank">
+          {' '}
+          <FontAwesomeIcon
+            className="navbar-LN"
+            icon={faAngellist}
+            transform="left-4"
+          />
+        </a>
+        <Link to="/businesses">All Businesses</Link>
+      </div>
+
+      <div className="search-bar-nav">
+        <SearchBar />
+      </div>
+
       <div>{display}</div>
     </header>
   )

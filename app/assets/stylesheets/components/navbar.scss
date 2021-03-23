@@ -13,8 +13,9 @@ $color-accent: #fff;
 
 .nav-bar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 7px;
+  padding: 1rem 10rem;
   background: #c60e1b;
 }
 
@@ -85,4 +86,9 @@ $color-accent: #fff;
   &:hover {
     background-color: rgb(155, 152, 152);
   }
+}
+
+.search-bar-nav {
+  height: 3rem;
+  width: 60%;
 }
