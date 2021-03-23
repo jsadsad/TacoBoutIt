@@ -210,7 +210,7 @@ class BusinessShow extends React.Component {
                 </ul>
               </div>
               <div className="google-maps">
-                <BusinessMap business={business} type="show" zoom="false" />
+                <BusinessMap businesses={business} type="show" zoom="false" />
               </div>
             </div>
           </div>
