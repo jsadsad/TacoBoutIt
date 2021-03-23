@@ -13,22 +13,20 @@ $color-accent: #fff;
 
 .nav-bar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 1rem 10rem;
+  height: 75px;
+  align-items: center;
+  margin: 0 auto;
+  min-width: 530px;
   background: #c60e1b;
 }
 
-.logo {
-  width: 100%;
-  margin-left: 200px;
-}
-
 .navbar-items {
-  position: relative;
-  width: 600px;
+  position: initial;
+  width: 1;
   padding: 8px;
-  margin: 2px;
+  margin: 8rem;
+  display: inline;
 }
 
 .user-icon {
@@ -74,10 +72,10 @@ $color-accent: #fff;
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #fff;
+  background-color: red;
   min-width: 81px;
-  margin: 5px;
-  padding: 7px 39px;
+  margin: 2px;
+  padding: 10px 20px;
   cursor: pointer;
 }
 
@@ -89,6 +87,27 @@ $color-accent: #fff;
 }
 
 .search-bar-nav {
+  display: flex;
+  margin: 0 auto;
+  width: 700px;
+  box-shadow: 2px 2px 5px 0px #353535;
   height: 3rem;
-  width: 60%;
+}
+
+.nav-bar-left {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 5px 0 5px;
+}
+
+.nav-bar-right {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 5px 0 5px;
 }

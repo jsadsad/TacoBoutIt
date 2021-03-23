@@ -29,7 +29,7 @@ const NavBar = ({ currentUser, logout }) => {
     </div>
   )
   return (
-    <header className="nav-bar">
+    <div className="nav-bar">
       <div className="nav-bar-left">
         <a href="" target="_blank">
           {' '}
@@ -62,8 +62,8 @@ const NavBar = ({ currentUser, logout }) => {
         <SearchBar />
       </div>
 
-      <div>{display}</div>
-    </header>
+      <div className="nav-bar-right">{display}</div>
+    </div>
   )
 }
 
