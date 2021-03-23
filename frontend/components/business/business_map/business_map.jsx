@@ -1,4 +1,3 @@
-import { faLeaf } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
 
 class BusinessMap extends React.Component {
