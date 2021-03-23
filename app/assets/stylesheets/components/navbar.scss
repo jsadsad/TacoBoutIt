@@ -95,8 +95,7 @@ $color-accent: #fff;
 }
 
 .nav-bar-left {
-  display: inline;
-  text-align: flex-end;
+  display: flex;
   width: 15%;
   padding: 15px;
   text-decoration: none;
@@ -118,6 +117,7 @@ $color-accent: #fff;
   text-decoration: none;
   color: white;
   padding-left: 2rem;
+  padding-top: 5px;
   &:hover {
     text-decoration: underline;
   }
@@ -126,7 +126,6 @@ $color-accent: #fff;
 .navbar-logo {
   width: 75px;
   margin-right: 1rem;
-  max-width: 100%;
   height: auto;
 }
 
@@ -136,3 +135,7 @@ $color-accent: #fff;
     color: green;
   }
 }
+
+// .tbi-navbar-logo {
+//   background-image: url('https://tbi-seeds.s3-us-west-1.amazonaws.com/TacoBoutIt+rev-02.png');
+// }

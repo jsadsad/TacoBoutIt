@@ -30,34 +30,38 @@ const NavBar = ({ currentUser, logout }) => {
   )
   return (
     <div className="nav-bar">
-      <div className="nav-bar-left">
-        <a href="" target="_blank">
-          <FontAwesomeIcon
-            className="navbar-FA"
-            icon={faGithub}
-            transform="left-4"
-            color="white"
-          />
-        </a>
-        <a href="" target="_blank">
-          <FontAwesomeIcon
-            className="navbar-FA"
-            icon={faLinkedin}
-            transform="left-4"
-            color="white"
-          />
-        </a>
-        <a href="" target="_blank">
-          <FontAwesomeIcon
-            className="navbar-FA"
-            icon={faAngellist}
-            transform="left-4"
-            color="white"
-          />
-        </a>
-        {/* <Link to="/">
-          <img className="navbar-logo" src={window.tbiLogo} />
-        </Link> */}
+      <div className="nav-bar-left justify-content-between">
+        <div className="d-flex">
+          <a href="" target="_blank">
+            <FontAwesomeIcon
+              className="navbar-FA"
+              icon={faGithub}
+              transform="left-4"
+              color="white"
+            />
+          </a>
+          <a href="" target="_blank">
+            <FontAwesomeIcon
+              className="navbar-FA"
+              icon={faLinkedin}
+              transform="left-4"
+              color="white"
+            />
+          </a>
+          <a href="" target="_blank">
+            <FontAwesomeIcon
+              className="navbar-FA"
+              icon={faAngellist}
+              transform="left-4"
+              color="white"
+            />
+          </a>
+          {/* <Link to="/">
+            <div className="tbi-navbar-logo">
+              <img className="navbar-logo" src={window.tbiLogo} />
+            </div>
+          </Link> */}
+        </div>
         <Link className="navbar-all-businesses" to="/businesses">
           All Businesses
         </Link>
