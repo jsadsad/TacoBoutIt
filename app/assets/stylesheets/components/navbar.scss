@@ -89,18 +89,20 @@ $color-accent: #fff;
 .search-bar-nav {
   display: flex;
   margin: 0 auto;
-  width: 700px;
+  width: 55rem;
   box-shadow: 2px 2px 5px 0px #353535;
   height: 3rem;
 }
 
 .nav-bar-left {
-  padding: 10px;
+  display: inline;
+  text-align: flex-end;
+  width: 15%;
+  padding: 15px;
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 1.3rem;
   font-weight: 700;
-  margin: 0 5px 0 5px;
 }
 
 .nav-bar-right {
@@ -110,4 +112,20 @@ $color-accent: #fff;
   font-size: 16px;
   font-weight: 700;
   margin: 0 5px 0 5px;
+}
+
+.navbar-all-businesses {
+  text-decoration: none;
+  color: white;
+  padding-left: 2rem;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.navbar-logo {
+  width: 75px;
+  margin-right: 1rem;
+  max-width: 100%;
+  height: auto;
 }

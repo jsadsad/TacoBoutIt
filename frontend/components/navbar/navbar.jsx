@@ -37,6 +37,7 @@ const NavBar = ({ currentUser, logout }) => {
             className="navbar-GH"
             icon={faGithub}
             transform="left-4"
+            color="white"
           />
         </a>
         <a href="" target="_blank">
@@ -45,6 +46,7 @@ const NavBar = ({ currentUser, logout }) => {
             className="navbar-LN"
             icon={faLinkedin}
             transform="left-4"
+            color="white"
           />
         </a>
         <a href="" target="_blank">
@@ -53,9 +55,16 @@ const NavBar = ({ currentUser, logout }) => {
             className="navbar-LN"
             icon={faAngellist}
             transform="left-4"
+            color="white"
           />
         </a>
-        <Link to="/businesses">All Businesses</Link>
+        <Link to="/">
+          <img className="navbar-logo" src={window.tbiLogo} />
+        </Link>
+
+        <Link className="navbar-all-businesses" to="/businesses">
+          All Businesses
+        </Link>
       </div>
 
       <div className="search-bar-nav">
