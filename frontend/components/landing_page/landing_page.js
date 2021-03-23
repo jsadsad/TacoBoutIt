@@ -11,9 +11,7 @@ const LandingPage = () => (
     <div className="landing-container">
       <div className="landing-search-area">
         <LandingNav />
-        <Link to="/">
-          <img className="taco-logo" src={window.tbiLogo} />
-        </Link>
+        <img className="taco-logo" src={window.tbiLogo} />
         <SearchBar />
         <SearchSuggestions />
       </div>
