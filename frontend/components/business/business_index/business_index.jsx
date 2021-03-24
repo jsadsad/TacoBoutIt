@@ -1,7 +1,7 @@
 import React from 'react'
 import NavbarContainer from '../../navbar/navbar_container'
 import BusinessIndexItem from '../business_index_item/business_index_item'
-// import BusinessMap from '../../business/business_map'
+import BusinessMap from '../../business/business_map/business_map'
 
 class BusinessIndex extends React.Component {
   constructor(props) {
@@ -14,7 +14,7 @@ class BusinessIndex extends React.Component {
 
   render() {
     const { businesses } = this.props
-    if (!businesses) return <h1>Loading...</h1>
+    if (businesses === undefined || businesses.length === 0) return null
     return (
       <div>
         <NavbarContainer />
@@ -29,7 +29,9 @@ class BusinessIndex extends React.Component {
             )
           })}
         </div>
-        {/* <BusinessMap businesses={businesses} /> */}
+        <div className="index-map-container">
+          <BusinessMap businesses={Object.values(this.props.businesses)} />
+        </div>
       </div>
     )
   }

@@ -56,11 +56,9 @@ const NavBar = ({ currentUser, logout }) => {
               color="white"
             />
           </a>
-          {/* <Link to="/">
-            <div className="tbi-navbar-logo">
-              <img className="navbar-logo" src={window.tbiLogo} />
-            </div>
-          </Link> */}
+          <Link to="/" className="tbi-logo-container">
+            <div className="tbi-navbar-logo"></div>
+          </Link>
         </div>
         <Link className="navbar-all-businesses" to="/businesses">
           All Businesses

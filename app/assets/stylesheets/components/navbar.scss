@@ -136,6 +136,14 @@ $color-accent: #fff;
   }
 }
 
-// .tbi-navbar-logo {
-//   background-image: url('https://tbi-seeds.s3-us-west-1.amazonaws.com/TacoBoutIt+rev-02.png');
-// }
+.tbi-logo-container {
+  width: 25px;
+}
+
+.tbi-navbar-logo {
+  background-image: url('https://tbi-seeds.s3-us-west-1.amazonaws.com/TacoBoutIt+rev-02.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}

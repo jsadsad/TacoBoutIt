@@ -11,11 +11,15 @@ const BusinessIndexItem = ({ business, index }) => (
   <div className="biz-search-container">
     <Link to={`/businesses/${business.id}`}>
       <div className="biz-index-search-result">
-        <img
+        <div
+          className="biz-image"
+          style={{ backgroundImage: `url(${business.indexPicture})` }}
+        />
+        {/* <img
           src={business.indexPicture}
           className="biz-image"
           alt="business_image"
-        />
+        /> */}
 
         <div className="biz-info">
           <h2>
@@ -28,23 +32,34 @@ const BusinessIndexItem = ({ business, index }) => (
             <FontAwesomeIcon icon={faDollarSign} size="xs" color="grey" />
             <span className="biz-category-tag">{business.category}</span>
           </p>
-          <div className="biz-outdoor-takeout">
-            <FontAwesomeIcon
-              icon={faCheck}
-              size="lg"
-              color="green"
-              fixedWidth
-            />
-            Delivery
-            <FontAwesomeIcon
-              icon={faCheck}
-              size="lg"
-              color="green"
-              fixedWidth
-            />
-            Takeout
-            <FontAwesomeIcon icon={faTimes} size="lg" color="red" fixedWidth />
-            Outdoor Seating
+          <div className="biz-outdoor-takeout d-flex">
+            <div>
+              <FontAwesomeIcon
+                icon={faCheck}
+                size="lg"
+                color="green"
+                fixedWidth
+              />
+              <span>Delivery</span>
+            </div>
+            <div>
+              <FontAwesomeIcon
+                icon={faCheck}
+                size="lg"
+                color="green"
+                fixedWidth
+              />
+              <span>Takeout</span>
+            </div>
+            <div>
+              <FontAwesomeIcon
+                icon={faTimes}
+                size="lg"
+                color="red"
+                fixedWidth
+              />
+              <span>Outdoor Seating</span>
+            </div>
           </div>
         </div>
         <div className="biz-index-contact-info">

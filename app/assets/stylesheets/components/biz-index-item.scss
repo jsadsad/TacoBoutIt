@@ -15,6 +15,8 @@
 }
 
 .biz-image {
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 200px;
   height: 200px;
   border-radius: 5px;
@@ -29,9 +31,18 @@
 
 .biz-outdoor-takeout {
   min-width: 400px;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 700;
   padding-top: 4rem;
-  color: #757280;
+  color: #2b273c;
+  div {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+  }
+  p {
+    margin-left: 8px;
+  }
 }
 
 .biz-index-subtitle {
