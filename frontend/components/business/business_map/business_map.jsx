@@ -10,20 +10,28 @@ class BusinessMap extends React.Component {
     if (Array.isArray(this.props.businesses)) {
       mapLoc = {
         center: {
-          lat: this.props.businesses[0].lat,
-          lng: this.props.businesses[0].lng,
+          lat: +this.props.businesses[0].lat,
+          lng: +this.props.businesses[0].lng,
         },
         zoom: 10,
-        fullScreen: false,
+        mapTypeControl: false,
+        scaleControl: false,
+        streetViewControl: false,
+        rotateControl: false,
+        fullscreenControl: true,
       }
     } else {
       mapLoc = {
         center: {
-          lat: this.props.businesses.lat,
-          lng: this.props.businesses.lng,
+          lat: +this.props.businesses.lat,
+          lng: +this.props.businesses.lng,
         },
         zoom: 10,
-        fullScreen: false,
+        mapTypeControl: false,
+        scaleControl: false,
+        streetViewControl: false,
+        rotateControl: false,
+        fullscreenControl: true,
       }
     }
 
@@ -38,18 +46,28 @@ class BusinessMap extends React.Component {
     if (Array.isArray(this.props.businesses)) {
       mapLoc = {
         center: {
-          lat: this.props.businesses[0].lat,
-          lng: this.props.businesses[0].lng,
+          lat: +this.props.businesses[0].lat,
+          lng: +this.props.businesses[0].lng,
         },
-        zoom: 12,
+        zoom: 10,
+        mapTypeControl: false,
+        scaleControl: false,
+        streetViewControl: false,
+        rotateControl: false,
+        fullscreenControl: true,
       }
     } else {
       mapLoc = {
         center: {
-          lat: this.props.businesses.lat,
-          lng: this.props.businesses.lng,
+          lat: +this.props.businesses.lat,
+          lng: +this.props.businesses.lng,
         },
-        zoom: 12,
+        zoom: 10,
+        mapTypeControl: false,
+        scaleControl: false,
+        streetViewControl: false,
+        rotateControl: false,
+        fullscreenControl: true,
       }
     }
 
