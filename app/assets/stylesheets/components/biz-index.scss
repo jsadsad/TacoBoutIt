@@ -1,10 +1,27 @@
 .biz-index-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 10px auto;
+  cursor: default;
 }
 
-.index-map-container {
+.biz-index-item {
+  width: 55%;
+  min-width: 500px;
+  padding-left: 2rem;
+  margin: 25px;
+  height: 100%;
+}
+
+.biz-index-right {
+  margin-top: 25px;
+  width: 600px;
+  height: 600px;
+  min-width: 300px;
+  position: sticky;
+  top: 25px;
+}
+
+.biz-map-container {
   width: 100%;
   min-width: 460px;
   height: 100vh;

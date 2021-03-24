@@ -4,10 +4,6 @@ import BusinessIndexItem from '../business_index_item/business_index_item'
 import BusinessMap from '../../business/business_map/business_map'
 
 class BusinessIndex extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   componentDidMount() {
     this.props.fetchBusinesses()
   }
@@ -15,22 +11,23 @@ class BusinessIndex extends React.Component {
   render() {
     const { businesses } = this.props
     if (businesses === undefined || businesses.length === 0) return null
+
+    const allBiz = businesses.map((business, idx) => {
+      return (
+        <BusinessIndexItem key={business.id} business={business} index={idx} />
+      )
+    })
+
     return (
       <div>
         <NavbarContainer />
         <div className="biz-index-container">
-          {businesses.map((business, index) => {
-            return (
-              <BusinessIndexItem
-                business={business}
-                key={index}
-                index={index}
-              />
-            )
-          })}
-        </div>
-        <div className="index-map-container">
-          <BusinessMap businesses={Object.values(this.props.businesses)} />
+          <div className="biz-index-item">{allBiz}</div>
+          <div className="biz-index-right">
+            <div className="biz-map-container">
+              <BusinessMap businesses={this.props.businesses} />
+            </div>
+          </div>
         </div>
       </div>
     )

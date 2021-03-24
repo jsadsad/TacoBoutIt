@@ -15,12 +15,6 @@ const BusinessIndexItem = ({ business, index }) => (
           className="biz-image"
           style={{ backgroundImage: `url(${business.indexPicture})` }}
         />
-        {/* <img
-          src={business.indexPicture}
-          className="biz-image"
-          alt="business_image"
-        /> */}
-
         <div className="biz-info">
           <h2>
             <div className="biz-index-subtitle">

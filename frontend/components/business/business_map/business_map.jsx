@@ -60,7 +60,7 @@ class BusinessMap extends React.Component {
   }
 
   render() {
-    if (!this.props.businesses) return <h1>Loading...</h1>
+    if (!this.props.businesses) return null
     return (
       <div style={{ height: '100%' }} ref={(map) => (this.mapNode = map)}></div>
     )
