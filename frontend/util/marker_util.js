@@ -20,14 +20,15 @@ class MarkerManager {
     if (num === null) {
       const marker = new google.maps.Marker({
         map: map,
-        position: { lat: business.lat, lng: business.lng },
         title: business.name,
+        position: { lat: business.lat, lng: business.lng },
       })
     } else {
       const marker = new google.maps.Marker({
         map: map,
         title: business.name,
         position: { lat: business.lat, lng: business.lng },
+        label: (num + 1).toString(),
       })
     }
   }
