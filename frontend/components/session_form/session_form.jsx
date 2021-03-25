@@ -25,10 +25,6 @@ class SessionForm extends React.Component {
     this.props.clearErrors()
   }
 
-  componentDidMount() {
-    window.scrollTo(0, 0)
-  }
-
   handleField(field) {
     return (e) =>
       this.setState({
