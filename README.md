@@ -110,3 +110,7 @@ class BusinessMap extends React.Component {
 - [ ] Categories for reviews
 - [ ] Profile Page for Users
 - [ ] Review Count
+
+# References
+
+- [Scroll Restoration](https://reactrouter.com/web/guides/scroll-restoration)
