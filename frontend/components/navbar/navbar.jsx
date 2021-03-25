@@ -32,7 +32,7 @@ const NavBar = ({ currentUser, logout }) => {
     <div className="nav-bar">
       <div className="nav-bar-left justify-content-between">
         <div className="d-flex">
-          <a href="" target="_blank">
+          <a href="https://github.com/jsadsad/TacoBoutIt" target="_blank">
             <FontAwesomeIcon
               className="navbar-FA"
               icon={faGithub}
@@ -40,7 +40,7 @@ const NavBar = ({ currentUser, logout }) => {
               color="white"
             />
           </a>
-          <a href="" target="_blank">
+          <a href="https://www.linkedin.com/in/joshsad2/" target="_blank">
             <FontAwesomeIcon
               className="navbar-FA"
               icon={faLinkedin}
@@ -48,7 +48,7 @@ const NavBar = ({ currentUser, logout }) => {
               color="white"
             />
           </a>
-          <a href="" target="_blank">
+          <a href="https://angel.co/u/jsadsad" target="_blank">
             <FontAwesomeIcon
               className="navbar-FA"
               icon={faAngellist}
@@ -60,15 +60,13 @@ const NavBar = ({ currentUser, logout }) => {
             <div className="tbi-navbar-logo"></div>
           </Link>
         </div>
-        <Link className="navbar-all-businesses" to="/businesses">
-          All Businesses
-        </Link>
       </div>
-
+      <Link className="navbar-all-businesses" to="/businesses">
+        All Businesses
+      </Link>
       <div className="search-bar-nav">
         <SearchBar />
       </div>
-
       <div className="nav-bar-right">{display}</div>
     </div>
   )

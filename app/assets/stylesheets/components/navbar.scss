@@ -25,7 +25,6 @@ $color-accent: #fff;
   position: initial;
   width: 1;
   padding: 8px;
-  margin: 8rem;
   display: inline;
 }
 
@@ -72,7 +71,7 @@ $color-accent: #fff;
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: red;
+  background-color: chocolate;
   min-width: 81px;
   margin: 2px;
   padding: 10px 20px;
@@ -82,16 +81,15 @@ $color-accent: #fff;
 .user-dropdown:hover .dropdown-content {
   display: block;
   &:hover {
-    background-color: rgb(155, 152, 152);
+    background-color: #42a74e;
   }
 }
 
 .search-bar-nav {
   display: flex;
-  margin: 0 auto;
-  width: 55rem;
-  box-shadow: 8px 3px 12px 2px #353535;
-  height: 3rem;
+  width: 63.3rem;
+  box-shadow: 16px 7px 15px 7px #353535;
+  height: 2.5rem;
 }
 
 .nav-bar-left {
@@ -105,19 +103,20 @@ $color-accent: #fff;
 }
 
 .nav-bar-right {
-  padding: 10px;
+  width: 50%;
+  padding: 20px;
   text-decoration: none;
   color: white;
-  font-size: 16px;
-  font-weight: 700;
   margin: 0 5px 0 5px;
 }
 
 .navbar-all-businesses {
   text-decoration: none;
+  width: 30%;
+  height: 15%;
   color: white;
-  padding-left: 2rem;
-  padding-top: 5px;
+  padding: 2px 8px 1px 25px;
+  padding-right: 2re;
   &:hover {
     text-decoration: underline;
   }
@@ -141,9 +140,10 @@ $color-accent: #fff;
 }
 
 .tbi-navbar-logo {
-  background-image: url('https://tbi-seeds.s3-us-west-1.amazonaws.com/TacoBoutIt+rev-02.png');
+  background-image: url(https://tbi-seeds.s3-us-west-1.amazonaws.com/tbi-v3.png);
+  background-color: black;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 200%;
   height: 100%;
 }
