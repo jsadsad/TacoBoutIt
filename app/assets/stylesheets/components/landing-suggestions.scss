@@ -20,6 +20,15 @@
   margin-top: 15px;
 }
 
+.landing-suggestion-index {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+
 .landing-suggestion-category {
   display: flex;
   flex-direction: column;
@@ -30,10 +39,9 @@
 }
 
 .landing-suggestion-category img {
-  height: 174px;
-  width: 218px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  height: 170px;
+  width: 215px;
+  border-radius: 2rem;
 }
 
 .landing-suggestions-caption {
