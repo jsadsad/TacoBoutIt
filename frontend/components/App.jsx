@@ -5,7 +5,13 @@ import LandingPage from './landing_page/landing_page'
 import LoginFormContainer from './session_form/login_form_container'
 import SignupFormContainer from './session_form/signup_form_container'
 import BusinessIndexContainer from './business/business_index/business_index_container'
+import AmericanBizIndexContainer from './business/businesss_categories/american_business_container'
+import ItalianBizIndexContainer from './business/businesss_categories/italian_business_container'
+import ThaiBizIndexContainer from './business/businesss_categories/thai_business_container'
 import JapaneseBizIndexContainer from './business/businesss_categories/japanese_business_container'
+import ChineseBizIndexContainer from './business/businesss_categories/chinese_business_container'
+import KoreanBizIndexContainer from './business/businesss_categories/korean_business_container'
+import CofTeaBizIndexContainer from './business/businesss_categories/coffee_tea_business_container'
 import BusinessShowContainer from './business/business_show/business_show_container'
 import CreateReviewContainer from './review/review_form/create_review_form_container'
 import EditReviewContainer from './review/review_form/edit_review_form_container'
@@ -23,8 +29,38 @@ const App = () => (
         <Route exact path="/businesses" component={BusinessIndexContainer} />
         <Route
           exact
+          path="/businesses/american"
+          component={AmericanBizIndexContainer}
+        />
+        <Route
+          exact
+          path="/businesses/italian"
+          component={ItalianBizIndexContainer}
+        />
+        <Route
+          exact
+          path="/businesses/thai"
+          component={ThaiBizIndexContainer}
+        />
+        <Route
+          exact
           path="/businesses/japanese"
           component={JapaneseBizIndexContainer}
+        />
+        <Route
+          exact
+          path="/businesses/chinese"
+          component={ChineseBizIndexContainer}
+        />
+        <Route
+          exact
+          path="/businesses/korean"
+          component={KoreanBizIndexContainer}
+        />
+        <Route
+          exact
+          path="/businesses/tea"
+          component={CofTeaBizIndexContainer}
         />
         <Route
           exact
