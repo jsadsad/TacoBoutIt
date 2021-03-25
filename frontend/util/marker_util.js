@@ -1,7 +1,6 @@
-export default class MarkerManager {
+class MarkerManager {
   constructor(map) {
     this.map = map
-    this.markers = {}
     this.createMarkerFromBusiness = this.createMarkerFromBusiness.bind(this)
   }
 
@@ -20,17 +19,18 @@ export default class MarkerManager {
   createMarkerFromBusiness(business, map, num) {
     if (num === null) {
       const marker = new google.maps.Marker({
-        position: { lat: business.lat, lng: business.lng },
         map: map,
+        position: { lat: business.lat, lng: business.lng },
         title: business.name,
       })
     } else {
       const marker = new google.maps.Marker({
-        position: { lat: business.lat, lng: business.lng },
-        label: (num + 1).toString(),
         map: map,
         title: business.name,
+        position: { lat: business.lat, lng: business.lng },
       })
     }
   }
 }
+
+export default MarkerManager

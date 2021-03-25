@@ -72,7 +72,6 @@ class BusinessMap extends React.Component {
     }
 
     this.map = new google.maps.Map(this.mapNode, mapLoc)
-
     this.MarkerManager = new MarkerManager(this.map)
     this.MarkerManager.updateMarkers(this.props.businesses)
   }

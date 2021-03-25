@@ -2,8 +2,8 @@ import { connect } from 'react-redux'
 import { fetchBusiness } from '../../../actions/business_actions'
 import { fetchReviews, deleteReview } from '../../../actions/review_actions'
 import { fetchUsers } from '../../../actions/user_actions'
-import { selectBusiness } from '../../../reducers/selectors'
-import { getReviewsForBusiness } from '../../../reducers/selectors'
+import { selectBusiness } from '../../../selectors/selectors'
+import { getReviewsForBusiness } from '../../../selectors/selectors'
 import BusinessShow from './business_show'
 
 const mapStateToProps = (state, { match }) => {
