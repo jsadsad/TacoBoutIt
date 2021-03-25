@@ -6,13 +6,6 @@ TacoBoutIt is a full-stack clone of Yelp.
 
 I have created functionality such as User Auth, visiting Business pages, viewing Business locations on Google Maps, creating Reviews, and Tagging Reviews
 
-## Technologies Used
-
-- HTML
-- CSS
-- FontAwesome
-- Google Maps API
-
 # Technologies Used
 
 | Backend                                                    | Frontend                                                                      |
