@@ -5,6 +5,7 @@ import LandingPage from './landing_page/landing_page'
 import LoginFormContainer from './session_form/login_form_container'
 import SignupFormContainer from './session_form/signup_form_container'
 import BusinessIndexContainer from './business/business_index/business_index_container'
+import JapaneseBizIndexContainer from './business/businesss_categories/japanese_business_container'
 import BusinessShowContainer from './business/business_show/business_show_container'
 import CreateReviewContainer from './review/review_form/create_review_form_container'
 import EditReviewContainer from './review/review_form/edit_review_form_container'
@@ -20,6 +21,11 @@ const App = () => (
         <AuthRoute exact path="/login" component={LoginFormContainer} />
         <AuthRoute exact path="/signup" component={SignupFormContainer} />
         <Route exact path="/businesses" component={BusinessIndexContainer} />
+        <Route
+          exact
+          path="/businesses/japanese"
+          component={JapaneseBizIndexContainer}
+        />
         <Route
           exact
           path="/businesses/:businessId"
