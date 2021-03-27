@@ -108,6 +108,7 @@ $color-accent: #fff;
   text-decoration: none;
   color: white;
   margin: 0 5px 0 5px;
+  min-width: 30%;
 }
 
 .navbar-all-businesses {
@@ -116,7 +117,7 @@ $color-accent: #fff;
   height: 15%;
   color: white;
   padding: 2px 8px 1px 25px;
-  padding-right: 2re;
+  min-width: 20%;
   &:hover {
     text-decoration: underline;
   }
