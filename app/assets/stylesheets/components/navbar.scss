@@ -110,9 +110,9 @@ $color-accent: #fff;
 
 .search-bar-nav {
   display: flex;
-  width: 63.5%;
-  /* box-shadow: 2px 7px 15px 7px #353535; */
-  height: 2.5rem;
+  align-items: center;
+  padding-top: 15px;
+  padding: -6px;
 }
 
 .nav-bar-left {
