@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta property="og:title" content="TacoBoutIt" />
+    <meta property="og:image" content="<%= image_url('meta-tbi-logo.png') %>"/>
+    <meta property="og:description"
+      content="TacoBoutIt is a full-stack clone of Yelp that allows users to Register, view Businesses, create Reviews, and interact with other Users by Tagging reviews. Ruby on Rails was implemented for the backend, while React and Redux was integrated for the frontend."
+    />
+    <meta property="og:url"
+      content="https://tacobout-it.herokuapp.com/"
+    />
     <title>TacoBoutIt</title>
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['MAPS_API_KEY']}" %>
     <%= csrf_meta_tags %>
@@ -21,7 +29,6 @@
       window.tbiLogo = "<%= image_url('TBI-Logo.png') %>";
     </script>
       <main><%= yield %></main>
-      <footer></footer>
     </article>
   </body>
 </html>
