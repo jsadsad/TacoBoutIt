@@ -1,9 +1,19 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 
-function SearchBar() {
+function SearchBar(props) {
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
+
+  const handleKeypress = (e) => {
+    if (e.keyCode === 13) {
+      handleSubmit()
+    }
+  }
+
   return (
     <div className="search-bar-container">
       <FindInput />
@@ -49,4 +59,4 @@ function SearchButton() {
   )
 }
 
-export default SearchBar
+export default withRouter(SearchBar)
