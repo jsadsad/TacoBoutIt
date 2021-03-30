@@ -109,10 +109,8 @@ $color-accent: #fff;
 }
 
 .search-bar-nav {
-  display: flex;
-  align-items: center;
   padding-top: 15px;
-  padding: -6px;
+  width: 55%;
 }
 
 .nav-bar-left {
@@ -126,12 +124,11 @@ $color-accent: #fff;
 }
 
 .nav-bar-right {
-  width: 50%;
-  padding: 20px;
+  display: flex;
+  width: 40%;
+  padding: 15px;
   text-decoration: none;
   color: white;
-  margin: 0 5px 0 5px;
-  min-width: 13%;
 }
 
 .navbar-all-businesses {
@@ -139,6 +136,7 @@ $color-accent: #fff;
   color: white;
   padding: 2px 8px 1px 25px;
   min-width: 10%;
+  line-height: 25px;
   &:hover {
     text-decoration: underline;
   }
