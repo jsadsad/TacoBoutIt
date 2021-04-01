@@ -27,7 +27,6 @@ class Api::ReviewTagsController < ApplicationController
     else
       render json: @tag.errors.full_messages, status: 422
     end
-
   end
 
   def destroy
@@ -41,5 +40,4 @@ class Api::ReviewTagsController < ApplicationController
   def tag_params
     params.require(:tag).permit(:useful, :funny, :cool)
   end
-
 end

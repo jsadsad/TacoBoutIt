@@ -1,7 +1,3 @@
-json.review do
-  json.partial! '/api/reviews/review', review: @review
-end
+json.review { json.partial! '/api/reviews/review', review: @review }
 
-json.user do
-  json.partial! '/api/users/user', user: @review.user
-end
+json.user { json.partial! '/api/users/user', user: @review.user }
