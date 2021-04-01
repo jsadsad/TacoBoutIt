@@ -28,6 +28,10 @@ const App = () => (
         <AuthRoute exact path="/signup" component={SignupFormContainer} />
         <Route exact path="/businesses" component={BusinessIndexContainer} />
         <Route
+          path="/businesses/search/:find_desc?"
+          component={BusinessIndexContainer}
+        />
+        <Route
           exact
           path="/businesses/american"
           component={AmericanBizIndexContainer}
