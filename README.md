@@ -24,7 +24,7 @@ TacoBoutIt has a User authentication feature which allows them to create their a
 
 In addition to making fields required in the frontend, the attributes are also validated in the `user.rb` model.
 
-```
+```rb
 class User < ApplicationRecord
     attr_reader :password
 
@@ -79,7 +79,7 @@ A TacoBoutIt Business Page has set of photos of that is being hosted on `AWS S3`
 
 A Business Show page contains information about Users, Business, and Reviews making it the main component of the entire the application. The Business show page is the main source of interactions within the application.
 
-```
+```js
 const mapStateToProps = (state, { match }) => {
   const users = state.entities.users
   const businessId = parseInt(match.params.businessId)
@@ -108,7 +108,7 @@ The Reviews will get posted up onto the business showpage and only Users of that
 
 Reviews are uniquely displayed on their business using a `selector`
 
-```
+```js
 export const getReviewsForBusiness = (state, ownProps) => {
   return Object.values(state.entities.reviews).filter(
     (review) => review.businessId == ownProps.businessId
@@ -120,46 +120,46 @@ export const getReviewsForBusiness = (state, ownProps) => {
 
 The `Google Maps API` is featured both on the Business Index page and Business Show page. With the Business Index page, a `marker_util.js` file is created in combination with the latitude and longitude values of a Business and is respectively shown on the Map.
 
-```
+```js
 let mapLoc
-    if (Array.isArray(this.props.businesses)) {
-      mapLoc = {
-        center: {
-          lat: +this.props.businesses[0].lat,
-          lng: +this.props.businesses[0].lng,
-        },
-        zoom: 10,
-        mapTypeControl: false,
-        scaleControl: false,
-        streetViewControl: false,
-        rotateControl: false,
-        fullscreenControl: true,
-      }
-    } else {
-      mapLoc = {
-        center: {
-          lat: +this.props.businesses.lat,
-          lng: +this.props.businesses.lng,
-        },
-        zoom: 10,
-        mapTypeControl: false,
-        scaleControl: false,
-        streetViewControl: false,
-        rotateControl: false,
-        fullscreenControl: true,
-      }
-    }
+if (Array.isArray(this.props.businesses)) {
+  mapLoc = {
+    center: {
+      lat: +this.props.businesses[0].lat,
+      lng: +this.props.businesses[0].lng,
+    },
+    zoom: 10,
+    mapTypeControl: false,
+    scaleControl: false,
+    streetViewControl: false,
+    rotateControl: false,
+    fullscreenControl: true,
+  }
+} else {
+  mapLoc = {
+    center: {
+      lat: +this.props.businesses.lat,
+      lng: +this.props.businesses.lng,
+    },
+    zoom: 10,
+    mapTypeControl: false,
+    scaleControl: false,
+    streetViewControl: false,
+    rotateControl: false,
+    fullscreenControl: true,
+  }
+}
 
-    this.map = new google.maps.Map(this.mapNode, mapLoc)
-    this.MarkerManager = new MarkerManager(this.map)
-    this.MarkerManager.updateMarkers(this.props.businesses)
+this.map = new google.maps.Map(this.mapNode, mapLoc)
+this.MarkerManager = new MarkerManager(this.map)
+this.MarkerManager.updateMarkers(this.props.businesses)
 ```
 
 5. Business Index with Specific Categories
 
 With `selectors`, connecting a container to the Business Index component allowed for easy filters of specific businesses depending on their category such as American, Italian, and Thai.
 
-```
+```js
 export const getAmericanBiz = (state) => {
   return Object.values(state.entities.businesses).filter(
     (business) => business.category === 'American (Traditional)'
@@ -209,7 +209,7 @@ With a `review_tags` table added, Users are able to interact with other Users re
 
 Using `componentDidUpdate()` and obtaining the previous properties of a Review Tag, incrementing or decrementing tag counts became available in real time.
 
-```
+```js
   componentDidUpdate(prevProps) {
     const { fetchReviews, business, review } = this.props
     let didUpdate =
