@@ -1,37 +1,35 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NavbarContainer from '../../navbar/navbar_container'
 import BusinessIndexItem from '../business_index_item/business_index_item'
 import BusinessMap from '../../business/business_map/business_map'
 
-class BusinessIndex extends React.Component {
-  componentDidMount() {
-    this.props.fetchBusinesses()
-  }
+const BusinessIndex = (props) => {
+  const { fetchBusinesses, businesses } = props
 
-  render() {
-    const { businesses } = this.props
-    if (businesses === undefined || businesses.length === 0) return null
+  useEffect(() => {
+    fetchBusinesses()
+  }, [])
 
-    const allBiz = businesses.map((business, idx) => {
-      return (
-        <BusinessIndexItem key={business.id} business={business} index={idx} />
-      )
-    })
-
+  const allBiz = businesses.map((business, idx) => {
     return (
-      <div>
-        <NavbarContainer />
-        <div className="biz-index-container">
-          <div className="biz-index-item">{allBiz}</div>
-          <div className="biz-index-right">
-            <div className="biz-map-container">
-              <BusinessMap businesses={this.props.businesses} />
-            </div>
+      <BusinessIndexItem key={business.id} business={business} index={idx} />
+    )
+  })
+
+  if (!businesses.length) return null
+  return (
+    <div>
+      <NavbarContainer />
+      <div className="biz-index-container">
+        <div className="biz-index-item">{allBiz}</div>
+        <div className="biz-index-right">
+          <div className="biz-map-container">
+            <BusinessMap businesses={businesses} />
           </div>
         </div>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default BusinessIndex
