@@ -8,7 +8,10 @@ const LandingSuggestions = () => (
       <div className="landing-suggestion-index">
         <div className="landing-suggestion-category">
           <Link to="/businesses">
-            <img src="https://tbi-seeds.s3-us-west-1.amazonaws.com/Restaurant_Splash.jpg"></img>
+            <img
+              loading="lazy"
+              src="https://tbi-seeds.s3-us-west-1.amazonaws.com/Restaurant_Splash.jpg"
+            ></img>
           </Link>
           <div>
             <p className="landing-suggestions-caption">Businesses</p>
@@ -16,7 +19,10 @@ const LandingSuggestions = () => (
         </div>
         <div className="landing-suggestion-category">
           <Link to="/businesses/thai">
-            <img src="https://tbi-seeds.s3-us-west-1.amazonaws.com/splash/khai_soi.jpeg"></img>
+            <img
+              loading="lazy"
+              src="https://tbi-seeds.s3-us-west-1.amazonaws.com/splash/khai_soi.jpeg"
+            ></img>
           </Link>
           <div>
             <p className="landing-suggestions-caption">Thai</p>
@@ -24,7 +30,10 @@ const LandingSuggestions = () => (
         </div>
         <div className="landing-suggestion-category">
           <Link to="/businesses/japanese">
-            <img src="https://tbi-seeds.s3-us-west-1.amazonaws.com/splash/splash_japanese.jpeg" />
+            <img
+              loading="lazy"
+              src="https://tbi-seeds.s3-us-west-1.amazonaws.com/splash/splash_japanese.jpeg"
+            />
           </Link>
           <div>
             <p className="landing-suggestions-caption">Japanese</p>
@@ -32,7 +41,10 @@ const LandingSuggestions = () => (
         </div>
         <div className="landing-suggestion-category">
           <Link to="/businesses/korean">
-            <img src="https://tbi-seeds.s3-us-west-1.amazonaws.com/splash/splash_korean.jpeg" />
+            <img
+              loading="lazy"
+              src="https://tbi-seeds.s3-us-west-1.amazonaws.com/splash/splash_korean.jpeg"
+            />
           </Link>
           <div>
             <p className="landing-suggestions-caption">Korean</p>
@@ -40,7 +52,10 @@ const LandingSuggestions = () => (
         </div>
         <div className="landing-suggestion-category">
           <Link to="/businesses/chinese">
-            <img src="https://tbi-seeds.s3-us-west-1.amazonaws.com/splash/splash_chinese.jpeg" />
+            <img
+              loading="lazy"
+              src="https://tbi-seeds.s3-us-west-1.amazonaws.com/splash/splash_chinese.jpeg"
+            />
           </Link>
           <div>
             <p className="landing-suggestions-caption">Chinese</p>
@@ -48,7 +63,10 @@ const LandingSuggestions = () => (
         </div>
         <div className="landing-suggestion-category">
           <Link to="/businesses/tea">
-            <img src="https://tbi-seeds.s3-us-west-1.amazonaws.com/splash/splash_boba.jpeg" />
+            <img
+              loading="lazy"
+              src="https://tbi-seeds.s3-us-west-1.amazonaws.com/splash/splash_boba.jpeg"
+            />
           </Link>
           <div>
             <p className="landing-suggestions-caption">Tea</p>

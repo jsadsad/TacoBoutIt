@@ -227,6 +227,7 @@ class ReviewItem extends React.Component {
       <div className="reviews-container">
         <div className="review-avatar-author">
           <img
+            loading="lazy"
             className="avatar"
             src="https://tbi-seeds.s3-us-west-1.amazonaws.com/taco_avatar.png"
           />

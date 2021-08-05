@@ -5,7 +5,12 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 const Footer = () => (
   <div className="tbi-footer">
     <div className="tbi-footer-scape">
-      <img src={window.cityFooter} className="footer-city" alt="Yelp City" />
+      <img
+        src={window.cityFooter}
+        className="footer-city"
+        alt="Yelp City"
+        loading="lazy"
+      />
       <div className="tbi-copyright">
         <p>Made with ♥ by JS</p>
       </div>
