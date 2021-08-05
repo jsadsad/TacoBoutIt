@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import { fetchBusinesses } from '../../../actions/business_actions'
 import { getKoreanBiz } from '../../../selectors/selectors'
-import BusinessIndex from '../business_index/business_index'
+import BusinessIndex from '../business_index/BusinessIndex'
 
 const mapStateToProps = (state) => {
   return {

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import NavbarContainer from '../../navbar/navbar_container'
-import BusinessIndexItem from '../business_index_item/business_index_item'
-import BusinessMap from '../../business/business_map/business_map'
+import BusinessIndexItem from '../business_index_item/BusinessIndexItem'
+import BusinessMap from '../business_map/BusinessMap'
 
 const BusinessIndex = (props) => {
   const { fetchBusinesses, businesses } = props
