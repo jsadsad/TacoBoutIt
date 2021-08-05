@@ -143,7 +143,11 @@ class SessionForm extends React.Component {
               </form>
             </div>
             <div className="classy-image">
-              <img src={window.classyImage} alt="A Classy Image" />
+              <img
+                loading="lazy"
+                src={window.classyImage}
+                alt="A Classy Image"
+              />
             </div>
           </div>
           <Footer />
@@ -254,7 +258,11 @@ class SessionForm extends React.Component {
               </div>
             </form>
             <div className="classy-image">
-              <img src={window.classyImage} alt="A Classy Image" />
+              <img
+                loading="lazy"
+                src={window.classyImage}
+                alt="A Classy Image"
+              />
             </div>
           </div>
           <Footer />
