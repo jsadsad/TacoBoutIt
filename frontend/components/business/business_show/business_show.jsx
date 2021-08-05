@@ -1,7 +1,7 @@
 import React from 'react'
 import NavbarContainer from '../../navbar/navbar_container'
 import ReviewItemContainer from '../../review/review_item/review_item_container'
-import BusinessMap from '../business_map/business_map'
+import BusinessMap from '../business_map/BusinessMap'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
