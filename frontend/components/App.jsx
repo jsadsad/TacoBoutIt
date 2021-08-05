@@ -12,7 +12,7 @@ import JapaneseBizIndexContainer from './business/businesss_categories/japanese_
 import ChineseBizIndexContainer from './business/businesss_categories/chinese_business_container'
 import KoreanBizIndexContainer from './business/businesss_categories/korean_business_container'
 import CofTeaBizIndexContainer from './business/businesss_categories/coffee_tea_business_container'
-import BusinessShowContainer from './business/business_show/business_show_container'
+import BusinessShowContainer from './business/business_show/BusinessShowContainer'
 import CreateReviewContainer from './review/review_form/create_review_form_container'
 import EditReviewContainer from './review/review_form/edit_review_form_container'
 import NotFoundPage from './notFound'

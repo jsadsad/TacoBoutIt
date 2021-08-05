@@ -4,7 +4,7 @@ import { fetchReviews, deleteReview } from '../../../actions/review_actions'
 import { fetchUsers } from '../../../actions/user_actions'
 import { selectBusiness } from '../../../selectors/selectors'
 import { getReviewsForBusiness } from '../../../selectors/selectors'
-import BusinessShow from './business_show'
+import BusinessShow from './BusinessShow'
 
 const mapStateToProps = (state, { match }) => {
   const users = state.entities.users
