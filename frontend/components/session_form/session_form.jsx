@@ -1,7 +1,7 @@
 import React from 'react'
 import { withRouter } from 'react-router'
 import { Link } from 'react-router-dom'
-import Footer from '../footer/footer'
+import Footer from '../footer/Footer'
 
 class SessionForm extends React.Component {
   constructor(props) {

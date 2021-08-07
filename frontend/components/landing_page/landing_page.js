@@ -4,7 +4,7 @@ import LandingSuggestions from './landing_suggestions/landing_suggestions'
 import SearchBar from '../search_bar/search_bar'
 import SearchSuggestions from '../search_suggestions/search_suggestions'
 import LandingNav from './landing_nav/landing_nav_container'
-import Footer from '../footer/footer'
+import Footer from '../footer/Footer'
 
 const LandingPage = () => (
   <div>
