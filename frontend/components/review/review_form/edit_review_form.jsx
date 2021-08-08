@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarContainer from '../../navbar/navbar_container'
+import NavbarContainer from '../../navbar/NavbarContainer'
 import { Link } from 'react-router-dom'
 
 class EditReviewForm extends React.Component {

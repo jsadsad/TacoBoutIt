@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import NavbarContainer from '../../navbar/navbar_container'
+import NavbarContainer from '../../navbar/NavbarContainer'
 import ReviewItemContainer from '../../review/review_item/review_item_container'
 import BusinessMap from '../business_map/BusinessMap'
 import { Link } from 'react-router-dom'

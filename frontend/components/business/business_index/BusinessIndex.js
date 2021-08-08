@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import NavbarContainer from '../../navbar/navbar_container'
+import NavbarContainer from '../../navbar/NavbarContainer'
 import BusinessIndexItem from '../business_index_item/BusinessIndexItem'
 import BusinessMap from '../business_map/BusinessMap'
 

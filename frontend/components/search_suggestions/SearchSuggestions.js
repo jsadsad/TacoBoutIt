@@ -6,7 +6,7 @@ import {
   faCocktail,
 } from '@fortawesome/free-solid-svg-icons'
 
-function SearchSuggestions() {
+const SearchSuggestions = () => {
   return (
     <div className="search-icons">
       <span className="search-fa-text">
