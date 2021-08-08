@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import LandingSuggestions from './landing_suggestions/landing_suggestions'
 import SearchBar from '../search_bar/search_bar'
-import SearchSuggestions from '../search_suggestions/search_suggestions'
+import SearchSuggestions from '../search_suggestions/SearchSuggestions'
 import LandingNav from './landing_nav/landing_nav_container'
 import Footer from '../footer/Footer'
 
