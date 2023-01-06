@@ -1,7 +1,5 @@
 # TacoBoutIt
 
-[Live!](http://tacobout-it.herokuapp.com/#/)
-
 TacoBoutIt is a full-stack clone of Yelp.
 
 I have created functionality such as User Auth, visiting Business pages, viewing Business locations on Google Maps, creating Reviews, and Tagging Reviews
